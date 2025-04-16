@@ -4,7 +4,14 @@ from urllib.parse import urljoin
 from collections import defaultdict
 from playwright.async_api import async_playwright
 
+#v3
 BASE_URL = "https://www.gov.br/ds/"
+
+#v4
+# BASE_URL = "https://www.gov.br/ds/"
+
+# V3 - https://www.gov.br/ds/
+# V4 - https://next-ds.estaleiro.serpro.gov.br/
 
 # Estrutura intermediária
 hierarquia = defaultdict(lambda: {"filhos": {}})

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Relatório de Verificação de Links</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Relatório de Verificação de Links</h1>
+        <p class="report-date"><em>Gerado em: {{ now }}</em></p>
+      </div>
+    </header>
+    <main class="container">
+      <section class="summary">
+        <h2>Resumo Estatístico</h2>
+        <div class="stats">
+          <div class="stat">
+            <span class="label">Total de Links:</span>
+            <span class="value" id="total_links">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">OK:</span>
+            <span class="value" id="ok_count">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">HTTP Error:</span>
+            <span class="value" id="http_error_count">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Inexistente:</span>
+            <span class="value" id="inexistente_count">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Erro de Carregamento:</span>
+            <span class="value" id="carregamento_count">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Sem Resposta:</span>
+            <span class="value" id="sem_resposta_count">0</span>
+          </div>
+        </div>
+        <div class="filters">
+          <button onclick="filtrar('todos')" class="btn filter-btn">
+            Mostrar Todos
+          </button>
+          <button onclick="filtrar('ok')" class="btn filter-btn">
+            Somente OK
+          </button>
+          <button onclick="filtrar('http')" class="btn filter-btn">
+            Somente HTTP Error
+          </button>
+          <button onclick="filtrar('inexistente')" class="btn filter-btn">
+            Somente Inexistente
+          </button>
+          <button onclick="filtrar('carregamento')" class="btn filter-btn">
+            Somente Erro de Carregamento
+          </button>
+          <button onclick="filtrar('sem resposta')" class="btn filter-btn">
+            Somente Sem Resposta
+          </button>
+          <button onclick="exportToCSV()" class="btn export-btn">
+            Exportar CSV
+          </button>
+        </div>
+      </section>
+      <section class="chart-section">
+        <canvas id="httpChart" height="100"></canvas>
+      </section>
+      <section class="report-sections">
+        {% for pai, info in dados.items() %}
+        <div class="report-block">
+          <h2 class="block-title">Seção Pai: {{ pai }}</h2>
+          <div class="block-info">
+            <p>
+              <strong>URL Pai:</strong>
+              <a href="{{ info.url_pai }}" target="_blank"
+                >{{ info.url_pai }}</a
+              >
+            </p>
+            <p><strong>Tempo:</strong> {{ info.tempo_pai | default(0) }}s</p>
+            {% if info.erro_pai and info.erro_pai.ocorreu %}
+            <p><strong>Erro Pai:</strong> {{ info.erro_pai | tojson }}</p>
+            {% endif %}
+          </div>
+          <div class="block-content">
+            <h3>Links do Pai</h3>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>URL</th>
+                  <th>Status</th>
+                  <th>HTTP</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for link in info.links_pai %}
+                <tr class="row-link">
+                  <td>
+                    <a href="{{ link.url }}" target="_blank">{{ link.url }}</a>
+                  </td>
+                  <td class="{{ 'ok' if link.status == 'ok' else 'erro' }}">
+                    {{ link.status }}
+                  </td>
+                  <td>
+                    {{ link.http_status if link.http_status is not none else '-'
+                    }}
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            {% for filho in info.filhos %}
+            <div class="subsection">
+              <h3>
+                Filho:
+                <a href="{{ filho.url }}" target="_blank">{{ filho.url }}</a>
+              </h3>
+              <p><strong>Tempo:</strong> {{ filho.tempo | default(0) }}s</p>
+              {% if filho.erro and filho.erro.ocorreu %}
+              <p><strong>Erro:</strong> {{ filho.erro | tojson }}</p>
+              {% endif %}
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>URL Subfilho</th>
+                    <th>Status</th>
+                    <th>HTTP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for subfilho in filho.subfilhos %}
+                  <tr class="row-link">
+                    <td>
+                      <a href="{{ subfilho.url }}" target="_blank"
+                        >{{ subfilho.url }}</a
+                      >
+                    </td>
+                    <td
+                      class="{{ 'ok' if subfilho.status == 'ok' else 'erro' }}"
+                    >
+                      {{ subfilho.status }}
+                    </td>
+                    <td>
+                      {{ subfilho.http_status if subfilho.http_status is not
+                      none else '-' }}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </section>
+    </main>
+    <!-- Campo oculto para montagem do CSV -->
+    <textarea id="csv_data" style="display: none">
+pai,filho,subfilho,status,http_status\n</textarea
+    >
+    <footer>
+      <div class="container">
+        <p>
+          &copy; {{ now.split('/')[2][:4] }} - Relatório Gerado por
+          govbr-link-checker
+        </p>
+      </div>
+    </footer>
+    <script>
+      // Configuração do gráfico utilizando Chart.js
+      const ctx = document.getElementById('httpChart').getContext('2d');
+      new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: {{ http_codes.keys() | list | tojson }},
+              datasets: [{
+                  label: 'Ocorrências por HTTP Status',
+                  data: {{ http_codes.values() | list | tojson }},
+                  backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                  borderColor: 'rgba(54, 162, 235, 1)',
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              scales: {
+                  y: { beginAtZero: true },
+                  x: { title: { display: true, text: 'Código HTTP' } }
+              }
+          }
+      });
+
+      // Estatísticas e filtros para os links
+      const todasLinhas = Array.from(document.querySelectorAll(".row-link"));
+      let total = 0, ok = 0, httpError = 0, inexistente = 0, carregamento = 0, semResposta = 0;
+      todasLinhas.forEach(row => {
+          const status = row.children[1].innerText.toLowerCase();
+          total++;
+          if (status === "ok") ok++;
+          else if (status.includes("http")) httpError++;
+          else if (status.includes("inexistente")) inexistente++;
+          else if (status.includes("carregamento")) carregamento++;
+          else if (status.includes("sem resposta")) semResposta++;
+      });
+      document.getElementById("total_links").innerText = total;
+      document.getElementById("ok_count").innerText = ok;
+      document.getElementById("http_error_count").innerText = httpError;
+      document.getElementById("inexistente_count").innerText = inexistente;
+      document.getElementById("carregamento_count").innerText = carregamento;
+      document.getElementById("sem_resposta_count").innerText = semResposta;
+
+      // Função para filtrar as linhas da tabela
+      function filtrar(tipo) {
+          todasLinhas.forEach(row => {
+              const status = row.children[1].innerText.toLowerCase();
+              row.style.display = "table-row";
+              if (tipo === "todos") return;
+              if (tipo === "ok" && status !== "ok") row.style.display = "none";
+              if (tipo === "http" && !status.includes("http")) row.style.display = "none";
+              if (tipo === "inexistente" && !status.includes("inexistente")) row.style.display = "none";
+              if (tipo === "carregamento" && !status.includes("carregamento")) row.style.display = "none";
+              if (tipo === "sem resposta" && !status.includes("sem resposta")) row.style.display = "none";
+          });
+      }
+
+      // Função para exportar os dados em CSV
+      function exportToCSV() {
+          const data = document.getElementById('csv_data').value;
+          const blob = new Blob([data], { type: 'text/csv;charset=utf-8;' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'relatorio_links.csv';
+          a.click();
+      }
+    </script>
+  </body>
+</html>

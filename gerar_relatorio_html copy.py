@@ -1,94 +1,38 @@
 import json
+from datetime import datetime
+from jinja2 import Environment, FileSystemLoader
 
+# Definição dos caminhos dos arquivos
 ARQUIVO_ENTRADA = "verificacao_links_quebrados.json"
 ARQUIVO_SAIDA = "relatorio_links.html"
 
+# Carrega os dados do arquivo JSON
 with open(ARQUIVO_ENTRADA, "r", encoding="utf-8") as f:
     dados = json.load(f)
 
-html = """
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Relatório de Verificação de Links</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            background: #f5f5f5;
-        }
-        h1 {
-            color: #333;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-            font-size: 14px;
-        }
-        th {
-            background: #007bff;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background: #f9f9f9;
-        }
-        .erro {
-            color: red;
-            font-weight: bold;
-        }
-        .ok {
-            color: green;
-        }
-    </style>
-</head>
-<body>
-    <h1>Relatório de Verificação de Links</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Seção Pai</th>
-                <th>URL Pai</th>
-                <th>Link Filho</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-"""
+# Obtém a data e hora atuais para inserir no relatório
+now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
-# Percorre os dados estruturados por pai
+# Processa os códigos HTTP para criar os dados do gráfico
+http_codes = {}
 for pai, info in dados.items():
-    url_pai = info.get("url_pai", "")
-    filhos = info.get("filhos", {})
+    for link in info.get("links_pai", []):
+        http = link.get("http_status")
+        http_codes[str(http)] = http_codes.get(str(http), 0) + 1
+    for filho in info.get("filhos", []):
+        for subfilho in filho.get("subfilhos", []):
+            http = subfilho.get("http_status")
+            http_codes[str(http)] = http_codes.get(str(http), 0) + 1
 
-    for url_filho, links_encontrados in filhos.items():
-        status = "ok" if links_encontrados else "erro"
-        status_class = "ok" if status == "ok" else "erro"
+# Configuração do Jinja2 para carregar os templates a partir da pasta 'templates'
+env = Environment(loader=FileSystemLoader('templates'))
+template = env.get_template('relatorio_template.html')
 
-        html += f"""
-        <tr>
-            <td>{pai}</td>
-            <td><a href="{url_pai}" target="_blank">{url_pai}</a></td>
-            <td><a href="{url_filho}" target="_blank">{url_filho}</a></td>
-            <td class="{status_class}">{status}</td>
-        </tr>
-        """
+# Renderiza o template, passando os dados, a data/hora e os códigos HTTP
+html = template.render(dados=dados, now=now, http_codes=http_codes)
 
-html += """
-        </tbody>
-    </table>
-</body>
-</html>
-"""
-
+# Salva o relatório gerado em um arquivo HTML
 with open(ARQUIVO_SAIDA, "w", encoding="utf-8") as f:
     f.write(html)
 
-print(f"✅ Relatório HTML gerado com sucesso em '{ARQUIVO_SAIDA}'")
+print(f"✅ Relatório final gerado com sucesso em '{ARQUIVO_SAIDA}'")
