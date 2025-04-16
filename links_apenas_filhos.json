@@ -1,0 +1,419 @@
+[
+  {
+    "introducao": [
+      {
+        "filhos": {
+          "comunidade": {
+            "url": "https://www.gov.br/ds/introducao/comunidade"
+          },
+          "o-que-ha-de-novo": {
+            "url": "https://www.gov.br/ds/introducao/o-que-ha-de-novo"
+          },
+          "padrao-minimo": {
+            "url": "https://www.gov.br/ds/introducao/padrao-minimo"
+          },
+          "principios": {
+            "url": "https://www.gov.br/ds/introducao/principios"
+          },
+          "sobre": {
+            "url": "https://www.gov.br/ds/introducao/sobre"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "home": [
+      {
+        "filhos": {}
+      }
+    ]
+  },
+  {
+    "como-comecar": [
+      {
+        "filhos": {
+          "instalacao": {
+            "url": "https://www.gov.br/ds/como-comecar/instalacao"
+          },
+          "prototipando": {
+            "url": "https://www.gov.br/ds/como-comecar/prototipando"
+          },
+          "purgecss": {
+            "url": "https://www.gov.br/ds/como-comecar/purgecss"
+          },
+          "utilizando-sass": {
+            "url": "https://www.gov.br/ds/como-comecar/utilizando-sass"
+          },
+          "vendors": {
+            "url": "https://www.gov.br/ds/como-comecar/vendors"
+          },
+          "versao-lite": {
+            "url": "https://www.gov.br/ds/como-comecar/versao-lite"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "acessibilidade": [
+      {
+        "filhos": {}
+      }
+    ]
+  },
+  {
+    "downloads": [
+      {
+        "filhos": {
+          "assets": {
+            "url": "https://www.gov.br/ds/downloads/assets"
+          },
+          "legislacao": {
+            "url": "https://www.gov.br/ds/downloads/legislacao"
+          },
+          "manuais-orientadores": {
+            "url": "https://www.gov.br/ds/downloads/manuais-orientadores"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "fundamentos-visuais": [
+      {
+        "filhos": {
+          "cores": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/cores"
+          },
+          "elevacao": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/elevacao"
+          },
+          "espacamento": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/espacamento"
+          },
+          "estados": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/estados"
+          },
+          "grid": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/grid"
+          },
+          "iconografia": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/iconografia"
+          },
+          "ilustracao": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/ilustracao"
+          },
+          "movimento": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/movimento"
+          },
+          "superficie": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie"
+          },
+          "tipografia": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia"
+          },
+          "visao-geral": {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/visao-geral"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "padroes": [
+      {
+        "filhos": {
+          "design/ajuda-comunicacao": {
+            "url": "https://www.gov.br/ds/padroes/design/ajuda-comunicacao"
+          },
+          "design/collapse": {
+            "url": "https://www.gov.br/ds/padroes/design/collapse"
+          },
+          "design/contentoverflow": {
+            "url": "https://www.gov.br/ds/padroes/design/contentoverflow"
+          },
+          "design/densidade": {
+            "url": "https://www.gov.br/ds/padroes/design/densidade"
+          },
+          "design/dropdown": {
+            "url": "https://www.gov.br/ds/padroes/design/dropdown"
+          },
+          "design/emptystates": {
+            "url": "https://www.gov.br/ds/padroes/design/emptystates"
+          },
+          "design/formulario": {
+            "url": "https://www.gov.br/ds/padroes/design/formulario"
+          },
+          "design/grafico": {
+            "url": "https://www.gov.br/ds/padroes/design/grafico"
+          },
+          "design/navegacao": {
+            "url": "https://www.gov.br/ds/padroes/design/navegacao"
+          },
+          "design/onboarding": {
+            "url": "https://www.gov.br/ds/padroes/design/onboarding"
+          },
+          "mobile/android-e-ios": {
+            "url": "https://www.gov.br/ds/padroes/mobile/android-e-ios"
+          },
+          "visao-geral": {
+            "url": "https://www.gov.br/ds/padroes/visao-geral"
+          },
+          "writing/microcopy": {
+            "url": "https://www.gov.br/ds/padroes/writing/microcopy"
+          },
+          "writing/principios-writing": {
+            "url": "https://www.gov.br/ds/padroes/writing/principios-writing"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "components": [
+      {
+        "filhos": {
+          "accordion": {
+            "url": "https://www.gov.br/ds/components/accordion"
+          },
+          "avatar": {
+            "url": "https://www.gov.br/ds/components/avatar"
+          },
+          "breadcrumb": {
+            "url": "https://www.gov.br/ds/components/breadcrumb"
+          },
+          "button": {
+            "url": "https://www.gov.br/ds/components/button"
+          },
+          "card": {
+            "url": "https://www.gov.br/ds/components/card"
+          },
+          "carousel": {
+            "url": "https://www.gov.br/ds/components/carousel"
+          },
+          "checkbox": {
+            "url": "https://www.gov.br/ds/components/checkbox"
+          },
+          "cookiebar": {
+            "url": "https://www.gov.br/ds/components/cookiebar"
+          },
+          "datetimepicker": {
+            "url": "https://www.gov.br/ds/components/datetimepicker"
+          },
+          "divider": {
+            "url": "https://www.gov.br/ds/components/divider"
+          },
+          "footer": {
+            "url": "https://www.gov.br/ds/components/footer"
+          },
+          "header": {
+            "url": "https://www.gov.br/ds/components/header"
+          },
+          "input": {
+            "url": "https://www.gov.br/ds/components/input"
+          },
+          "item": {
+            "url": "https://www.gov.br/ds/components/item"
+          },
+          "list": {
+            "url": "https://www.gov.br/ds/components/list"
+          },
+          "loading": {
+            "url": "https://www.gov.br/ds/components/loading"
+          },
+          "magicbutton": {
+            "url": "https://www.gov.br/ds/components/magicbutton"
+          },
+          "menu": {
+            "url": "https://www.gov.br/ds/components/menu"
+          },
+          "message": {
+            "url": "https://www.gov.br/ds/components/message"
+          },
+          "modal": {
+            "url": "https://www.gov.br/ds/components/modal"
+          },
+          "notification": {
+            "url": "https://www.gov.br/ds/components/notification"
+          },
+          "pagination": {
+            "url": "https://www.gov.br/ds/components/pagination"
+          },
+          "radio": {
+            "url": "https://www.gov.br/ds/components/radio"
+          },
+          "scrim": {
+            "url": "https://www.gov.br/ds/components/scrim"
+          },
+          "select": {
+            "url": "https://www.gov.br/ds/components/select"
+          },
+          "signin": {
+            "url": "https://www.gov.br/ds/components/signin"
+          },
+          "skiplink": {
+            "url": "https://www.gov.br/ds/components/skiplink"
+          },
+          "step": {
+            "url": "https://www.gov.br/ds/components/step"
+          },
+          "switch": {
+            "url": "https://www.gov.br/ds/components/switch"
+          },
+          "tab": {
+            "url": "https://www.gov.br/ds/components/tab"
+          },
+          "table": {
+            "url": "https://www.gov.br/ds/components/table"
+          },
+          "tag": {
+            "url": "https://www.gov.br/ds/components/tag"
+          },
+          "textarea": {
+            "url": "https://www.gov.br/ds/components/textarea"
+          },
+          "tooltip": {
+            "url": "https://www.gov.br/ds/components/tooltip"
+          },
+          "upload": {
+            "url": "https://www.gov.br/ds/components/upload"
+          },
+          "visao-geral": {
+            "url": "https://www.gov.br/ds/components/visao-geral"
+          },
+          "wizard": {
+            "url": "https://www.gov.br/ds/components/wizard"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "templates": [
+      {
+        "filhos": {
+          "base": {
+            "url": "https://www.gov.br/ds/templates/base"
+          },
+          "erro": {
+            "url": "https://www.gov.br/ds/templates/erro"
+          },
+          "visao-geral": {
+            "url": "https://www.gov.br/ds/templates/visao-geral"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "utilitarios": [
+      {
+        "filhos": {
+          "css/arredondamento": {
+            "url": "https://www.gov.br/ds/utilitarios/css/arredondamento"
+          },
+          "css/bordas": {
+            "url": "https://www.gov.br/ds/utilitarios/css/bordas"
+          },
+          "css/cores": {
+            "url": "https://www.gov.br/ds/utilitarios/css/cores"
+          },
+          "css/display": {
+            "url": "https://www.gov.br/ds/utilitarios/css/display"
+          },
+          "css/elevacao": {
+            "url": "https://www.gov.br/ds/utilitarios/css/elevacao"
+          },
+          "css/espacamento": {
+            "url": "https://www.gov.br/ds/utilitarios/css/espacamento"
+          },
+          "css/flexbox": {
+            "url": "https://www.gov.br/ds/utilitarios/css/flexbox"
+          },
+          "css/grid": {
+            "url": "https://www.gov.br/ds/utilitarios/css/grid"
+          },
+          "css/movimento": {
+            "url": "https://www.gov.br/ds/utilitarios/css/movimento"
+          },
+          "css/overflow": {
+            "url": "https://www.gov.br/ds/utilitarios/css/overflow"
+          },
+          "css/textos": {
+            "url": "https://www.gov.br/ds/utilitarios/css/textos"
+          },
+          "css/tipografia": {
+            "url": "https://www.gov.br/ds/utilitarios/css/tipografia"
+          },
+          "js/accordion": {
+            "url": "https://www.gov.br/ds/utilitarios/js/accordion"
+          },
+          "js/checkgroup": {
+            "url": "https://www.gov.br/ds/utilitarios/js/checkgroup"
+          },
+          "js/collapse": {
+            "url": "https://www.gov.br/ds/utilitarios/js/collapse"
+          },
+          "js/dropdown": {
+            "url": "https://www.gov.br/ds/utilitarios/js/dropdown"
+          },
+          "js/scrim": {
+            "url": "https://www.gov.br/ds/utilitarios/js/scrim"
+          },
+          "js/tooltip": {
+            "url": "https://www.gov.br/ds/utilitarios/js/tooltip"
+          },
+          "visao-geral": {
+            "url": "https://www.gov.br/ds/utilitarios/visao-geral"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "guias": [
+      {
+        "filhos": {
+          "acessibilidade-html": {
+            "url": "https://www.gov.br/ds/guias/acessibilidade-html"
+          },
+          "boas-praticas-de-css": {
+            "url": "https://www.gov.br/ds/guias/boas-praticas-de-css"
+          },
+          "boas-praticas-de-html": {
+            "url": "https://www.gov.br/ds/guias/boas-praticas-de-html"
+          },
+          "codificacao-javascript": {
+            "url": "https://www.gov.br/ds/guias/codificacao-javascript"
+          },
+          "codificacao-sass": {
+            "url": "https://www.gov.br/ds/guias/codificacao-sass"
+          },
+          "construcao-de-componentes": {
+            "url": "https://www.gov.br/ds/guias/construcao-de-componentes"
+          },
+          "migracao-2x-3x": {
+            "url": "https://www.gov.br/ds/guias/migracao-2x-3x"
+          },
+          "navegadores-suportados": {
+            "url": "https://www.gov.br/ds/guias/navegadores-suportados"
+          },
+          "visao-geral": {
+            "url": "https://www.gov.br/ds/guias/visao-geral"
+          },
+          "wai-aria": {
+            "url": "https://www.gov.br/ds/guias/wai-aria"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "release-notes": [
+      {
+        "filhos": {}
+      }
+    ]
+  }
+]

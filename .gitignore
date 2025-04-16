@@ -1,0 +1,24 @@
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+
+# Arquivos de log e cache
+*.log
+*.cache
+*.tmp
+
+# Arquivos de sistema
+.DS_Store
+
+# Arquivos de saída
+links_extraidos.json
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
