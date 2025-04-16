@@ -29,10 +29,11 @@ async def mapear_novos_links():
             url_pai = urljoin(BASE_URL, pai + "/")
             print(f"🔍 Acessando página do pai: {url_pai}")
 
-            # Coleta os links da página do pai
+            # Coleta os links da página do pai dentro da .main-content
             try:
                 await page.goto(url_pai, wait_until="networkidle", timeout=20000)
-                a_tags = await page.query_selector_all("a[href]")
+                main_content = await page.query_selector(".main-content")
+                a_tags = await main_content.query_selector_all("a[href]") if main_content else []
                 links_pai = set()
 
                 for a in a_tags:
@@ -41,24 +42,24 @@ async def mapear_novos_links():
                         link_completo = urljoin(url_pai, href)
                         links_pai.add(link_completo)
 
-                links_pai_ordenados = sorted(links_pai)
+                links_pai_ordenados = sorted(set(links_pai))
             except Exception as e:
                 print(f"⚠️ Erro ao acessar a página do pai {url_pai}: {e}")
                 links_pai_ordenados = []
 
-            # Inicializa estrutura do pai
             resultado[pai] = {
                 "url_pai": url_pai,
                 "links_pai": links_pai_ordenados,
-                "filhos": [{}]
+                "filhos": {}
             }
 
-            # Coleta os links das páginas dos filhos
+            # Coleta os links das páginas dos filhos dentro da .main-content
             for url_filho in urls_filhos:
                 print(f"   ↪ Acessando filho: {url_filho}")
                 try:
                     await page.goto(url_filho, wait_until="networkidle", timeout=20000)
-                    a_tags = await page.query_selector_all("a[href]")
+                    main_content = await page.query_selector(".main-content")
+                    a_tags = await main_content.query_selector_all("a[href]") if main_content else []
                     links_filhos = set()
 
                     for a in a_tags:
@@ -67,7 +68,7 @@ async def mapear_novos_links():
                             link_completo = urljoin(url_filho, href)
                             links_filhos.add(link_completo)
 
-                    resultado[pai]["filhos"][url_filho] = sorted(links_filhos)
+                    resultado[pai]["filhos"][url_filho] = sorted(set(links_filhos))
                 except Exception as e:
                     print(f"⚠️ Erro ao acessar filho {url_filho}: {e}")
                     resultado[pai]["filhos"][url_filho] = []
