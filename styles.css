@@ -1,12 +1,18 @@
 /* Importa a fonte Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+/* Definição de tamanhos de fonte responsivos usando REM */
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   background: #f9f9f9;
   color: #333;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 .container {
@@ -47,6 +53,7 @@ main {
 
 .summary h2 {
   margin-bottom: 10px;
+  font-size: 1.75rem;
 }
 
 .stats {
@@ -68,6 +75,7 @@ main {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
+  font-size: 0.9rem;
 }
 
 .stats .stat .value {
@@ -115,14 +123,21 @@ main {
 
 .report-sections {
   margin-bottom: 20px;
+  display: grid;
+  gap: 20px;
 }
 
 .report-block {
   background: #fff;
-  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.block-info {
+  display: grid;
+  gap: 10px;
 }
 
 .block-title {
@@ -130,20 +145,38 @@ main {
   color: #264653;
   border-bottom: 2px solid #2a9d8f;
   padding-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 .block-info p {
   margin: 8px 0;
+  font-size: 1rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .block-content {
   margin-top: 15px;
 }
 
+.block-content h3 {
+  font-size: 1.25rem;
+}
+
+.data-table-wrapper {
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+
 .data-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 15px;
+  font-size: 0.95rem;
+  min-width: 500px;
 }
 
 .data-table th,
@@ -156,6 +189,7 @@ main {
 .data-table th {
   background: #2a9d8f;
   color: #fff;
+  font-size: 1rem;
 }
 
 .data-table tr:nth-child(even) {
@@ -195,6 +229,20 @@ footer p {
   font-size: 0.9rem;
 }
 
+/* Melhor tratamento para textos longos */
+p,
+a,
+span,
+div,
+td,
+th,
+li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
 /* Truncamento de URLs longas */
 .data-table td a {
   display: block;
@@ -204,56 +252,124 @@ footer p {
   white-space: nowrap;
 }
 
+.block-content p strong {
+  word-break: normal;
+}
+
+.subsection h3 {
+  font-size: 1.15rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.subsection p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.subsection {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
 /* Regras de responsividade */
 @media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
   .container {
     width: 95%;
     padding: 15px;
   }
 
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .summary h2 {
+    font-size: 1.5rem;
   }
 
   .stats {
     gap: 10px;
+    margin: -5px;
+    padding: 5px;
   }
 
   .stats .stat {
-    flex: 1 0 100px;
+    flex: 1 0 calc(50% - 20px);
+    margin: 5px;
+    min-width: 120px;
+  }
+
+  .stats .stat .value {
+    font-size: 1.3rem;
+  }
+
+  .block-title {
+    font-size: 1.3rem;
+  }
+
+  .block-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+    padding: 10px 0;
   }
 
   .filters .btn {
-    padding: 8px 12px;
-    font-size: 0.8rem;
-    display: inline-block;
-    margin: 3px;
-  }
-
-  .data-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  .data-table th,
-  .data-table td {
+    width: 100%;
+    margin: 0;
     padding: 8px;
-    font-size: 0.9rem;
   }
 
-  .data-table td a {
-    max-width: 250px;
+  .export-btn {
+    grid-column: 1 / -1;
   }
 
-  .chart-section {
-    height: 250px;
+  .report-block {
+    padding: 15px;
+  }
+
+  .data-table-wrapper {
+    margin: 0 -15px;
+    padding: 0 15px;
+  }
+
+  .block-info {
+    gap: 8px;
+  }
+
+  .subsection {
+    margin-top: 1.25rem;
+    padding-top: 0.75rem;
+  }
+
+  /* Ajustes para touch */
+  .report-block:hover {
+    transform: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Feedback visual para links em touch */
+  .data-table td a:active {
+    background: rgba(42, 157, 143, 0.1);
   }
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
   .container {
-    width: 98%;
+    width: 100%;
     padding: 10px;
   }
 
@@ -262,47 +378,150 @@ footer p {
   }
 
   header p.report-date {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
-  .stats .stat {
-    flex: 1 0 45%;
-    padding: 8px;
-  }
-
-  .stats .stat .value {
-    font-size: 1.2rem;
-  }
-
-  .filters .btn {
-    width: calc(50% - 10px);
-    margin: 3px;
-    font-size: 0.75rem;
-  }
-
-  .export-btn {
-    width: auto !important;
-  }
-
-  .block-title {
+  .summary h2 {
     font-size: 1.3rem;
   }
 
-  .report-block {
-    padding: 15px;
+  .stats .stat {
+    flex: 1 0 calc(100% - 16px);
+    margin: 4px;
   }
 
-  .chart-section {
-    height: 200px;
-  }
-
-  .data-table th,
-  .data-table td {
-    padding: 6px;
+  .stats .stat .label {
     font-size: 0.8rem;
   }
 
-  .data-table td a {
-    max-width: 180px;
+  .stats .stat .value {
+    font-size: 1.1rem;
   }
+
+  .block-title {
+    font-size: 1.2rem;
+  }
+
+  .block-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .report-block {
+    padding: 12px;
+  }
+
+  .data-table-wrapper {
+    margin: 0 -12px;
+    padding: 0 12px;
+  }
+
+  .data-table-wrapper::after {
+    content: "⟷";
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background: rgba(42, 157, 143, 0.9);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0.8;
+  }
+
+  .block-info {
+    gap: 6px;
+  }
+
+  .subsection {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  /* Otimizações para telas muito pequenas */
+  .data-table td a::after {
+    display: none;
+  }
+
+  .data-table-wrapper::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  /* Melhor visualização de status em telas pequenas */
+  .ok,
+  .erro {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+  }
+
+  .ok {
+    background: rgba(39, 174, 96, 0.1);
+  }
+
+  .erro {
+    background: rgba(231, 111, 81, 0.1);
+  }
+}
+
+/* Melhorias na experiência móvel */
+@media (hover: hover) {
+  .filters .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.filters .btn:active {
+  transform: translateY(1px);
+}
+
+/* Feedback visual para rolagem horizontal */
+.data-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.data-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.data-table-wrapper::-webkit-scrollbar-thumb {
+  background: #2a9d8f;
+  border-radius: 3px;
+}
+
+.data-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #264653;
+}
+
+/* Melhorias na visualização de links */
+.data-table td a {
+  position: relative;
+  padding-right: 20px;
+}
+
+.data-table td a::after {
+  content: "↗";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+
+/* Animações suaves */
+.report-block {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

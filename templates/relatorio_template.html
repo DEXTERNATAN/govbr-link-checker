@@ -88,31 +88,35 @@
           </div>
           <div class="block-content">
             <h3>Links do Pai</h3>
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>URL</th>
-                  <th>Status</th>
-                  <th>HTTP</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for link in info.links_pai %}
-                <tr class="row-link">
-                  <td>
-                    <a href="{{ link.url }}" target="_blank">{{ link.url }}</a>
-                  </td>
-                  <td class="{{ 'ok' if link.status == 'ok' else 'erro' }}">
-                    {{ link.status }}
-                  </td>
-                  <td>
-                    {{ link.http_status if link.http_status is not none else '-'
-                    }}
-                  </td>
-                </tr>
-                {% endfor %}
-              </tbody>
-            </table>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>URL</th>
+                    <th>Status</th>
+                    <th>HTTP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for link in info.links_pai %}
+                  <tr class="row-link">
+                    <td>
+                      <a href="{{ link.url }}" target="_blank"
+                        >{{ link.url }}</a
+                      >
+                    </td>
+                    <td class="{{ 'ok' if link.status == 'ok' else 'erro' }}">
+                      {{ link.status }}
+                    </td>
+                    <td>
+                      {{ link.http_status if link.http_status is not none else
+                      '-' }}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
             {% for filho in info.filhos %}
             <div class="subsection">
               <h3>
@@ -123,35 +127,37 @@
               {% if filho.erro and filho.erro.ocorreu %}
               <p><strong>Erro:</strong> {{ filho.erro | tojson }}</p>
               {% endif %}
-              <table class="data-table">
-                <thead>
-                  <tr>
-                    <th>URL Subfilho</th>
-                    <th>Status</th>
-                    <th>HTTP</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {% for subfilho in filho.subfilhos %}
-                  <tr class="row-link">
-                    <td>
-                      <a href="{{ subfilho.url }}" target="_blank"
-                        >{{ subfilho.url }}</a
+              <div class="data-table-wrapper">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>URL Subfilho</th>
+                      <th>Status</th>
+                      <th>HTTP</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for subfilho in filho.subfilhos %}
+                    <tr class="row-link">
+                      <td>
+                        <a href="{{ subfilho.url }}" target="_blank"
+                          >{{ subfilho.url }}</a
+                        >
+                      </td>
+                      <td
+                        class="{{ 'ok' if subfilho.status == 'ok' else 'erro' }}"
                       >
-                    </td>
-                    <td
-                      class="{{ 'ok' if subfilho.status == 'ok' else 'erro' }}"
-                    >
-                      {{ subfilho.status }}
-                    </td>
-                    <td>
-                      {{ subfilho.http_status if subfilho.http_status is not
-                      none else '-' }}
-                    </td>
-                  </tr>
-                  {% endfor %}
-                </tbody>
-              </table>
+                        {{ subfilho.status }}
+                      </td>
+                      <td>
+                        {{ subfilho.http_status if subfilho.http_status is not
+                        none else '-' }}
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
             </div>
             {% endfor %}
           </div>
@@ -174,7 +180,13 @@ pai,filho,subfilho,status,http_status\n</textarea
     <script>
       // Configuração do gráfico utilizando Chart.js
       const ctx = document.getElementById('httpChart').getContext('2d');
-      new Chart(ctx, {
+
+      // Função para ajustar o tamanho da fonte baseado na largura da tela
+      function getFontSize() {
+        return window.innerWidth < 480 ? 10 : window.innerWidth < 768 ? 12 : 14;
+      }
+
+      const chart = new Chart(ctx, {
           type: 'bar',
           data: {
               labels: {{ http_codes.keys() | list | tojson }},
@@ -190,10 +202,47 @@ pai,filho,subfilho,status,http_status\n</textarea
               responsive: true,
               maintainAspectRatio: false,
               scales: {
-                  y: { beginAtZero: true },
-                  x: { title: { display: true, text: 'Código HTTP' } }
+                  y: {
+                      beginAtZero: true,
+                      ticks: {
+                          font: {
+                              size: getFontSize()
+                          }
+                      }
+                  },
+                  x: {
+                      title: {
+                          display: true,
+                          text: 'Código HTTP',
+                          font: {
+                              size: getFontSize()
+                          }
+                      },
+                      ticks: {
+                          font: {
+                              size: getFontSize()
+                          }
+                      }
+                  }
+              },
+              plugins: {
+                  legend: {
+                      labels: {
+                          font: {
+                              size: getFontSize()
+                          }
+                      }
+                  }
               }
           }
+      });
+
+      // Atualiza o tamanho da fonte quando a janela é redimensionada
+      window.addEventListener('resize', function() {
+          chart.options.scales.x.ticks.font.size = getFontSize();
+          chart.options.scales.y.ticks.font.size = getFontSize();
+          chart.options.plugins.legend.labels.font.size = getFontSize();
+          chart.update();
       });
 
       // Estatísticas e filtros para os links
