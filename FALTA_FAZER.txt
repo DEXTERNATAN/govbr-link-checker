@@ -1,4 +1,4 @@
-- Responsividade para telas menores
+- ✅ Responsividade para telas menores
 - Ajustar a acessibilidade do projeto
 - Ajustar o projeto para gerar o arquivo de relatorio html dentro da pasta public
 - Ajustar o projeto para rodar para o projeto da v4

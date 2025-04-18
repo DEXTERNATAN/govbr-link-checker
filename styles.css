@@ -110,6 +110,7 @@ main {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 300px;
 }
 
 .report-sections {
@@ -192,4 +193,116 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+/* Truncamento de URLs longas */
+.data-table td a {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Regras de responsividade */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .stats {
+    gap: 10px;
+  }
+
+  .stats .stat {
+    flex: 1 0 100px;
+  }
+
+  .filters .btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin: 3px;
+  }
+
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .data-table td a {
+    max-width: 250px;
+  }
+
+  .chart-section {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 98%;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p.report-date {
+    font-size: 0.9rem;
+  }
+
+  .stats .stat {
+    flex: 1 0 45%;
+    padding: 8px;
+  }
+
+  .stats .stat .value {
+    font-size: 1.2rem;
+  }
+
+  .filters .btn {
+    width: calc(50% - 10px);
+    margin: 3px;
+    font-size: 0.75rem;
+  }
+
+  .export-btn {
+    width: auto !important;
+  }
+
+  .block-title {
+    font-size: 1.3rem;
+  }
+
+  .report-block {
+    padding: 15px;
+  }
+
+  .chart-section {
+    height: 200px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+
+  .data-table td a {
+    max-width: 180px;
+  }
 }
