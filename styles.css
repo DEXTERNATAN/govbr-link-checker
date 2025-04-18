@@ -16,10 +16,9 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 header {
@@ -335,6 +334,9 @@ li {
 
   .report-block {
     padding: 15px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .data-table-wrapper {
