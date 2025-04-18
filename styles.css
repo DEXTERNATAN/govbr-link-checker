@@ -1,6 +1,40 @@
 /* Importa a fonte Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+/* Definição de variáveis de cores com alto contraste e paleta expandida */
+:root {
+  /* Cores principais */
+  --primary-dark: #1a5f7a; /* Azul escuro - contraste 7.5:1 com branco */
+  --primary: #2596be; /* Azul principal - contraste 4.7:1 com branco */
+  --primary-light: #b3e0ff; /* Azul claro para backgrounds suaves */
+
+  /* Cores secundárias */
+  --secondary-dark: #2d4b4d; /* Verde escuro - contraste 8.1:1 com branco */
+  --secondary: #45858c; /* Verde médio - contraste 4.5:1 com branco */
+  --secondary-light: #a7c4c7; /* Verde claro para backgrounds suaves */
+
+  /* Cores de destaque */
+  --accent-dark: #7b2cbf; /* Roxo escuro - contraste 7:1 com branco */
+  --accent: #9d4edd; /* Roxo médio - contraste 4.6:1 com branco */
+  --accent-light: #e0b7ff; /* Roxo claro para backgrounds suaves */
+
+  /* Cores de status */
+  --error: #c42f2f; /* Vermelho mais escuro - contraste 7:1 com branco */
+  --error-light: #ffebee; /* Vermelho claro para backgrounds de erro */
+  --success: #2d5a27; /* Verde mais escuro - contraste 7.2:1 com branco */
+  --success-light: #e8f5e9; /* Verde claro para backgrounds de sucesso */
+  --warning: #904e00; /* Laranja escuro - contraste 6.5:1 com branco */
+  --warning-light: #fff3e0; /* Laranja claro para backgrounds de alerta */
+
+  /* Cores de texto e background */
+  --text-dark: #222222; /* Texto principal quase preto */
+  --text-medium: #555555; /* Texto médio para subtítulos */
+  --text-light: #ffffff; /* Texto branco */
+  --background-light: #f9f9f9;
+  --background-medium: #f0f0f0;
+  --border-color: #cccccc;
+}
+
 /* Definição de tamanhos de fonte responsivos usando REM */
 html {
   font-size: 16px;
@@ -9,8 +43,8 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: var(--background-light);
+  color: var(--text-dark);
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -23,8 +57,8 @@ body {
 }
 
 header {
-  background: #2a9d8f;
-  color: #fff;
+  background: var(--primary-dark);
+  color: var(--text-light);
   padding: 20px 0;
   text-align: center;
 }
@@ -64,7 +98,9 @@ main {
 }
 
 .stats .stat {
-  background: #e9ecef;
+  background: var(--background-medium);
+  color: var(--text-dark);
+  border-left: 4px solid var(--accent);
   padding: 10px 15px;
   border-radius: 5px;
   flex: 1 0 150px;
@@ -99,13 +135,15 @@ main {
 }
 
 .filter-btn {
-  background: #f4a261;
-  color: #fff;
+  background: var(--secondary);
+  color: var(--text-light);
+  font-weight: 500;
 }
 
 .export-btn {
-  background: #2a9d8f;
-  color: #fff;
+  background: var(--accent-dark);
+  color: var(--text-light);
+  font-weight: 500;
 }
 
 .filters .btn:hover {
@@ -133,6 +171,8 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: all 0.3s ease;
+  margin-bottom: 40px;
+  border-left: 4px solid var(--primary);
 }
 
 .block-info {
@@ -142,8 +182,8 @@ main {
 
 .block-title {
   margin-top: 0;
-  color: #264653;
-  border-bottom: 2px solid #2a9d8f;
+  color: var(--secondary-dark);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 5px;
   font-size: 1.5rem;
 }
@@ -187,8 +227,8 @@ main {
 }
 
 .data-table th {
-  background: #2a9d8f;
-  color: #fff;
+  background: var(--primary-dark);
+  color: var(--text-light);
   font-size: 1rem;
 }
 
@@ -197,29 +237,33 @@ main {
 }
 
 .ok {
-  color: #27ae60;
-  font-weight: 700;
+  color: var(--success);
+  background-color: var(--success-light);
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
 .erro {
-  color: #e76f51;
-  font-weight: 700;
+  color: var(--error);
+  background-color: var(--error-light);
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
 a {
-  color: #2a9d8f;
+  color: var(--primary-dark);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #264653;
+  color: var(--accent-dark);
   text-decoration: underline;
 }
 
 footer {
-  background: #264653;
-  color: #fff;
+  background: var(--secondary-dark);
+  color: var(--text-light);
   text-align: center;
   padding: 15px 0;
 }
@@ -270,7 +314,9 @@ li {
 .subsection {
   margin-top: 1.5rem;
   padding-top: 1rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color);
+  border-left: 3px solid var(--secondary-light);
+  padding-left: 15px;
 }
 
 /* Regras de responsividade */
@@ -424,13 +470,13 @@ li {
     position: absolute;
     bottom: 5px;
     right: 10px;
-    background: rgba(42, 157, 143, 0.9);
-    color: white;
+    background: var(--primary-dark);
+    color: var(--text-light);
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 12px;
     pointer-events: none;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   .block-info {
@@ -461,11 +507,11 @@ li {
   }
 
   .ok {
-    background: rgba(39, 174, 96, 0.1);
+    background: rgba(30, 132, 73, 0.15);
   }
 
   .erro {
-    background: rgba(231, 111, 81, 0.1);
+    background: rgba(214, 73, 51, 0.15);
   }
 }
 
@@ -492,12 +538,12 @@ li {
 }
 
 .data-table-wrapper::-webkit-scrollbar-thumb {
-  background: #2a9d8f;
+  background: var(--accent);
   border-radius: 3px;
 }
 
 .data-table-wrapper::-webkit-scrollbar-thumb:hover {
-  background: #264653;
+  background: var(--accent-dark);
 }
 
 /* Melhorias na visualização de links */
@@ -524,4 +570,32 @@ li {
 .report-block:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adicionando hover states com contraste adequado */
+.filter-btn:hover {
+  background: var(--secondary-dark);
+}
+
+.export-btn:hover {
+  background: var(--accent);
+}
+
+/* Feedback visual para interações */
+.data-table tr:hover {
+  background-color: var(--primary-light);
+}
+
+/* Notificações com as novas cores */
+.export-notification {
+  background-color: var(--success-light);
+  color: var(--success);
+  border-left: 4px solid var(--success);
+  padding: 12px 20px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

@@ -8,67 +8,128 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <header>
+    <header role="banner">
       <div class="container">
         <h1>Relatório de Verificação de Links</h1>
-        <p class="report-date"><em>Gerado em: 18/04/2025 18:55:40</em></p>
+        <p class="report-date" aria-label="Data do relatório">
+          <em>Gerado em: 18/04/2025 19:37:52</em>
+        </p>
       </div>
     </header>
-    <main class="container">
-      <section class="summary">
-        <h2>Resumo Estatístico</h2>
-        <div class="stats">
+    <main class="container" role="main">
+      <section class="summary" aria-labelledby="summary-title">
+        <h2 id="summary-title">Resumo Estatístico</h2>
+        <div class="stats" role="group" aria-label="Estatísticas gerais">
           <div class="stat">
-            <span class="label">Total de Links:</span>
-            <span class="value" id="total_links">0</span>
+            <span class="label" id="total-label">Total de Links:</span>
+            <span class="value" aria-labelledby="total-label" id="total_links"
+              >0</span
+            >
           </div>
           <div class="stat">
-            <span class="label">OK:</span>
-            <span class="value" id="ok_count">0</span>
+            <span class="label" id="ok-label">OK:</span>
+            <span class="value" aria-labelledby="ok-label" id="ok_count"
+              >0</span
+            >
           </div>
           <div class="stat">
-            <span class="label">HTTP Error:</span>
-            <span class="value" id="http_error_count">0</span>
+            <span class="label" id="http-error-label">HTTP Error:</span>
+            <span
+              class="value"
+              aria-labelledby="http-error-label"
+              id="http_error_count"
+              >0</span
+            >
           </div>
           <div class="stat">
-            <span class="label">Inexistente:</span>
-            <span class="value" id="inexistente_count">0</span>
+            <span class="label" id="inexistente-label">Inexistente:</span>
+            <span
+              class="value"
+              aria-labelledby="inexistente-label"
+              id="inexistente_count"
+              >0</span
+            >
           </div>
           <div class="stat">
-            <span class="label">Erro de Carregamento:</span>
-            <span class="value" id="carregamento_count">0</span>
+            <span class="label" id="carregamento-label"
+              >Erro de Carregamento:</span
+            >
+            <span
+              class="value"
+              aria-labelledby="carregamento-label"
+              id="carregamento_count"
+              >0</span
+            >
           </div>
           <div class="stat">
-            <span class="label">Sem Resposta:</span>
-            <span class="value" id="sem_resposta_count">0</span>
+            <span class="label" id="sem-resposta-label">Sem Resposta:</span>
+            <span
+              class="value"
+              aria-labelledby="sem-resposta-label"
+              id="sem_resposta_count"
+              >0</span
+            >
           </div>
         </div>
-        <div class="filters">
-          <button onclick="filtrar('todos')" class="btn filter-btn">
+        <div class="filters" role="group" aria-label="Filtros de visualização">
+          <button
+            onclick="filtrar('todos')"
+            class="btn filter-btn"
+            aria-pressed="true"
+          >
             Mostrar Todos
           </button>
-          <button onclick="filtrar('ok')" class="btn filter-btn">
+          <button
+            onclick="filtrar('ok')"
+            class="btn filter-btn"
+            aria-pressed="false"
+          >
             Somente OK
           </button>
-          <button onclick="filtrar('http')" class="btn filter-btn">
+          <button
+            onclick="filtrar('http')"
+            class="btn filter-btn"
+            aria-pressed="false"
+          >
             Somente HTTP Error
           </button>
-          <button onclick="filtrar('inexistente')" class="btn filter-btn">
+          <button
+            onclick="filtrar('inexistente')"
+            class="btn filter-btn"
+            aria-pressed="false"
+          >
             Somente Inexistente
           </button>
-          <button onclick="filtrar('carregamento')" class="btn filter-btn">
+          <button
+            onclick="filtrar('carregamento')"
+            class="btn filter-btn"
+            aria-pressed="false"
+          >
             Somente Erro de Carregamento
           </button>
-          <button onclick="filtrar('sem resposta')" class="btn filter-btn">
+          <button
+            onclick="filtrar('sem resposta')"
+            class="btn filter-btn"
+            aria-pressed="false"
+          >
             Somente Sem Resposta
           </button>
-          <button onclick="exportToCSV()" class="btn export-btn">
+          <button
+            onclick="exportToCSV()"
+            class="btn export-btn"
+            aria-label="Exportar dados para CSV"
+          >
             Exportar CSV
           </button>
         </div>
       </section>
-      <section class="chart-section">
-        <canvas id="httpChart" height="100"></canvas>
+      <section class="chart-section" aria-label="Gráfico de status HTTP">
+        <canvas
+          id="httpChart"
+          height="100"
+          role="img"
+          aria-label="Gráfico de barras mostrando distribuição de códigos HTTP"
+        ></canvas>
       </section>
       <section class="report-sections">
         
@@ -16718,7 +16779,7 @@
     <textarea id="csv_data" style="display: none">
 pai,filho,subfilho,status,http_status\n</textarea
     >
-    <footer>
+    <footer role="contentinfo">
       <div class="container">
         <p>
           &copy; 2025 - Relatório Gerado por
