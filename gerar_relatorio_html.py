@@ -8,7 +8,7 @@ from pathlib import Path
 DIRETORIO_BASE = Path(__file__).parent
 DIRETORIO_PUBLIC = DIRETORIO_BASE / "public"
 ARQUIVO_ENTRADA = DIRETORIO_BASE / "verificacao_links_quebrados.json"
-ARQUIVO_SAIDA = DIRETORIO_PUBLIC / "relatorio_links.html"
+ARQUIVO_SAIDA = DIRETORIO_PUBLIC / "index.html"
 
 def criar_diretorio_se_nao_existe(diretorio):
     """Cria o diretório se ele não existir."""
