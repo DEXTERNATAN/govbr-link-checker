@@ -1,5 +1,0 @@
-[build]
-  # Se o seu build pode ser executado na máquina do Netlify, especifique o comando:
-  command = "python gerar_relatorio_html.py"
-  # O diretório que contém o site estático final. Neste caso, usamos a pasta 'public'
-  publish = "dist"
