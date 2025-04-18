@@ -1,0 +1,7 @@
+- Responsividade para telas menores
+- Ajustar a acessibilidade do projeto
+- Ajustar o projeto para gerar o arquivo de relatorio html dentro da pasta public
+- Ajustar o projeto para rodar para o projeto da v4
+- Ajustar os arquivos readme e .sh para refletirem a estrutura atual do projeto
+- Verificar se eu consigo colocar um input na tela e a partir disso rodar os arquivos python
+na nuvem ( ou seja verificar se consigo rodar em um servidor web todo esse processo)
