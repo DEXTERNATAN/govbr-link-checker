@@ -131,13 +131,41 @@ main {
   border-radius: 5px;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
 .filter-btn {
   background: var(--secondary);
   color: var(--text-light);
   font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilo para botão de filtro ativo */
+.filter-btn.filter-active {
+  background-color: var(--accent-dark) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+  transform: translateY(1px);
+  border: 2px solid var(--accent-light);
+}
+
+/* Estilo para botão ativo ao ser pressionado */
+.filter-btn.filter-active:active {
+  background-color: var(--accent-dark) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+  transform: translateY(1px);
+}
+
+.filter-btn:hover {
+  background-color: var(--secondary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
 }
 
 .export-btn {
@@ -598,4 +626,43 @@ li {
   right: 20px;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o elemento de filtro ativo */
+.filtro-ativo {
+  text-align: center;
+  font-weight: 600;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: var(--accent-light);
+  color: var(--accent-dark);
+  border-radius: 5px;
+  border-left: 4px solid var(--accent-dark);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Estilo para a mensagem de resultados vazios */
+.mensagem-vazia {
+  display: none;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: var(--background-medium);
+  border-radius: 8px;
+  color: var(--text-medium);
+  font-weight: bold;
+  border-left: 4px solid var(--warning);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,6 +1,7 @@
 - ✅ Responsividade para telas menores (incluindo ajuste de fontes responsivas)
-- Ajustar a acessibilidade do projeto
-- Ajustar o projeto para gerar o arquivo de relatorio html dentro da pasta public
+- ✅ Ajustar a acessibilidade do projeto
+- ✅ Ajustar o projeto para gerar o arquivo de relatorio html dentro da pasta public
+- Tentar limpar a tela e mostrar apenas os pais, filhos e subfilhos que apresentam o erro quando o botao de filtro é pressionado
 - Ajustar o projeto para rodar para o projeto da v4
 - Ajustar os arquivos readme e .sh para refletirem a estrutura atual do projeto
 - Verificar se eu consigo colocar um input na tela e a partir disso rodar os arquivos python

@@ -1,24 +1,87 @@
+// Variável global para armazenar o filtro atual
+let filtroAtual = "todos";
+
 // Função para atualizar o estado dos botões de filtro
 function updateFilterButtons(activeFilter) {
   document.querySelectorAll(".filter-btn").forEach((btn) => {
-    const isPressed = btn.textContent.toLowerCase().includes(activeFilter);
+    // Normaliza o texto do botão e o filtro ativo para comparação
+    const buttonText = btn.textContent.trim().toLowerCase();
+    const filterText = activeFilter.toLowerCase();
+
+    // Verifica se o botão corresponde ao filtro ativo
+    const isPressed =
+      buttonText.includes(filterText) ||
+      (filterText === "todos" && buttonText.includes("mostrar todos"));
+
+    // Atualiza os atributos ARIA
     btn.setAttribute("aria-pressed", isPressed);
+
+    // Atualiza as classes CSS
+    if (isPressed) {
+      btn.classList.add("filter-active");
+    } else {
+      btn.classList.remove("filter-active");
+    }
   });
 }
 
 // Função para filtrar os resultados
 function filtrar(tipo) {
+  // Atualiza o filtro atual
+  filtroAtual = tipo;
+
+  // Atualiza os botões antes de filtrar
   updateFilterButtons(tipo);
-  const rows = document.querySelectorAll("tbody tr");
+
+  // Referências para todas as linhas nas tabelas
+  const todasLinhas = document.querySelectorAll(".row-link");
   let visibleRows = 0;
 
-  rows.forEach((row) => {
-    const status = row.querySelector(".status").textContent.toLowerCase();
-    const shouldShow = tipo === "todos" || status.includes(tipo);
-    row.style.display = shouldShow ? "" : "none";
-    row.setAttribute("aria-hidden", !shouldShow);
-    if (shouldShow) visibleRows++;
-  });
+  // Se o filtro for 'todos', simplesmente mostra tudo
+  if (tipo === "todos") {
+    todasLinhas.forEach((row) => {
+      row.style.display = "";
+      row.setAttribute("aria-hidden", "false");
+      visibleRows++;
+    });
+
+    // Mostra todos os blocos de relatório
+    document.querySelectorAll(".report-block").forEach((block) => {
+      block.style.display = "";
+    });
+
+    // Mostra todas as subseções (filhos)
+    document.querySelectorAll(".subsection").forEach((subsection) => {
+      subsection.style.display = "";
+    });
+  } else {
+    // Filtra linhas por status
+    todasLinhas.forEach((row) => {
+      const status = row.querySelector(".status").textContent.toLowerCase();
+      const shouldShow = status.includes(tipo);
+      row.style.display = shouldShow ? "" : "none";
+      row.setAttribute("aria-hidden", !shouldShow);
+      if (shouldShow) visibleRows++;
+    });
+
+    // Filtrar blocos pai (ocultar os que não têm nenhum resultado)
+    document.querySelectorAll(".report-block").forEach((block) => {
+      // Verifica se há alguma linha visível dentro deste bloco
+      const temLinhasVisiveis = Array.from(
+        block.querySelectorAll(".row-link")
+      ).some((row) => row.style.display !== "none");
+      block.style.display = temLinhasVisiveis ? "" : "none";
+    });
+
+    // Filtrar subseções de filhos (ocultar os que não têm nenhum resultado)
+    document.querySelectorAll(".subsection").forEach((subsection) => {
+      // Verifica se há alguma linha visível dentro desta subseção
+      const temLinhasVisiveis = Array.from(
+        subsection.querySelectorAll(".row-link")
+      ).some((row) => row.style.display !== "none");
+      subsection.style.display = temLinhasVisiveis ? "" : "none";
+    });
+  }
 
   // Anunciar resultados com mais contexto
   const liveRegion =
@@ -27,6 +90,13 @@ function filtrar(tipo) {
     visibleRows === 1 ? "resultado encontrado" : "resultados encontrados"
   } para o filtro ${tipo}. Use as setas para navegar.`;
   liveRegion.textContent = message;
+
+  // Atualiza o texto do filtro ativo com o texto exato do botão
+  const filtroAtivo = document.getElementById("filtro-ativo");
+  const botaoAtivo = document.querySelector(`.filter-btn[aria-pressed="true"]`);
+  if (filtroAtivo && botaoAtivo) {
+    filtroAtivo.innerText = `Filtro atual: ${botaoAtivo.textContent.trim()}`;
+  }
 
   // Focar no primeiro resultado visível
   const firstVisibleRow = document.querySelector('tbody tr[style=""]');
@@ -37,6 +107,39 @@ function filtrar(tipo) {
       firstCell.focus();
     }
   }
+
+  // Se não houver resultados, mostrar mensagem
+  if (visibleRows === 0) {
+    const mensagemVazia =
+      document.getElementById("mensagem-vazia") || criarMensagemVazia();
+    mensagemVazia.textContent = `Nenhum resultado encontrado para o filtro "${tipo}".`;
+    mensagemVazia.style.display = "block";
+  } else {
+    const mensagemVazia = document.getElementById("mensagem-vazia");
+    if (mensagemVazia) {
+      mensagemVazia.style.display = "none";
+    }
+  }
+}
+
+// Função para criar mensagem de resultados vazios
+function criarMensagemVazia() {
+  const mensagem = document.createElement("div");
+  mensagem.id = "mensagem-vazia";
+  mensagem.className = "mensagem-vazia";
+  mensagem.setAttribute("role", "alert");
+  mensagem.style.textAlign = "center";
+  mensagem.style.padding = "30px";
+  mensagem.style.marginTop = "20px";
+  mensagem.style.backgroundColor = "var(--background-medium)";
+  mensagem.style.borderRadius = "8px";
+  mensagem.style.color = "var(--text-medium)";
+  mensagem.style.fontWeight = "bold";
+
+  const reportSections = document.querySelector(".report-sections");
+  reportSections.appendChild(mensagem);
+
+  return mensagem;
 }
 
 // Criar região live para anúncios de leitores de tela
@@ -72,23 +175,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Adicionar eventos de teclado para ordenação
-  table.addEventListener("keydown", (e) => {
-    const target = e.target;
-    if (target.tagName === "TH" && target.onclick) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        target.click();
+  // Aplicar o filtro inicial 'todos'
+  filtrar("todos");
 
-        // Atualizar aria-sort
-        const isAscending = target.classList.contains("asc");
-        target.setAttribute(
-          "aria-sort",
-          isAscending ? "ascending" : "descending"
-        );
-      }
+  // Adicionar estilos CSS para o botão ativo
+  const style = document.createElement("style");
+  style.textContent = `
+    .filter-btn.filter-active {
+      background: var(--accent-dark) !important;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2) inset;
+      transform: translateY(1px);
     }
-  });
+  `;
+  document.head.appendChild(style);
 
   // Adicionar região com instruções de atalhos
   const instructions = document.createElement("div");

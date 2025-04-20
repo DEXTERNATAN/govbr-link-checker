@@ -12,7 +12,7 @@
       <div class="container">
         <h1>Relatório de Verificação de Links</h1>
         <p class="report-date" aria-label="Data do relatório">
-          <em>Gerado em: 18/04/2025 19:55:57</em>
+          <em>Gerado em: 20/04/2025 06:38:11</em>
         </p>
       </div>
     </header>
@@ -122,6 +122,10 @@
             Exportar CSV
           </button>
         </div>
+        <!-- Elemento para exibir o filtro ativo -->
+        <!-- <div id="filtro-ativo" class="filtro-ativo" aria-live="polite">
+          Filtro atual: Todos
+        </div> -->
       </section>
       <section class="chart-section" aria-label="Gráfico de status HTTP">
         <canvas
@@ -16886,6 +16890,9 @@ pai,filho,subfilho,status,http_status\n</textarea
               if (tipo === "carregamento" && !status.includes("carregamento")) row.style.display = "none";
               if (tipo === "sem resposta" && !status.includes("sem resposta")) row.style.display = "none";
           });
+          // Atualiza o filtro ativo
+          const filtroAtivo = document.getElementById('filtro-ativo');
+          filtroAtivo.innerText = `Filtro atual: ${tipo.charAt(0).toUpperCase() + tipo.slice(1)}`;
       }
 
       // Função para exportar os dados em CSV
