@@ -91,18 +91,152 @@ function calcularEstatisticas() {
     total++;
     if (status === "ok") ok++;
     else if (status.includes("http")) httpError++;
-    else if (status.includes("inexistente")) inexistente++;
+    else if (
+      status.includes("pagina inexistente") ||
+      status.includes("inexistente")
+    )
+      inexistente++;
     else if (status.includes("carregamento")) carregamento++;
     else if (status.includes("sem resposta") || status.includes("timeout"))
       semResposta++;
   });
 
+  // Atualiza os contadores
   document.getElementById("total_links").innerText = total;
   document.getElementById("ok_count").innerText = ok;
   document.getElementById("http_error_count").innerText = httpError;
   document.getElementById("inexistente_count").innerText = inexistente;
   document.getElementById("carregamento_count").innerText = carregamento;
   document.getElementById("sem_resposta_count").innerText = semResposta;
+
+  // Esconde cards com valor zero
+  ocultarCardsVazios("ok-label", ok);
+  ocultarCardsVazios("http-error-label", httpError);
+  ocultarCardsVazios("inexistente-label", inexistente);
+  ocultarCardsVazios("carregamento-label", carregamento);
+  ocultarCardsVazios("sem-resposta-label", semResposta);
+
+  // Esconde filtros com valor zero
+  ocultarFiltrosVazios("ok", ok);
+  ocultarFiltrosVazios("http", httpError);
+  ocultarFiltrosVazios("inexistente", inexistente);
+  ocultarFiltrosVazios("carregamento", carregamento);
+  ocultarFiltrosVazios("sem resposta", semResposta);
+}
+
+// Função para ocultar cards com valor zero
+function ocultarCardsVazios(labelId, valor) {
+  const statElement = document.getElementById(labelId)?.closest(".stat");
+  if (statElement && valor === 0) {
+    statElement.style.display = "none";
+  } else if (statElement) {
+    statElement.style.display = "";
+  }
+
+  // Ajusta o layout quando alguns cards forem removidos
+  ajustarLayoutStats();
+}
+
+// Função para ajustar o layout dos cards estatísticos
+function ajustarLayoutStats() {
+  const statsContainer = document.querySelector(".stats");
+  if (!statsContainer) return;
+
+  // Conta quantos cards estão visíveis
+  const cardsVisiveis = Array.from(
+    statsContainer.querySelectorAll(".stat")
+  ).filter((card) => card.style.display !== "none").length;
+
+  // Ajusta o layout com base no número de cards visíveis
+  if (cardsVisiveis <= 2) {
+    // Para 1-2 cards, fazemos cada um ocupar 100% da largura
+    statsContainer.querySelectorAll(".stat").forEach((card) => {
+      if (card.style.display !== "none") {
+        card.style.flex = "1 0 100%";
+      }
+    });
+  } else if (cardsVisiveis <= 4) {
+    // Para 3-4 cards, fazemos cada um ocupar 50% da largura
+    statsContainer.querySelectorAll(".stat").forEach((card) => {
+      if (card.style.display !== "none") {
+        card.style.flex = "1 0 45%";
+      }
+    });
+  } else {
+    // Para 5+ cards, voltamos ao layout original
+    statsContainer.querySelectorAll(".stat").forEach((card) => {
+      card.style.flex = "";
+    });
+  }
+}
+
+// Função para ocultar filtros com valor zero
+function ocultarFiltrosVazios(tipoFiltro, valor) {
+  // Encontra o botão de filtro correspondente ao tipo
+  const botaoFiltro = Array.from(document.querySelectorAll(".filter-btn")).find(
+    (btn) => {
+      const onclick = btn.getAttribute("onclick");
+      return onclick && onclick.includes(`filtrar('${tipoFiltro}')`);
+    }
+  );
+
+  if (botaoFiltro && valor === 0) {
+    botaoFiltro.style.display = "none";
+  } else if (botaoFiltro) {
+    botaoFiltro.style.display = "";
+  }
+
+  // Ajusta layout dos botões de filtro
+  ajustarLayoutFiltros();
+}
+
+// Função para ajustar layout dos botões de filtro
+function ajustarLayoutFiltros() {
+  const filtersContainer = document.querySelector(".filters");
+  if (!filtersContainer) return;
+
+  // Conta quantos botões de filtro estão visíveis (excluindo "Mostrar Todos" e botões especiais)
+  const botoesVisiveis = Array.from(
+    filtersContainer.querySelectorAll(
+      ".filter-btn:not([onclick*=\"filtrar('todos')\"]):not(.error-only-btn):not(.export-btn)"
+    )
+  ).filter((btn) => btn.style.display !== "none").length;
+
+  // Se tivermos poucos botões, vai reorganizar o layout
+  if (botoesVisiveis <= 2) {
+    // Botões muito largos em telas pequenas
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    if (mediaQuery.matches) {
+      // Em telas pequenas com poucos botões, fazer cada um ocupar uma linha inteira
+      filtersContainer
+        .querySelectorAll(".filter-btn:not(.error-only-btn):not(.export-btn)")
+        .forEach((btn) => {
+          if (btn.style.display !== "none") {
+            btn.style.gridColumn = "1 / -1";
+          }
+        });
+    } else {
+      // Em telas maiores, fazer botões com tamanho maior
+      filtersContainer.style.display = "flex";
+      filtersContainer.style.flexWrap = "wrap";
+      filtersContainer
+        .querySelectorAll(".filter-btn:not(.error-only-btn):not(.export-btn)")
+        .forEach((btn) => {
+          if (btn.style.display !== "none") {
+            btn.style.flex = "1 0 auto";
+            btn.style.minWidth = "200px";
+          }
+        });
+    }
+  } else {
+    // Restabelecer layout original
+    filtersContainer.style.display = "";
+    filtersContainer.querySelectorAll(".filter-btn").forEach((btn) => {
+      btn.style.gridColumn = "";
+      btn.style.flex = "";
+      btn.style.minWidth = "";
+    });
+  }
 }
 
 // Função para atualizar o estado dos botões de filtro
@@ -199,7 +333,9 @@ function filtrar(tipo) {
           status.includes("dns");
       } else if (tipo === "inexistente") {
         // Páginas inexistentes
-        shouldShow = status.includes("inexistente");
+        shouldShow =
+          status.includes("pagina inexistente") ||
+          status.includes("inexistente");
       } else if (tipo === "ok") {
         // Somente status OK
         shouldShow = status === "ok";
