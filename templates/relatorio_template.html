@@ -16,6 +16,19 @@
         </p>
       </div>
     </header>
+    <script>
+      // Inicializar dados do gráfico de HTTP codes
+      window.httpCodesData = {
+        labels: {{ http_codes.keys() | list | tojson }},
+        datasets: [{
+          label: 'Ocorrências por HTTP Status',
+          data: {{ http_codes.values() | list | tojson }},
+          backgroundColor: 'rgba(54, 162, 235, 0.6)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1
+        }]
+      };
+    </script>
     <main class="container" role="main">
       <section class="summary" aria-labelledby="summary-title">
         <h2 id="summary-title">Resumo Estatístico</h2>
@@ -71,6 +84,7 @@
             >
           </div>
         </div>
+        <!-- Mapa de Filtros -->
         <div class="filters" role="group" aria-label="Filtros de visualização">
           <button
             onclick="filtrar('todos')"
@@ -112,7 +126,14 @@
             class="btn filter-btn"
             aria-pressed="false"
           >
-            Somente Sem Resposta
+            Somente Sem Resposta/Timeout
+          </button>
+          <button
+            onclick="filtrarApenasErros()"
+            class="btn error-only-btn"
+            aria-pressed="false"
+          >
+            Mostrar Apenas Erros
           </button>
           <button
             onclick="exportToCSV()"
@@ -123,9 +144,9 @@
           </button>
         </div>
         <!-- Elemento para exibir o filtro ativo -->
-        <!-- <div id="filtro-ativo" class="filtro-ativo" aria-live="polite">
+        <div id="filtro-ativo" class="filtro-ativo" aria-live="polite">
           Filtro atual: Todos
-        </div> -->
+        </div>
       </section>
       <section class="chart-section" aria-label="Gráfico de status HTTP">
         <canvas
@@ -149,6 +170,23 @@
             <p><strong>Tempo:</strong> {{ info.tempo_pai | default(0) }}s</p>
             {% if info.erro_pai and info.erro_pai.ocorreu %}
             <p><strong>Erro Pai:</strong> {{ info.erro_pai | tojson }}</p>
+            {% endif %} {% if info.erro_pai and info.erro_pai.erro_links_pai is
+            defined %}
+            <p class="status-links-pai">
+              <strong>Status dos Links:</strong>
+              <span
+                class="{{ 'erro' if info.erro_pai.erro_links_pai else 'ok' }}"
+              >
+                {{ 'Contém erros na hierarquia' if info.erro_pai.erro_links_pai
+                else 'Todos os links OK' }}
+              </span>
+              {% if info.erro_pai.erro_links_pai %}
+              <span class="erro-info"
+                >Erros podem estar nos links do pai, nos filhos ou nos
+                subfilhos</span
+              >
+              {% endif %}
+            </p>
             {% endif %}
           </div>
           <div class="block-content">
@@ -160,6 +198,7 @@
                     <th>URL</th>
                     <th>Status</th>
                     <th>HTTP</th>
+                    <th>Detalhes</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -176,6 +215,12 @@
                     <td>
                       {{ link.http_status if link.http_status is not none else
                       '-' }}
+                    </td>
+                    <td class="detalhes-erro">
+                      {% if link.detalhes is defined and link.detalhes %}
+                      <span class="texto-truncado">{{ link.detalhes }}</span>
+                      <span class="texto-completo">{{ link.detalhes }}</span>
+                      {% endif %}
                     </td>
                   </tr>
                   {% endfor %}
@@ -199,6 +244,7 @@
                       <th>URL Subfilho</th>
                       <th>Status</th>
                       <th>HTTP</th>
+                      <th>Detalhes</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -217,6 +263,17 @@
                       <td>
                         {{ subfilho.http_status if subfilho.http_status is not
                         none else '-' }}
+                      </td>
+                      <td class="detalhes-erro">
+                        {% if subfilho.detalhes is defined and subfilho.detalhes
+                        %}
+                        <span class="texto-truncado"
+                          >{{ subfilho.detalhes }}</span
+                        >
+                        <span class="texto-completo"
+                          >{{ subfilho.detalhes }}</span
+                        >
+                        {% endif %}
                       </td>
                     </tr>
                     {% endfor %}
@@ -242,120 +299,6 @@ pai,filho,subfilho,status,http_status\n</textarea
         </p>
       </div>
     </footer>
-    <script>
-      // Configuração do gráfico utilizando Chart.js
-      const ctx = document.getElementById('httpChart').getContext('2d');
-
-      // Função para ajustar o tamanho da fonte baseado na largura da tela
-      function getFontSize() {
-        return window.innerWidth < 480 ? 10 : window.innerWidth < 768 ? 12 : 14;
-      }
-
-      const chart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: {{ http_codes.keys() | list | tojson }},
-              datasets: [{
-                  label: 'Ocorrências por HTTP Status',
-                  data: {{ http_codes.values() | list | tojson }},
-                  backgroundColor: 'rgba(54, 162, 235, 0.6)',
-                  borderColor: 'rgba(54, 162, 235, 1)',
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              responsive: true,
-              maintainAspectRatio: false,
-              scales: {
-                  y: {
-                      beginAtZero: true,
-                      ticks: {
-                          font: {
-                              size: getFontSize()
-                          }
-                      }
-                  },
-                  x: {
-                      title: {
-                          display: true,
-                          text: 'Código HTTP',
-                          font: {
-                              size: getFontSize()
-                          }
-                      },
-                      ticks: {
-                          font: {
-                              size: getFontSize()
-                          }
-                      }
-                  }
-              },
-              plugins: {
-                  legend: {
-                      labels: {
-                          font: {
-                              size: getFontSize()
-                          }
-                      }
-                  }
-              }
-          }
-      });
-
-      // Atualiza o tamanho da fonte quando a janela é redimensionada
-      window.addEventListener('resize', function() {
-          chart.options.scales.x.ticks.font.size = getFontSize();
-          chart.options.scales.y.ticks.font.size = getFontSize();
-          chart.options.plugins.legend.labels.font.size = getFontSize();
-          chart.update();
-      });
-
-      // Estatísticas e filtros para os links
-      const todasLinhas = Array.from(document.querySelectorAll(".row-link"));
-      let total = 0, ok = 0, httpError = 0, inexistente = 0, carregamento = 0, semResposta = 0;
-      todasLinhas.forEach(row => {
-          const status = row.children[1].innerText.toLowerCase();
-          total++;
-          if (status === "ok") ok++;
-          else if (status.includes("http")) httpError++;
-          else if (status.includes("inexistente")) inexistente++;
-          else if (status.includes("carregamento")) carregamento++;
-          else if (status.includes("sem resposta")) semResposta++;
-      });
-      document.getElementById("total_links").innerText = total;
-      document.getElementById("ok_count").innerText = ok;
-      document.getElementById("http_error_count").innerText = httpError;
-      document.getElementById("inexistente_count").innerText = inexistente;
-      document.getElementById("carregamento_count").innerText = carregamento;
-      document.getElementById("sem_resposta_count").innerText = semResposta;
-
-      // Função para filtrar as linhas da tabela
-      function filtrar(tipo) {
-          todasLinhas.forEach(row => {
-              const status = row.children[1].innerText.toLowerCase();
-              row.style.display = "table-row";
-              if (tipo === "todos") return;
-              if (tipo === "ok" && status !== "ok") row.style.display = "none";
-              if (tipo === "http" && !status.includes("http")) row.style.display = "none";
-              if (tipo === "inexistente" && !status.includes("inexistente")) row.style.display = "none";
-              if (tipo === "carregamento" && !status.includes("carregamento")) row.style.display = "none";
-              if (tipo === "sem resposta" && !status.includes("sem resposta")) row.style.display = "none";
-          });
-          // Atualiza o filtro ativo
-          const filtroAtivo = document.getElementById('filtro-ativo');
-          filtroAtivo.innerText = `Filtro atual: ${tipo.charAt(0).toUpperCase() + tipo.slice(1)}`;
-      }
-
-      // Função para exportar os dados em CSV
-      function exportToCSV() {
-          const data = document.getElementById('csv_data').value;
-          const blob = new Blob([data], { type: 'text/csv;charset=utf-8;' });
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = 'relatorio_links.csv';
-          a.click();
-      }
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

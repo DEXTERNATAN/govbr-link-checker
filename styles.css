@@ -20,6 +20,7 @@
 
   /* Cores de status */
   --error: #c42f2f; /* Vermelho mais escuro - contraste 7:1 com branco */
+  --error-dark: #8c1e1e; /* Vermelho ainda mais escuro - contraste 10:1 com branco */
   --error-light: #ffebee; /* Vermelho claro para backgrounds de erro */
   --success: #2d5a27; /* Verde mais escuro - contraste 7.2:1 com branco */
   --success-light: #e8f5e9; /* Verde claro para backgrounds de sucesso */
@@ -260,6 +261,135 @@ main {
   font-size: 1rem;
 }
 
+/* Ajustes específicos para colunas da tabela */
+.data-table td:nth-child(2) {
+  min-width: 200px; /* Coluna de status mais larga */
+}
+
+/* Tratamento para URLs longas */
+.data-table td:first-child {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+/* Ícone de cópia para URLs */
+.data-table td:first-child a {
+  display: inline-block;
+  max-width: calc(100% - 25px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.data-table td:first-child .copy-icon {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 5px;
+  color: var(--primary-dark);
+  opacity: 0.7;
+  transition: all 0.2s;
+  vertical-align: middle;
+}
+
+.data-table td:first-child .copy-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Modal para exibir URL completa */
+.url-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.url-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.url-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.url-modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+}
+
+.url-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-medium);
+}
+
+.url-modal-body {
+  margin-bottom: 20px;
+}
+
+.url-full {
+  background: var(--background-medium);
+  padding: 15px;
+  border-radius: 4px;
+  word-break: break-all;
+  font-family: monospace;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.url-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.url-modal-button {
+  padding: 8px 15px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.url-modal-button:hover {
+  background: var(--primary-dark);
+}
+
+.copy-success {
+  background: var(--success-light);
+  color: var(--success);
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: none;
+}
+
 .data-table tr:nth-child(even) {
   background: #f3f3f3;
 }
@@ -401,8 +531,10 @@ li {
     width: 100%;
     margin: 0;
     padding: 8px;
+    font-size: 0.8rem;
   }
 
+  .error-only-btn,
   .export-btn {
     grid-column: 1 / -1;
   }
@@ -423,6 +555,59 @@ li {
   .subsection {
     margin-top: 1.25rem;
     padding-top: 0.75rem;
+  }
+
+  /* Ajuste para células da tabela em dispositivos móveis */
+  .data-table td,
+  .data-table th {
+    padding: 8px 6px;
+    font-size: 0.9rem;
+  }
+
+  /* A primeira coluna (URL) fica mais estreita em telas menores */
+  .data-table td:first-child {
+    max-width: 200px;
+  }
+
+  /* A segunda coluna (Status) fica um pouco mais estreita, mas ainda legível */
+  .data-table td:nth-child(2) {
+    min-width: 150px;
+  }
+
+  /* A terceira coluna (HTTP) fica bem compacta */
+  .data-table td:nth-child(3) {
+    width: 60px;
+    text-align: center;
+  }
+
+  /* A quarta coluna (Detalhes) fica um pouco menor */
+  .data-table td:nth-child(4) {
+    max-width: 180px;
+  }
+
+  /* Ajustes para modal em dispositivos móveis */
+  .url-modal-content {
+    width: 95%;
+    max-width: 450px;
+    padding: 15px;
+  }
+
+  .url-modal-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .url-full {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .url-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .url-modal-button {
+    width: 100%;
   }
 
   /* Ajustes para touch */
@@ -493,6 +678,34 @@ li {
     padding: 0 12px;
   }
 
+  /* Tabelas em dispositivos móveis muito pequenos */
+  .data-table {
+    min-width: 300px;
+  }
+
+  .data-table td,
+  .data-table th {
+    padding: 6px 4px;
+    font-size: 0.8rem;
+  }
+
+  /* Ajustar as colunas para telas muito pequenas */
+  .data-table td:first-child {
+    max-width: 120px;
+  }
+
+  .data-table td:nth-child(2) {
+    min-width: 80px;
+  }
+
+  .data-table td:nth-child(3) {
+    width: 40px;
+  }
+
+  .data-table td:nth-child(4) {
+    max-width: 100px;
+  }
+
   .data-table-wrapper::after {
     content: "⟷";
     position: absolute;
@@ -540,6 +753,92 @@ li {
 
   .erro {
     background: rgba(214, 73, 51, 0.15);
+  }
+
+  /* Modal para telas muito pequenas */
+  .url-modal-content {
+    width: 98%;
+    padding: 10px;
+  }
+
+  .url-modal-header h3 {
+    font-size: 1rem;
+  }
+
+  .url-full {
+    padding: 8px;
+    font-size: 0.8rem;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  .url-modal-button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  /* Ajustes para o filtro ativo */
+  .filtro-ativo {
+    font-size: 0.85rem;
+    padding: 8px;
+    margin: 10px 0;
+  }
+}
+
+/* Suporte para orientação paisagem em dispositivos móveis */
+@media (max-height: 480px) and (orientation: landscape) {
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .stats .stat {
+    flex: 1 0 auto;
+    min-width: 0;
+  }
+
+  .filters {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Modal para paisagem */
+  .url-modal-content {
+    max-height: 90vh;
+  }
+
+  .url-full {
+    max-height: 100px;
+  }
+
+  .url-actions {
+    flex-direction: row;
+  }
+}
+
+/* Suporte para tablets em posição paisagem */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .filters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .error-only-btn,
+  .export-btn {
+    grid-column: auto;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Melhor utilização do espaço horizontal */
+  .data-table td:first-child {
+    max-width: 350px;
+  }
+
+  .data-table td:nth-child(2) {
+    min-width: 180px;
   }
 }
 
@@ -665,4 +964,88 @@ li {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Estilo para o status dos links do pai */
+.status-links-pai {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.status-links-pai .ok {
+  display: inline-block;
+  padding: 3px 10px;
+  background-color: var(--success-light);
+  color: var(--success);
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.status-links-pai .erro {
+  display: inline-block;
+  padding: 3px 10px;
+  background-color: var(--error-light);
+  color: var(--error);
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.status-links-pai .erro-info {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: var(--text-medium);
+  font-style: italic;
+  padding-left: 5px;
+  border-left: 2px solid var(--error-light);
+}
+
+/* Estilo para detalhes de erro */
+.detalhes-erro {
+  font-size: 0.85rem;
+  color: var(--text-medium);
+  font-style: italic;
+  max-width: 300px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Container para o texto com ellipsis */
+.detalhes-erro .texto-truncado {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+/* Tooltip para exibir o texto completo */
+.detalhes-erro .texto-completo {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px;
+  min-width: 250px;
+  max-width: 500px;
+  z-index: 100;
+  white-space: normal;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-style: normal;
+  color: var(--text-dark);
+}
+
+/* Mostrar o tooltip ao passar o mouse */
+.detalhes-erro:hover .texto-completo {
+  display: block;
+}
+
+/* Adicionar um indicador visual de que há mais texto */
+.detalhes-erro:has(.texto-truncado:not(:empty)):after {
+  content: "ℹ️";
+  font-size: 12px;
+  margin-left: 5px;
+  opacity: 0.7;
 }

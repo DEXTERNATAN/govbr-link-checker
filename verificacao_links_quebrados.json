@@ -5,7 +5,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [],
     "filhos": [
@@ -29,17 +30,17 @@
             "http_status": 200
           },
           {
-            "url": "https://forms.office.com/r/e0C589jcVv",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://forms.office.com/r/skcRJVX8ua",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://gitlab.com/govbr-ds/dev/govbr-ds-dev-core",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://forms.office.com/r/e0C589jcVv",
             "status": "ok",
             "http_status": 200
           },
@@ -70,11 +71,6 @@
         },
         "subfilhos": [
           {
-            "url": "https://gov.br/ds/wiki/desenvolvimento/guias/roteiro/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.gov.br/ds/acessibilidade",
             "status": "ok",
             "http_status": 200
@@ -93,6 +89,11 @@
             "url": "https://www.gov.br/ds/release-notes",
             "status": "ok",
             "http_status": 200
+          },
+          {
+            "url": "https://gov.br/ds/wiki/desenvolvimento/guias/roteiro/",
+            "status": "ok",
+            "http_status": 200
           }
         ]
       },
@@ -105,11 +106,6 @@
           "tipo": ""
         },
         "subfilhos": [
-          {
-            "url": "https://forms.office.com/r/skcRJVX8ua",
-            "status": "ok",
-            "http_status": 200
-          },
           {
             "url": "https://www.gov.br/ds/components/button",
             "status": "ok",
@@ -131,17 +127,22 @@
             "http_status": 200
           },
           {
+            "url": "https://forms.office.com/r/skcRJVX8ua",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.gov.br/ds/fundamentos-visuais/cores",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/iconografia",
+            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
+            "url": "https://www.gov.br/ds/fundamentos-visuais/iconografia",
             "status": "ok",
             "http_status": 200
           },
@@ -180,7 +181,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [
       {
@@ -252,7 +254,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": true
     },
     "links_pai": [],
     "filhos": [
@@ -296,17 +299,17 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/guias/construcao-de-componentes",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.gov.br/ds/introducao/principios",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/templates/base",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/guias/construcao-de-componentes",
             "status": "ok",
             "http_status": 200
           }
@@ -322,16 +325,6 @@
         },
         "subfilhos": [
           {
-            "url": "https://helpx.adobe.com/br/support/xd.html",
-            "status": "erro de carregamento",
-            "http_status": null
-          },
-          {
-            "url": "https://www.adobe.com/products/xd.html",
-            "status": "erro de carregamento",
-            "http_status": null
-          },
-          {
             "url": "https://www.figma.com/",
             "status": "ok",
             "http_status": 200
@@ -343,8 +336,20 @@
           },
           {
             "url": "https://www.gov.br/ds/como-comecar/downloads/assets",
-            "status": "erro de carregamento",
-            "http_status": null
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://helpx.adobe.com/br/support/xd.html",
+            "status": "timeout",
+            "http_status": null,
+            "detalhes": "Tempo limite excedido"
+          },
+          {
+            "url": "https://www.adobe.com/products/xd.html",
+            "status": "timeout",
+            "http_status": null,
+            "detalhes": "Tempo limite excedido"
           }
         ]
       },
@@ -359,8 +364,8 @@
         "subfilhos": [
           {
             "url": "https://purgecss.com/",
-            "status": "erro de carregamento",
-            "http_status": null
+            "status": "ok",
+            "http_status": 200
           },
           {
             "url": "https://purgecss.com/configuration.html",
@@ -395,17 +400,17 @@
         },
         "subfilhos": [
           {
+            "url": "https://www.jsdelivr.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://cdnjs.com/",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/como-comecar/instalacao",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.jsdelivr.com/",
             "status": "ok",
             "http_status": 200
           }
@@ -440,16 +445,33 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": true
     },
     "links_pai": [
       {
         "url": "http://www.handtalk.me/br/blog/wcag-2-0/>",
-        "status": "HTTP 404",
-        "http_status": 404
+        "status": "erro de carregamento",
+        "http_status": null,
+        "detalhes": "Erro: Ignoring non-200 response"
+      },
+      {
+        "url": "https://www.ibge.gov.br/estatisticas/sociais/rendimento-despesa-e-consumo/9662-censo-demografico-2010.html",
+        "status": "ok",
+        "http_status": 200
+      },
+      {
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
+        "status": "ok",
+        "http_status": 200
       },
       {
         "url": "https://gov.br/ds/wiki/acessibilidade/",
+        "status": "ok",
+        "http_status": 200
+      },
+      {
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm",
         "status": "ok",
         "http_status": 200
       },
@@ -467,21 +489,6 @@
         "url": "https://www.gov.br/ds/introducao/principios",
         "status": "ok",
         "http_status": 200
-      },
-      {
-        "url": "https://www.ibge.gov.br/estatisticas/sociais/rendimento-despesa-e-consumo/9662-censo-demografico-2010.html",
-        "status": "ok",
-        "http_status": 200
-      },
-      {
-        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
-        "status": "ok",
-        "http_status": 200
-      },
-      {
-        "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm",
-        "status": "ok",
-        "http_status": 200
       }
     ],
     "filhos": []
@@ -492,7 +499,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [],
     "filhos": [
@@ -534,7 +542,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [],
     "filhos": [
@@ -548,17 +557,23 @@
         },
         "subfilhos": [
           {
+            "url": "https://contrast-ratio.com/",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
+          },
+          {
             "url": "https://colorkit.io/shades-tints",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://contrast-ratio.com/",
-            "status": "HTTP 403",
-            "http_status": 403
+            "url": "https://hslpicker.com/",
+            "status": "ok",
+            "http_status": 200
           },
           {
-            "url": "https://contrastchecker.com",
+            "url": "https://spectrum.adobe.com/",
             "status": "ok",
             "http_status": 200
           },
@@ -568,7 +583,17 @@
             "http_status": 200
           },
           {
-            "url": "https://hslpicker.com/",
+            "url": "https://contrastchecker.com",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.carbondesignsystem.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://webaim.org/resources/contrastchecker",
             "status": "ok",
             "http_status": 200
           },
@@ -583,32 +608,27 @@
             "http_status": 200
           },
           {
-            "url": "https://spectrum.adobe.com/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://webaim.org/resources/contrastchecker",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.carbondesignsystem.com/",
+            "url": "https://www.w3.org/TR/WCAG20/",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/fundamentos-visuais/cores#contrast-table",
-            "status": "pagina inexistente",
+            "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/fundamentos-visuais/cores#paleta-do-govbr-ds",
-            "status": "pagina inexistente",
+            "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/fundamentos-visuais/estados",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.leserlich.info/werkzeuge/kontrastrechner/index-en.php",
             "status": "ok",
             "http_status": 200
           },
@@ -624,16 +644,6 @@
           },
           {
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.leserlich.info/werkzeuge/kontrastrechner/index-en.php",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG20/",
             "status": "ok",
             "http_status": 200
           }
@@ -727,12 +737,12 @@
             "http_status": 200
           },
           {
-            "url": "https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility",
+            "url": "https://fontawesome.com/v5.9.0/how-to-use/on-the-web/styling/layering",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://fontawesome.com/v5.9.0/how-to-use/on-the-web/styling/layering",
+            "url": "https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility",
             "status": "ok",
             "http_status": 200
           }
@@ -748,22 +758,12 @@
         },
         "subfilhos": [
           {
-            "url": "https://atlassian.design/foundations/illustrations/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://design.firefox.com/photon/visuals/illustration.html",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://designsystem.quickbooks.com/bolt/lifestyle-illustrations/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://polaris.shopify.com/design/illustrations#navigation",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://atlassian.design/foundations/illustrations/",
             "status": "ok",
             "http_status": 200
           },
@@ -773,12 +773,17 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/downloads/assets",
+            "url": "https://designsystem.quickbooks.com/bolt/lifestyle-illustrations/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/cores",
+            "url": "https://www.youtube.com/watch?v=xwNInJssbPU",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://design.firefox.com/photon/visuals/illustration.html",
             "status": "ok",
             "http_status": 200
           },
@@ -788,12 +793,17 @@
             "http_status": 200
           },
           {
+            "url": "https://www.gov.br/ds/downloads/assets",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.lightningdesignsystem.com/components/illustration/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.youtube.com/watch?v=xwNInJssbPU",
+            "url": "https://www.gov.br/ds/fundamentos-visuais/cores",
             "status": "ok",
             "http_status": 200
           }
@@ -814,6 +824,16 @@
             "http_status": 200
           },
           {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.gov.br/ds/fundamentos-visuais/cores",
             "status": "ok",
             "http_status": 200
@@ -825,16 +845,6 @@
           },
           {
             "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
             "status": "ok",
             "http_status": 200
           }
@@ -860,19 +870,10 @@
         },
         "subfilhos": [
           {
-            "url": "https://type-scale.com/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.cdnfonts.com/rawline.font",
-            "status": "HTTP 403",
-            "http_status": 403
-          },
-          {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/cores",
-            "status": "ok",
-            "http_status": 200
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
           },
           {
             "url": "https://www.modularscale.com",
@@ -881,6 +882,16 @@
           },
           {
             "url": "https://www.w3schools.com/tags/default.asp",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://type-scale.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/cores",
             "status": "ok",
             "http_status": 200
           }
@@ -955,7 +966,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": true
     },
     "links_pai": [],
     "filhos": [
@@ -974,17 +986,17 @@
             "http_status": 200
           },
           {
-            "url": "https://brasil.uxdesign.cc/como-coletar-feedback-e-capturar-usu%C3%A1rios-para-pesquisas-sobre-o-produto-7cfbb7e56c5d",
-            "status": "HTTP 403",
-            "http_status": 403
-          },
-          {
             "url": "https://material.io/archive/guidelines/patterns/help-feedback.html#help-feedback-placement",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/padroes/design/collapse",
+            "url": "https://brasil.uxdesign.cc/como-coletar-feedback-e-capturar-usu%C3%A1rios-para-pesquisas-sobre-o-produto-7cfbb7e56c5d",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.oracle.com/webfolder/ux/middleware/alta/patterns/ContextHelponDemand.html",
             "status": "ok",
             "http_status": 200
           },
@@ -999,12 +1011,12 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/padroes/design/onboarding",
+            "url": "https://www.gov.br/ds/padroes/design/collapse",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.oracle.com/webfolder/ux/middleware/alta/patterns/ContextHelponDemand.html",
+            "url": "https://www.gov.br/ds/padroes/design/onboarding",
             "status": "ok",
             "http_status": 200
           }
@@ -1115,8 +1127,8 @@
         "subfilhos": [
           {
             "url": "https://brasil.uxdesign.cc/empty-states-interfaces-cheias-de-oportunidades-a1ed4f6e5a8a",
-            "status": "HTTP 403",
-            "http_status": 403
+            "status": "ok",
+            "http_status": 200
           },
           {
             "url": "https://www.carbondesignsystem.com/patterns/empty-states-pattern",
@@ -1160,6 +1172,16 @@
             "http_status": 200
           },
           {
+            "url": "https://www.w3.org/WAI/tutorials/forms/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.nngroup.com/articles/web-form-design/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.gov.br/ds/components/button?tab=designer",
             "status": "ok",
             "http_status": 200
@@ -1180,22 +1202,12 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/espacamento",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.nngroup.com/articles/web-form-design/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/tutorials/forms/",
+            "url": "https://www.gov.br/ds/fundamentos-visuais/espacamento",
             "status": "ok",
             "http_status": 200
           }
@@ -1212,8 +1224,9 @@
         "subfilhos": [
           {
             "url": "http://blog.coletum.com/tipos-de-graficos/",
-            "status": "erro de carregamento",
-            "http_status": null
+            "status": "dns não resolvido",
+            "http_status": null,
+            "detalhes": "Nome do domínio não pôde ser resolvido"
           },
           {
             "url": "http://talitapagani.com/gaia/g1-recomendacao-1/",
@@ -1221,9 +1234,10 @@
             "http_status": 200
           },
           {
-            "url": "https://accessibility.oit.ncsu.edu/accessible-color-and-color-contrast/",
-            "status": "HTTP 403",
-            "http_status": 403
+            "url": "https://amplix.net/como-as-cores-facilitam-o-entendimento-de-um-grafico/",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
           },
           {
             "url": "https://accessibility.psu.edu/images/charts/",
@@ -1231,22 +1245,37 @@
             "http_status": 200
           },
           {
-            "url": "https://amplix.net/como-as-cores-facilitam-o-entendimento-de-um-grafico/",
-            "status": "HTTP 404",
-            "http_status": 404
-          },
-          {
-            "url": "https://blog.datawrapper.de/colorblindness-part1/",
+            "url": "https://brasil.uxdesign.cc/acessibilidade-o-impacto-das-cores-bfc0d60420db",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://blog.datawrapper.de/colorblindness-part2/",
+            "url": "https://accessibility.oit.ncsu.edu/accessible-color-and-color-contrast/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://blog.datawrapper.de/colorblindness-part3/",
+            "url": "https://medium.com/carbondesign/color-palettes-and-accessibility-features-for-data-visualization-7869f4874fca",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://medium.com/datavizbr/dez-dicas-para-deixar-sua-visualiza%C3%A7%C3%A3o-de-dados-mais-acess%C3%ADvel-bf884895812d",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://medium.com/nightingale/como-escrever-textos-alternativos-de-gr%C3%A1ficos-7a5ead229822",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://pt.surveymonkey.com/curiosity/use-custom-chart-colors-to-reflect-your-brand-and-bring-your-survey-data-to-life/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://serprodrive.serpro.gov.br/s/7DNtygdJcAzASST",
             "status": "ok",
             "http_status": 200
           },
@@ -1256,9 +1285,9 @@
             "http_status": 200
           },
           {
-            "url": "https://brasil.uxdesign.cc/acessibilidade-o-impacto-das-cores-bfc0d60420db",
-            "status": "HTTP 403",
-            "http_status": 403
+            "url": "https://medium.com/nightingale/data-visualization-accessibility-where-are-we-now-and-whats-next-b2c9eeac4e8b",
+            "status": "ok",
+            "http_status": 200
           },
           {
             "url": "https://infogram.com/pt/criar/grafico-de-bolhas",
@@ -1266,37 +1295,7 @@
             "http_status": 200
           },
           {
-            "url": "https://medium.com/carbondesign/color-palettes-and-accessibility-features-for-data-visualization-7869f4874fca",
-            "status": "HTTP 403",
-            "http_status": 403
-          },
-          {
-            "url": "https://medium.com/datavizbr/dez-dicas-para-deixar-sua-visualiza%C3%A7%C3%A3o-de-dados-mais-acess%C3%ADvel-bf884895812d",
-            "status": "HTTP 403",
-            "http_status": 403
-          },
-          {
-            "url": "https://medium.com/nightingale/como-escrever-textos-alternativos-de-gr%C3%A1ficos-7a5ead229822",
-            "status": "HTTP 403",
-            "http_status": 403
-          },
-          {
-            "url": "https://medium.com/nightingale/data-visualization-accessibility-where-are-we-now-and-whats-next-b2c9eeac4e8b",
-            "status": "HTTP 403",
-            "http_status": 403
-          },
-          {
-            "url": "https://pt.surveymonkey.com/curiosity/use-custom-chart-colors-to-reflect-your-brand-and-bring-your-survey-data-to-life/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://pt.venngage.com/blog/diagrama-de-dispersao/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://serprodrive.serpro.gov.br/s/7DNtygdJcAzASST",
+            "url": "https://temporalcerebral.com.br/como-aplicar-a-harmonia-das-cores-no-design-grafico/",
             "status": "ok",
             "http_status": 200
           },
@@ -1311,17 +1310,17 @@
             "http_status": 200
           },
           {
-            "url": "https://temporalcerebral.com.br/como-aplicar-a-harmonia-das-cores-no-design-grafico/",
+            "url": "https://pt.venngage.com/blog/diagrama-de-dispersao/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://uxdesign.cc/data-visualization-for-color-accessibility-8a30ce25d90b",
-            "status": "HTTP 403",
-            "http_status": 403
+            "url": "https://www.w3.org/WAI/tutorials/images/complex/#long-descriptions",
+            "status": "ok",
+            "http_status": 200
           },
           {
-            "url": "https://www.elaborata.com.br/blog/2018/06/07/combinar-e-escolher-cores-para-o-design-grafico-dicas/",
+            "url": "https://blog.datawrapper.de/colorblindness-part2/",
             "status": "ok",
             "http_status": 200
           },
@@ -1331,7 +1330,33 @@
             "http_status": 200
           },
           {
+            "url": "https://blog.datawrapper.de/colorblindness-part3/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://blog.datawrapper.de/colorblindness-part1/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/wiki/SVG*Accessibility",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
+          },
+          {
+            "url": "https://uxdesign.cc/data-visualization-for-color-accessibility-8a30ce25d90b",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.gov.br/ds/components/tooltip?tab=designer",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.highcharts.com/blog/accessibility/",
             "status": "ok",
             "http_status": 200
           },
@@ -1351,19 +1376,9 @@
             "http_status": 200
           },
           {
-            "url": "https://www.highcharts.com/blog/accessibility/",
+            "url": "https://www.elaborata.com.br/blog/2018/06/07/combinar-e-escolher-cores-para-o-design-grafico-dicas/",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/tutorials/images/complex/#long-descriptions",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/wiki/SVG*Accessibility",
-            "status": "HTTP 404",
-            "http_status": 404
           }
         ]
       },
@@ -1403,12 +1418,18 @@
         },
         "subfilhos": [
           {
-            "url": "https://material.io/design/communication/onboarding.html",
+            "url": "https://www.toptal.com/designers/ux/user-onboarding-best-practices",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
+          },
+          {
+            "url": "https://www.gov.br/ds/components/carousel?tab=designer",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/components/carousel?tab=designer",
+            "url": "https://material.io/design/communication/onboarding.html",
             "status": "ok",
             "http_status": 200
           },
@@ -1421,11 +1442,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.toptal.com/designers/ux/user-onboarding-best-practices",
-            "status": "HTTP 403",
-            "http_status": 403
           }
         ]
       },
@@ -1601,7 +1617,7 @@
         },
         "subfilhos": [
           {
-            "url": "https://hotmart.com/pt-br/blog/teste-2",
+            "url": "https://www.nngroup.com/",
             "status": "ok",
             "http_status": 200
           },
@@ -1611,12 +1627,12 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/padroes/design/formulario",
+            "url": "https://hotmart.com/pt-br/blog/teste-2",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.nngroup.com/",
+            "url": "https://www.gov.br/ds/padroes/design/formulario",
             "status": "ok",
             "http_status": 200
           }
@@ -1633,8 +1649,8 @@
         "subfilhos": [
           {
             "url": "https://brasil.uxdesign.cc/linguagem-inclusiva-e-ux-writing-muito-alem-de-dicas-fe52c4f55596",
-            "status": "HTTP 403",
-            "http_status": 403
+            "status": "ok",
+            "http_status": 200
           },
           {
             "url": "https://epwg.governoeletronico.gov.br/cartilha-redacao.html",
@@ -1642,14 +1658,9 @@
             "http_status": 200
           },
           {
-            "url": "https://guiaderedacao.contaazul.design/4c03672f6/p/47bee2-guia-de-redao",
-            "status": "erro de carregamento",
-            "http_status": null
-          },
-          {
             "url": "https://irp-cdn.multiscreensite.com/87bdaac3/files/uploaded/mpli1_2.pdf",
-            "status": "erro de carregamento",
-            "http_status": null
+            "status": "ok",
+            "http_status": 200
           },
           {
             "url": "https://m2.material.io/design/communication/writing.html",
@@ -1662,8 +1673,14 @@
             "http_status": 200
           },
           {
+            "url": "https://guiaderedacao.contaazul.design/4c03672f6/p/47bee2-guia-de-redao",
+            "status": "dns não resolvido",
+            "http_status": null,
+            "detalhes": "Nome do domínio não pôde ser resolvido"
+          },
+          {
             "url": "https://www.gov.br/ds/padroes/writing/principios-writing#boas-pr%C3%A1ticas-para-escrever-bons-textos-em-produtos-digitais",
-            "status": "pagina inexistente",
+            "status": "ok",
             "http_status": 200
           }
         ]
@@ -1676,7 +1693,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [],
     "filhos": [
@@ -1726,12 +1744,12 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
+            "url": "https://www.gov.br/ds/utilitarios/css/cores",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/utilitarios/css/cores",
+            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
             "status": "ok",
             "http_status": 200
           }
@@ -1813,12 +1831,17 @@
             "http_status": 200
           },
           {
+            "url": "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://guia-wcag.com/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
             "status": "ok",
             "http_status": 200
           },
@@ -1834,11 +1857,6 @@
           },
           {
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
             "status": "ok",
             "http_status": 200
           }
@@ -1859,12 +1877,12 @@
             "http_status": 200
           },
           {
-            "url": "https://guia-wcag.com/",
+            "url": "https://m3.material.io/components/cards/accessibility",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://m3.material.io/components/cards/accessibility",
+            "url": "https://guia-wcag.com/",
             "status": "ok",
             "http_status": 200
           },
@@ -1891,6 +1909,11 @@
           },
           {
             "url": "https://guia-wcag.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.nngroup.com/articles/mobile-carousels/",
             "status": "ok",
             "http_status": 200
           },
@@ -1923,11 +1946,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.nngroup.com/articles/mobile-carousels/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -1947,6 +1965,11 @@
           },
           {
             "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-checked",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -1984,11 +2007,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2003,8 +2021,9 @@
         "subfilhos": [
           {
             "url": "http://www.planalto.gov.br/ccivil*03/*ato2015-2018/2018/lei/L13709.htm",
-            "status": "HTTP 404",
-            "http_status": 404
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
           },
           {
             "url": "https://serpro.gov.br/lgpd/menu/a-lgpd/o-que-muda-com-a-lgpd",
@@ -2022,12 +2041,22 @@
             "http_status": 200
           },
           {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.gov.br/ds/components/card",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/components/card?tab=designer",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -2077,22 +2106,12 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
+            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
             "status": "ok",
             "http_status": 200
           }
@@ -2118,12 +2137,22 @@
             "http_status": 200
           },
           {
+            "url": "https://m3.material.io/components/date-pickers/accessibility",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://flatpickr.js.org/options/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://m3.material.io/components/date-pickers/accessibility",
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -2156,16 +2185,6 @@
             "url": "https://www.gov.br/ds/guias/uso-de-vendors",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2184,21 +2203,6 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.gov.br/utilitarios/css/espacamento",
-            "status": "HTTP 404",
-            "http_status": 404
-          },
-          {
-            "url": "https://www.gov.br/utilitarios/css/flexbox",
-            "status": "HTTP 404",
-            "http_status": 404
-          },
-          {
             "url": "https://www.w3.org/",
             "status": "ok",
             "http_status": 200
@@ -2207,6 +2211,23 @@
             "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/utilitarios/css/espacamento",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
+          },
+          {
+            "url": "https://www.gov.br/utilitarios/css/flexbox",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
           }
         ]
       },
@@ -2219,6 +2240,21 @@
           "tipo": ""
         },
         "subfilhos": [
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/ARIA/apg/",
+            "status": "ok",
+            "http_status": 200
+          },
           {
             "url": "https://www.gov.br/ds/components/button",
             "status": "ok",
@@ -2260,27 +2296,12 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.gov.br/ds/padroes/design/collapse",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/",
+            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
           }
@@ -2295,6 +2316,16 @@
           "tipo": ""
         },
         "subfilhos": [
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
           {
             "url": "https://www.gov.br/ds/components/avatar?tab=designer",
             "status": "ok",
@@ -2349,16 +2380,6 @@
             "url": "https://www.gov.br/ds/padroes/design/dropdown",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2383,6 +2404,16 @@
           },
           {
             "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -2412,7 +2443,7 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
+            "url": "https://www.gov.br/ds/padroes/design/formulario",
             "status": "ok",
             "http_status": 200
           },
@@ -2422,17 +2453,7 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/padroes/design/formulario",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
+            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
           }
@@ -2448,22 +2469,22 @@
         },
         "subfilhos": [
           {
-            "url": "https://www.gov.br/ds/components/divider?tab=designer",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.w3.org/",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/components/divider?tab=designer",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
             "status": "ok",
             "http_status": 200
           }
@@ -2478,6 +2499,16 @@
           "tipo": ""
         },
         "subfilhos": [
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
           {
             "url": "https://www.gov.br/ds/components/divider?tab=designer",
             "status": "ok",
@@ -2502,16 +2533,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2525,12 +2546,22 @@
         },
         "subfilhos": [
           {
+            "url": "https://m3.material.io/components/progress-indicators/accessibility",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://carbondesignsystem.com/components/loading/accessibility",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://m3.material.io/components/progress-indicators/accessibility",
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -2548,16 +2579,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2571,17 +2592,22 @@
         },
         "subfilhos": [
           {
+            "url": "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://carbondesignsystem.com/components/button/accessibility",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://guia-wcag.com/",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
+            "url": "https://guia-wcag.com/",
             "status": "ok",
             "http_status": 200
           },
@@ -2604,11 +2630,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2623,6 +2644,21 @@
         "subfilhos": [
           {
             "url": "https://carbondesignsystem.com/components/overflow-menu/accessibility",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menubar/",
             "status": "ok",
             "http_status": 200
           },
@@ -2642,17 +2678,17 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/components/footer?tab=designer",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.gov.br/ds/components/header?tab=designer",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/components/item?tab=designer",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/components/footer?tab=designer",
             "status": "ok",
             "http_status": 200
           },
@@ -2675,21 +2711,6 @@
             "url": "https://www.gov.br/ds/templates/base?tab=designer",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menubar/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2702,6 +2723,21 @@
           "tipo": ""
         },
         "subfilhos": [
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/alert/",
+            "status": "ok",
+            "http_status": 200
+          },
           {
             "url": "https://www.gov.br/ds/components/button",
             "status": "ok",
@@ -2731,21 +2767,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/alert/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2759,12 +2780,32 @@
         },
         "subfilhos": [
           {
+            "url": "https://m3.material.io/components/date-pickers/accessibility",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://carbondesignsystem.com/components/date-picker/accessibility",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://m3.material.io/components/date-pickers/accessibility",
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.ufrgs.br/acessibilidadedigital/modais-com-acessibilidade/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -2797,26 +2838,6 @@
             "url": "https://www.gov.br/ds/utilitarios/js/scrim",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.ufrgs.br/acessibilidadedigital/modais-com-acessibilidade/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2830,17 +2851,27 @@
         },
         "subfilhos": [
           {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.gov.br/ds/components/button",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/components/button?tab=designer",
+            "url": "https://www.gov.br/ds/components/divider?tab=designer",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/components/divider?tab=designer",
+            "url": "https://www.gov.br/ds/components/button?tab=designer",
             "status": "ok",
             "http_status": 200
           },
@@ -2883,16 +2914,6 @@
             "url": "https://www.gov.br/ds/padroes/design/dropdown",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2907,6 +2928,16 @@
         "subfilhos": [
           {
             "url": "https://carbondesignsystem.com/components/pagination/accessibility",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -2959,16 +2990,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -2988,6 +3009,11 @@
           },
           {
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -3018,11 +3044,6 @@
           },
           {
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           }
@@ -3060,6 +3081,21 @@
         "subfilhos": [
           {
             "url": "https://carbondesignsystem.com/components/select/accessibility",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/",
             "status": "ok",
             "http_status": 200
           },
@@ -3117,21 +3153,6 @@
             "url": "https://www.gov.br/ds/padroes/design/dropdown",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3145,6 +3166,11 @@
         },
         "subfilhos": [
           {
+            "url": "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://carbondesignsystem.com/components/button/accessibility",
             "status": "ok",
             "http_status": 200
@@ -3155,7 +3181,7 @@
             "http_status": 200
           },
           {
-            "url": "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
             "status": "ok",
             "http_status": 200
           },
@@ -3178,11 +3204,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3197,6 +3218,26 @@
         "subfilhos": [
           {
             "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/accesskey",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.ufrgs.br/acessibilidadedigital/pular-links/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/",
             "status": "ok",
             "http_status": 200
           },
@@ -3224,26 +3265,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.ufrgs.br/acessibilidadedigital/pular-links/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3257,22 +3278,22 @@
         },
         "subfilhos": [
           {
-            "url": "https://www.gov.br/ds/components/button",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.w3.org/",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/components/button",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
           }
@@ -3298,21 +3319,6 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.w3.org/",
             "status": "ok",
             "http_status": 200
@@ -3324,6 +3330,21 @@
           },
           {
             "url": "https://www.w3.org/WAI/ARIA/apg/patterns/switch/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/iconografia",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
           }
@@ -3339,12 +3360,37 @@
         },
         "subfilhos": [
           {
+            "url": "https://m3.material.io/components/tabs/accessibility",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://carbondesignsystem.com/components/tabs/accessibility",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://m3.material.io/components/tabs/accessibility",
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.ufrgs.br/acessibilidadedigital/abas-tabs-acessiveis/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-2/tabs.html",
             "status": "ok",
             "http_status": 200
           },
@@ -3377,31 +3423,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.ufrgs.br/acessibilidadedigital/abas-tabs-acessiveis/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-2/tabs.html",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3415,12 +3436,18 @@
         },
         "subfilhos": [
           {
-            "url": "http://www.acessibilidadelegal.com/13-tabelas-acessiveis.php",
-            "status": "erro de carregamento",
-            "http_status": null
+            "url": "https://carbondesignsystem.com/components/data-table/accessibility",
+            "status": "ok",
+            "http_status": 200
           },
           {
-            "url": "https://carbondesignsystem.com/components/data-table/accessibility",
+            "url": "http://www.acessibilidadelegal.com/13-tabelas-acessiveis.php",
+            "status": "dns não resolvido",
+            "http_status": null,
+            "detalhes": "Nome do domínio não pôde ser resolvido"
+          },
+          {
+            "url": "https://www.w3.org/",
             "status": "ok",
             "http_status": 200
           },
@@ -3431,6 +3458,16 @@
           },
           {
             "url": "https://www.gov.br/ds/components/checkbox",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/WAI/tutorials/tables/irregular/",
             "status": "ok",
             "http_status": 200
           },
@@ -3488,21 +3525,6 @@
             "url": "https://www.gov.br/ds/components/select",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/tutorials/tables/irregular/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3517,6 +3539,16 @@
         "subfilhos": [
           {
             "url": "https://carbondesignsystem.com/components/tag/accessibility/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -3549,16 +3581,6 @@
             "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3578,6 +3600,16 @@
           },
           {
             "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -3605,16 +3637,6 @@
             "url": "https://www.gov.br/ds/padroes/design/formulario",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3628,12 +3650,17 @@
         },
         "subfilhos": [
           {
+            "url": "https://popper.js.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://carbondesignsystem.com/components/tooltip/accessibility/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://popper.js.org/",
+            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/",
             "status": "ok",
             "http_status": 200
           },
@@ -3656,11 +3683,6 @@
             "url": "https://www.gov.br/ds/guias/uso-de-vendors",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3675,6 +3697,16 @@
         "subfilhos": [
           {
             "url": "https://carbondesignsystem.com/components/file-uploader/accessibility",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -3727,16 +3759,6 @@
             "url": "https://www.gov.br/ds/util/tooltip",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -3750,12 +3772,12 @@
         },
         "subfilhos": [
           {
-            "url": "https://www.gov.br/ds/components/avatar?tab=designer",
+            "url": "https://www.gov.br/ds/components/breadcrumb?tab=designer",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/components/breadcrumb?tab=designer",
+            "url": "https://www.gov.br/ds/components/avatar?tab=designer",
             "status": "ok",
             "http_status": 200
           },
@@ -3845,17 +3867,17 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/components/notification?tab=designer",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.gov.br/ds/components/pagination?tab=designer",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/components/radio?tab=designer",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/components/notification?tab=designer",
             "status": "ok",
             "http_status": 200
           },
@@ -3931,6 +3953,16 @@
         },
         "subfilhos": [
           {
+            "url": "https://www.w3.org/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/WCAG21/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.gov.br/ds/components/button",
             "status": "ok",
             "http_status": 200
@@ -3944,16 +3976,6 @@
             "url": "https://www.gov.br/ds/padroes/design/formulario",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       }
@@ -3965,7 +3987,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [],
     "filhos": [
@@ -3989,12 +4012,12 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/components/header?tab=designer",
+            "url": "https://www.gov.br/ds/components/menu",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/components/menu",
+            "url": "https://www.gov.br/ds/components/header?tab=designer",
             "status": "ok",
             "http_status": 200
           },
@@ -4030,12 +4053,12 @@
         },
         "subfilhos": [
           {
-            "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status",
+            "url": "https://docs-ds.estaleiro.serpro.gov.br//govbr-ds-core/dist/templates/erro/erro.html",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://docs-ds.estaleiro.serpro.gov.br//govbr-ds-core/dist/templates/erro/erro.html",
+            "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status",
             "status": "ok",
             "http_status": 200
           },
@@ -4090,7 +4113,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [],
     "filhos": [
@@ -4215,17 +4239,17 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/utilitarios/css/components/header",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/grid",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://www.gov.br/ds/utilitarios/css/templates/base",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.gov.br/ds/utilitarios/css/components/header",
             "status": "ok",
             "http_status": 200
           }
@@ -4458,7 +4482,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [],
     "filhos": [
@@ -4477,22 +4502,18 @@
             "http_status": 200
           },
           {
-            "url": "https://www.lifewire.com/why-use-semantic-html-3468271",
-            "status": "HTTP 404",
-            "http_status": 404
-          },
-          {
             "url": "https://www.w3.org/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.w3.org/TR/WCAG21/",
-            "status": "ok",
-            "http_status": 200
+            "url": "https://www.lifewire.com/why-use-semantic-html-3468271",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
           },
           {
-            "url": "https://www.w3.org/TR/html52/",
+            "url": "https://www.w3.org/TR/WCAG21/",
             "status": "ok",
             "http_status": 200
           },
@@ -4503,6 +4524,11 @@
           },
           {
             "url": "https://www.w3.org/WAI/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3.org/TR/html52/",
             "status": "ok",
             "http_status": 200
           }
@@ -4523,7 +4549,7 @@
             "http_status": 200
           },
           {
-            "url": "http://csslint.net/",
+            "url": "http://smacss.com/",
             "status": "ok",
             "http_status": 200
           },
@@ -4533,37 +4559,34 @@
             "http_status": 200
           },
           {
-            "url": "http://smacss.com/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "http://thesassway.com/intermediate/dynamically-change-text-color-based-on-its-background-with-sass",
-            "status": "HTTP 404",
-            "http_status": 404
-          },
-          {
-            "url": "http://www.richfinelli.com/what-is-a-css-source-maps/",
-            "status": "erro de carregamento",
-            "http_status": null
-          },
-          {
             "url": "https://codebeautify.org/cssvalidate",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://css-tricks.com/sass-vs-less/",
-            "status": "ok",
-            "http_status": 200
+            "url": "http://thesassway.com/intermediate/dynamically-change-text-color-based-on-its-background-with-sass",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
           },
           {
-            "url": "https://css-tricks.com/snippets/css/media-queries-for-standard-devices/",
-            "status": "ok",
-            "http_status": 200
+            "url": "https://en.wikipedia.org/wiki/Comparison_of_browser_engines_(CSS_support)",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
           },
           {
             "url": "https://cssguidelin.es/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "http://csslint.net/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "http://www.richfinelli.com/what-is-a-css-source-maps/",
             "status": "ok",
             "http_status": 200
           },
@@ -4573,9 +4596,24 @@
             "http_status": 200
           },
           {
-            "url": "https://en.wikipedia.org/wiki/Comparison_of_browser_engines_(CSS_support)",
-            "status": "HTTP 404",
-            "http_status": 404
+            "url": "https://getbootstrap.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://css-tricks.com/sass-vs-less/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://getuikit.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://css-tricks.com/snippets/css/media-queries-for-standard-devices/",
+            "status": "ok",
+            "http_status": 200
           },
           {
             "url": "https://foundation.zurb.com/",
@@ -4588,42 +4626,7 @@
             "http_status": 200
           },
           {
-            "url": "https://getbootstrap.com/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://getuikit.com/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://gist.github.com/chriseppstein/1215856",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://github.com/airbnb/css",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://github.com/gajus/css-lint",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://github.com/sass/linter",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://github.com/sasstools/sass-lint",
             "status": "ok",
             "http_status": 200
           },
@@ -4633,22 +4636,7 @@
             "http_status": 200
           },
           {
-            "url": "https://levelup.gitconnected.com/the-complete-css-style-guide-for-your-next-project-bb5a5d8f7bc9",
-            "status": "HTTP 403",
-            "http_status": 403
-          },
-          {
-            "url": "https://materializecss.com/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://milligram.io/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://necolas.github.io/normalize.css/",
+            "url": "https://gist.github.com/chriseppstein/1215856",
             "status": "ok",
             "http_status": 200
           },
@@ -4658,7 +4646,12 @@
             "http_status": 200
           },
           {
-            "url": "https://purecss.io/",
+            "url": "https://necolas.github.io/normalize.css/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://github.com/gajus/css-lint",
             "status": "ok",
             "http_status": 200
           },
@@ -4668,32 +4661,27 @@
             "http_status": 200
           },
           {
-            "url": "https://rscss.io",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://sass-guidelin.es",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://semantic-ui.com/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://stylelint.io/",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://thoughtbot.com/blog/removing-sass-duplication",
+            "url": "https://github.com/sass/linter",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://v0.material-ui.com/#/",
+            "url": "https://materializecss.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.w3schools.com/css/css_rwd_mediaqueries.asp",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://milligram.io/",
             "status": "ok",
             "http_status": 200
           },
@@ -4703,12 +4691,52 @@
             "http_status": 200
           },
           {
+            "url": "https://purecss.io/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://semantic-ui.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://github.com/sasstools/sass-lint",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://v0.material-ui.com/#/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://rscss.io",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://thoughtbot.com/blog/removing-sass-duplication",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://sass-guidelin.es",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://www.creativebloq.com/advice/a-guide-to-writing-better-css",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.w3schools.com/css/css_rwd_mediaqueries.asp",
+            "url": "https://levelup.gitconnected.com/the-complete-css-style-guide-for-your-next-project-bb5a5d8f7bc9",
             "status": "ok",
             "http_status": 200
           }
@@ -4725,8 +4753,9 @@
         "subfilhos": [
           {
             "url": "https://www.lifewire.com/xua-compatible-meta-tag-3469059",
-            "status": "HTTP 404",
-            "http_status": 404
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Ignoring non-200 response"
           },
           {
             "url": "https://www.w3.org/",
@@ -4750,16 +4779,6 @@
         },
         "subfilhos": [
           {
-            "url": "http://www.ecma-international.org/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "http://www.ecma-international.org/publications/standards/Ecma-262.htm",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://eslint.org/docs/rules/",
             "status": "ok",
             "http_status": 200
@@ -4771,6 +4790,16 @@
           },
           {
             "url": "https://eslint.org/docs/rules/arrow-body-style",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "http://www.ecma-international.org/publications/standards/Ecma-262.htm",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "http://www.ecma-international.org/",
             "status": "ok",
             "http_status": 200
           },
@@ -5290,12 +5319,27 @@
             "http_status": 200
           },
           {
+            "url": "https://jsdoc.app/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://eslint.org/docs/rules/semi",
             "status": "ok",
             "http_status": 200
           },
           {
+            "url": "https://pt.wikipedia.org/wiki/ECMAScript",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
             "url": "https://eslint.org/docs/rules/semi-spacing",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://jsdoc.app/index.html#block-tags",
             "status": "ok",
             "http_status": 200
           },
@@ -5306,6 +5350,11 @@
           },
           {
             "url": "https://eslint.org/docs/rules/sort-imports",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "https://www.iso.org/standard/55755.html",
             "status": "ok",
             "http_status": 200
           },
@@ -5363,26 +5412,6 @@
             "url": "https://eslint.org/docs/rules/vars-on-top",
             "status": "ok",
             "http_status": 200
-          },
-          {
-            "url": "https://jsdoc.app/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://jsdoc.app/index.html#block-tags",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://pt.wikipedia.org/wiki/ECMAScript",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://www.iso.org/standard/55755.html",
-            "status": "ok",
-            "http_status": 200
           }
         ]
       },
@@ -5396,17 +5425,17 @@
         },
         "subfilhos": [
           {
-            "url": "http://sassdoc.com/",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
             "url": "https://sass-lang.com/",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://stylelint.io/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "http://sassdoc.com/",
             "status": "ok",
             "http_status": 200
           },
@@ -5427,11 +5456,6 @@
         },
         "subfilhos": [
           {
-            "url": "http://localhost:9000/",
-            "status": "erro de carregamento",
-            "http_status": null
-          },
-          {
             "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
             "status": "ok",
             "http_status": 200
@@ -5442,17 +5466,23 @@
             "http_status": 200
           },
           {
+            "url": "https://sass-lang.com/",
+            "status": "ok",
+            "http_status": 200
+          },
+          {
+            "url": "http://localhost:9000/",
+            "status": "erro de carregamento",
+            "http_status": null,
+            "detalhes": "Erro: Connection was refused by other side: 111: Connection refused."
+          },
+          {
             "url": "https://pugjs.org/api/getting-started.html",
             "status": "ok",
             "http_status": 200
           },
           {
             "url": "https://pugjs.org/language/mixins.html",
-            "status": "ok",
-            "http_status": 200
-          },
-          {
-            "url": "https://sass-lang.com/",
             "status": "ok",
             "http_status": 200
           },
@@ -5519,12 +5549,12 @@
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/guias/boas-praticas-de-html",
+            "url": "https://www.gov.br/ds/guias/codificacao-javascript",
             "status": "ok",
             "http_status": 200
           },
           {
-            "url": "https://www.gov.br/ds/guias/codificacao-javascript",
+            "url": "https://www.gov.br/ds/guias/boas-praticas-de-html",
             "status": "ok",
             "http_status": 200
           },
@@ -5571,13 +5601,13 @@
           },
           {
             "url": "https://www.w3.org/TR/wai-aria/#role_definitions",
-            "status": "sem resposta",
-            "http_status": null
+            "status": "ok",
+            "http_status": 200
           },
           {
             "url": "https://www.w3.org/TR/wai-aria/#states_and_properties",
-            "status": "sem resposta",
-            "http_status": null
+            "status": "ok",
+            "http_status": 200
           },
           {
             "url": "https://www.w3.org/TR/wai-aria/img/rdf_model.svg",
@@ -5599,7 +5629,8 @@
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
-      "tipo": ""
+      "tipo": "",
+      "erro_links_pai": false
     },
     "links_pai": [
       {
