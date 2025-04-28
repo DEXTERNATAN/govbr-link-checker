@@ -1,103 +1,97 @@
 {
-  "introducao": {
-    "url_pai": "https://www.gov.br/ds/introducao/",
-    "links_pai": [],
-    "tempo_pai": 1.365,
+  "#main-content-title": {
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/#main-content-title/",
+    "links_pai": [
+      "https://discord.com/invite/NkaVZERAT7",
+      "https://discord.gg/NkaVZERAT7",
+      "https://gitlab.com/govbr-ds/dev/govbr-ds-dev-core",
+      "https://gitlab.com/govbr-ds/wbc/govbr-ds-wbc",
+      "https://gov.br/ds/wiki/",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/design-token",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton"
+    ],
+    "tempo_pai": 1.659,
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
       "tipo": ""
     },
-    "filhos": {
-      "https://www.gov.br/ds/introducao/comunidade": {
-        "links": [
-          "https://discord.gg/NkaVZERAT7",
-          "https://forms.office.com/r/WJRJR8kEsQ",
-          "https://forms.office.com/r/e0C589jcVv",
-          "https://forms.office.com/r/skcRJVX8ua",
-          "https://gitlab.com/govbr-ds/dev/govbr-ds-dev-core",
-          "https://gitlab.com/govbr-ds/dev/wbc/govbr-ds-wbc",
-          "https://gov.br/ds/wiki/",
-          "https://gov.br/ds/wiki/comunidade/contribuindo-com-o-ds/"
-        ],
-        "tempo": 1.294,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/introducao/o-que-ha-de-novo": {
-        "links": [
-          "https://gov.br/ds/wiki/desenvolvimento/guias/roteiro/",
-          "https://www.gov.br/ds/acessibilidade",
-          "https://www.gov.br/ds/components/visao-geral",
-          "https://www.gov.br/ds/padroes/writing/principios-writing",
-          "https://www.gov.br/ds/release-notes"
-        ],
-        "tempo": 0.949,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/introducao/padrao-minimo": {
-        "links": [
-          "https://forms.office.com/r/skcRJVX8ua",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/footer",
-          "https://www.gov.br/ds/components/header",
-          "https://www.gov.br/ds/components/signin",
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/padroes/design/formulario"
-        ],
-        "tempo": 1.137,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/introducao/principios": {
-        "links": [],
-        "tempo": 0.944,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/introducao/sobre": {
-        "links": [],
-        "tempo": 0.895,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      }
-    }
+    "filhos": {}
+  },
+  "#main-navigation-title": {
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/#main-navigation-title/",
+    "links_pai": [
+      "https://discord.com/invite/NkaVZERAT7",
+      "https://discord.gg/NkaVZERAT7",
+      "https://gitlab.com/govbr-ds/dev/govbr-ds-dev-core",
+      "https://gitlab.com/govbr-ds/wbc/govbr-ds-wbc",
+      "https://gov.br/ds/wiki/",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/design-token",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton"
+    ],
+    "tempo_pai": 0.649,
+    "erro_pai": {
+      "ocorreu": false,
+      "mensagem": "",
+      "tipo": ""
+    },
+    "filhos": {}
+  },
+  "#main-searchbox": {
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/#main-searchbox/",
+    "links_pai": [
+      "https://discord.com/invite/NkaVZERAT7",
+      "https://discord.gg/NkaVZERAT7",
+      "https://gitlab.com/govbr-ds/dev/govbr-ds-dev-core",
+      "https://gitlab.com/govbr-ds/wbc/govbr-ds-wbc",
+      "https://gov.br/ds/wiki/",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/design-token",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton"
+    ],
+    "tempo_pai": 0.613,
+    "erro_pai": {
+      "ocorreu": false,
+      "mensagem": "",
+      "tipo": ""
+    },
+    "filhos": {}
+  },
+  "#footer-title": {
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/#footer-title/",
+    "links_pai": [
+      "https://discord.com/invite/NkaVZERAT7",
+      "https://discord.gg/NkaVZERAT7",
+      "https://gitlab.com/govbr-ds/dev/govbr-ds-dev-core",
+      "https://gitlab.com/govbr-ds/wbc/govbr-ds-wbc",
+      "https://gov.br/ds/wiki/",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/design-token",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton"
+    ],
+    "tempo_pai": 0.614,
+    "erro_pai": {
+      "ocorreu": false,
+      "mensagem": "",
+      "tipo": ""
+    },
+    "filhos": {}
   },
   "home": {
-    "url_pai": "https://www.gov.br/ds/home/",
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/home/",
     "links_pai": [
-      "https://forms.office.com/r/skcRJVX8ua",
-      "https://gitlab.com/govbr-ds/dev/wbc/govbr-ds-wbc",
-      "https://www.gov.br/ds/como-comecar/instalacao",
-      "https://www.gov.br/ds/components/visao-geral",
-      "https://www.gov.br/ds/downloads/assets",
-      "https://www.gov.br/ds/downloads/manuais-orientadores",
-      "https://www.gov.br/ds/fundamentos-visuais/visao-geral",
-      "https://www.gov.br/ds/introducao/comunidade",
-      "https://www.gov.br/ds/introducao/padrao-minimo",
-      "https://www.gov.br/ds/introducao/sobre",
-      "https://www.gov.br/ds/padroes/visao-geral",
-      "https://www.gov.br/ds/templates/visao-geral"
+      "https://discord.com/invite/NkaVZERAT7",
+      "https://discord.gg/NkaVZERAT7",
+      "https://gitlab.com/govbr-ds/dev/govbr-ds-dev-core",
+      "https://gitlab.com/govbr-ds/wbc/govbr-ds-wbc",
+      "https://gov.br/ds/wiki/",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/design-token",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton"
     ],
-    "tempo_pai": 1.106,
+    "tempo_pai": 0.78,
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
@@ -105,92 +99,96 @@
     },
     "filhos": {}
   },
-  "como-comecar": {
-    "url_pai": "https://www.gov.br/ds/como-comecar/",
-    "links_pai": [],
-    "tempo_pai": 0.767,
+  "introducao": {
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/introducao/",
+    "links_pai": [
+      "https://discord.gg/NkaVZERAT7"
+    ],
+    "tempo_pai": 0.91,
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
       "tipo": ""
     },
     "filhos": {
-      "https://www.gov.br/ds/como-comecar/instalacao": {
+      "https://next-ds.estaleiro.serpro.gov.br/introducao/como-comecar": {
         "links": [
-          "https://nodejs.org/",
-          "https://www.gov.br/ds/como-comecar/prototipando",
-          "https://www.gov.br/ds/como-comecar/versao-lite",
-          "https://www.gov.br/ds/downloads/assets",
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/guias/construcao-de-componentes",
-          "https://www.gov.br/ds/introducao/principios",
-          "https://www.gov.br/ds/templates/base"
+          "https://discord.com/invite/NkaVZERAT7",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/introducao/como-comecar",
+          "https://next-ds.estaleiro.serpro.gov.br/introducao/fluxo-criacao",
+          "https://next-ds.estaleiro.serpro.gov.br/introducao/fluxo-desenvolvimento",
+          "https://next-ds.estaleiro.serpro.gov.br/introducao/principios",
+          "https://next-ds.estaleiro.serpro.gov.br/introducao/sobre"
         ],
-        "tempo": 0.95,
+        "tempo": 2.075,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/como-comecar/prototipando": {
+      "https://next-ds.estaleiro.serpro.gov.br/introducao/fluxo-criacao": {
         "links": [
-          "https://helpx.adobe.com/br/support/xd.html",
-          "https://www.adobe.com/products/xd.html",
-          "https://www.figma.com/",
-          "https://www.figma.com/prototyping/",
-          "https://www.gov.br/ds/como-comecar/downloads/assets"
+          "https://discord.com/invite/NkaVZERAT7",
+          "https://gitlab.com/govbr-ds/bibliotecas/govbr-ds-assets-de-design/-/tree/main/ilustracoes?ref_type=heads",
+          "https://next-ds.estaleiro.serpro.gov.br/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/introducao/principios",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing"
         ],
-        "tempo": 0.846,
+        "tempo": 0.795,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/como-comecar/purgecss": {
+      "https://next-ds.estaleiro.serpro.gov.br/introducao/fluxo-desenvolvimento": {
         "links": [
-          "https://purgecss.com/",
-          "https://purgecss.com/configuration.html"
+          "https://discord.com/invite/NkaVZERAT7",
+          "https://github.com/nvm-sh/nvm",
+          "https://gitlab.com/govbr-ds/bibliotecas/wc/govbr-ds-wc",
+          "https://next-ds.estaleiro.serpro.gov.br/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/introducao/principios",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://nodejs.org",
+          "https://webcomponent-ds.estaleiro.serpro.gov.br/?path=/story/introdu%C3%A7%C3%A3o--page",
+          "https://www.webcomponents.org/specs"
         ],
-        "tempo": 0.898,
+        "tempo": 0.761,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/como-comecar/utilizando-sass": {
+      "https://next-ds.estaleiro.serpro.gov.br/introducao/principios": {
         "links": [
-          "https://www.gov.br/ds/como-comecar/instalacao"
+          "https://emag.governoeletronico.gov.br/",
+          "https://next-ds.estaleiro.serpro.gov.br/home"
         ],
-        "tempo": 0.844,
+        "tempo": 0.746,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/como-comecar/vendors": {
+      "https://next-ds.estaleiro.serpro.gov.br/introducao/sobre": {
         "links": [
-          "https://cdnjs.com/",
-          "https://www.gov.br/ds/como-comecar/instalacao",
-          "https://www.jsdelivr.com/"
+          "https://emag.governoeletronico.gov.br/",
+          "https://next-ds.estaleiro.serpro.gov.br/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://www.w3.org/TR/WCAG21//"
         ],
-        "tempo": 0.849,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/como-comecar/versao-lite": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/cores",
-          "https://www.gov.br/ds/utilitarios/css/espacamento"
-        ],
-        "tempo": 0.832,
+        "tempo": 0.755,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
@@ -199,235 +197,320 @@
       }
     }
   },
-  "acessibilidade": {
-    "url_pai": "https://www.gov.br/ds/acessibilidade/",
+  "fundamentos": {
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/",
     "links_pai": [
-      "http://www.handtalk.me/br/blog/wcag-2-0/>",
-      "https://gov.br/ds/wiki/acessibilidade/",
-      "https://www.gov.br/ds/guias/acessibilidade-html",
-      "https://www.gov.br/ds/guias/wai-aria",
-      "https://www.gov.br/ds/introducao/principios",
-      "https://www.ibge.gov.br/estatisticas/sociais/rendimento-despesa-e-consumo/9662-censo-demografico-2010.html",
-      "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
-      "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm"
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/design-token",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+      "https://next-ds.estaleiro.serpro.gov.br/home"
     ],
-    "tempo_pai": 0.977,
-    "erro_pai": {
-      "ocorreu": false,
-      "mensagem": "",
-      "tipo": ""
-    },
-    "filhos": {}
-  },
-  "downloads": {
-    "url_pai": "https://www.gov.br/ds/downloads/",
-    "links_pai": [],
-    "tempo_pai": 0.763,
+    "tempo_pai": 0.815,
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
       "tipo": ""
     },
     "filhos": {
-      "https://www.gov.br/ds/downloads/assets": {
-        "links": [],
-        "tempo": 1.036,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/downloads/legislacao": {
-        "links": [],
-        "tempo": 0.814,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/downloads/manuais-orientadores": {
-        "links": [],
-        "tempo": 0.805,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      }
-    }
-  },
-  "fundamentos-visuais": {
-    "url_pai": "https://www.gov.br/ds/fundamentos-visuais/",
-    "links_pai": [],
-    "tempo_pai": 1.124,
-    "erro_pai": {
-      "ocorreu": false,
-      "mensagem": "",
-      "tipo": ""
-    },
-    "filhos": {
-      "https://www.gov.br/ds/fundamentos-visuais/cores": {
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor": {
         "links": [
+          "https://colorandcontrast.com",
           "https://colorkit.io/shades-tints",
           "https://contrast-ratio.com/",
-          "https://contrastchecker.com",
           "https://designsystem.digital.gov/",
           "https://hslpicker.com/",
           "https://material.io/design/color/the-color-system.html",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor?tokens#paleta-do-design-system",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor?visao-geral#funcao-das-cores",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/tema",
           "https://paletton.com/",
           "https://spectrum.adobe.com/",
-          "https://webaim.org/resources/contrastchecker",
           "https://www.carbondesignsystem.com/",
-          "https://www.gov.br/ds/fundamentos-visuais/cores#contrast-table",
-          "https://www.gov.br/ds/fundamentos-visuais/cores#paleta-do-govbr-ds",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
           "https://www.leserlich.info/werkzeuge/kontrastrechner/index-en.php",
-          "https://www.w3.org/TR/WCAG20/"
+          "https://www.w3.org/TR/WCAG21/",
+          "https://www.whocanuse.com"
         ],
-        "tempo": 1.78,
+        "tempo": 1.471,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/fundamentos-visuais/elevacao": {
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/design-token": {
         "links": [
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/utilities-css/elevacao"
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/<https:/dbanks.design/blog/documenting-design-tokens/>",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/<https:/m3.material.io/foundations/design-tokens/overview>",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/<https:/spectrum.adobe.com/page/design-tokens/>",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/designtokens?visao-geral#taxonomia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/designtokens?visao-geral#terminologia",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://tr.designtokens.org/format/"
         ],
-        "tempo": 0.971,
+        "tempo": 0.874,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/fundamentos-visuais/espacamento": {
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao": {
         "links": [
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia"
+          "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao?saiba-mais#acessibilidade",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao?tokens#token-de-cor-da-elevacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao?tokens#tokens-de-opacidade-da-sombra",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao?tokens#tokens-de-projecao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao?tokens#tokens-de-sombra",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao?tokens#tokens-de-suavidade",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/content-overflow",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/contentoverflow",
+          "https://www.w3.org/TR/wai-aria-1.2/"
         ],
-        "tempo": 0.96,
+        "tempo": 1.063,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/fundamentos-visuais/estados": {
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento": {
         "links": [
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie"
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing",
+          "https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento?tokens",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/densidade"
         ],
-        "tempo": 1.037,
+        "tempo": 0.986,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/fundamentos-visuais/grid": {
-        "links": [],
-        "tempo": 1.081,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/fundamentos-visuais/iconografia": {
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado": {
         "links": [
-          "https://fontawesome.com/",
-          "https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility",
-          "https://fontawesome.com/v5.9.0/how-to-use/on-the-web/styling/layering"
+          "https://developer.mozilla.org/pt-BR/",
+          "https://fontawesome.com/docs/web/",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#alerta",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#arrastando",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#ativo",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#call-to-action",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#desabilitado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#dropzone",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#dropzone-ativo",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#erro",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#foco",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#hover",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#interativo",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#ligado-e-desligado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#pressionado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#selecionado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#sucesso",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?tokens#visitado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?visao-geral#7--foco",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?visao-geral#especificacoes-hover",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento?visao-geral#sequenciamento-da-animacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/collapse",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/densidade",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/dropdown",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/tema",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing?microcopy",
+          "https://www.gov.br/ds/acessibilidade",
+          "https://www.w3.org/WAI/WCAG22/Understanding/",
+          "https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html",
+          "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
         ],
-        "tempo": 1.006,
+        "tempo": 1.076,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/fundamentos-visuais/ilustracao": {
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid": {
         "links": [
-          "https://atlassian.design/foundations/illustrations/",
-          "https://design.firefox.com/photon/visuals/illustration.html",
-          "https://designsystem.quickbooks.com/bolt/lifestyle-illustrations/",
-          "https://polaris.shopify.com/design/illustrations#navigation",
-          "https://www.design.foyer.lu/illustration.html",
-          "https://www.gov.br/ds/downloads/assets",
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.ibm.com/design/language/illustration/overview/",
-          "https://www.lightningdesignsystem.com/components/illustration/",
-          "https://www.youtube.com/watch?v=xwNInJssbPU"
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag",
+          "https://experienceleague.adobe.com/docs/target/using/experiences/vec/mobile-viewports.html",
+          "https://gs.statcounter.com/screen-resolution-stats/mobile/brazil/",
+          "https://next-ds.estaleiro.serpro.gov.br/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?tokens#breakpoints-principais-e-extras",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?tokens#tokens-de-grid",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?visao-geral#entendendo-a-grid",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?visao-geral#sangria-bleed",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/collapse",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/densidade",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/dropdown",
+          "https://viewportsizer.com/devices/",
+          "https://viewportsizer.com/lite"
         ],
-        "tempo": 2.041,
+        "tempo": 1.019,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/fundamentos-visuais/movimento": {
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia": {
         "links": [
-          "https://cubic-bezier.com/#.17,.67,.83,.67",
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/elevacao",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.w3.org/",
+          "http://scripts.sil.org/OFL",
+          "https://creativecommons.org/licenses/by/4.0/",
+          "https://fontastic.me",
+          "https://fontawesome.com/docs/web/",
+          "https://fontello.com",
+          "https://m2.material.io/design/layout/pixel-density.html#pixel-density",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia?saiba-mais#design-de-icones",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia?tokens#nome-dos-ícones",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia?tokens#tokens-de-iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia?visao-geral#orientacoes-de-uso",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://opensource.org/licenses/MIT"
+        ],
+        "tempo": 0.896,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao": {
+        "links": [
+          "https://aspect-ratio.desenvolvimentoparaweb.com",
+          "https://aspectratiocalculator.com",
+          "https://br.freepik.com",
+          "https://byjus.com/ratio-calculator/",
+          "https://next-ds.estaleiro.serpro.gov.br/downloads/ilustracao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor?tokens#paleta-do-design-system",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao?saiba-mais#cenarios-para-uso",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao?saiba-mais#guia-para-construcao-de-ilustracoes",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao?visao-geral#estilo",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://polaris.shopify.com/design/illustrations",
+          "https://pt.dreamstime.com/menina-bonita-com-as-flores-da-camomila-em-seu-cabelo-que-joga-ilustração-do-vetor-dos-desenhos-animados-borboleta-no-fundo-image151055979",
+          "https://www.design.foyer.lu/illustration.html"
+        ],
+        "tempo": 1.253,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento": {
+        "links": [
+          "https://developer.mozilla.org/en-US/docs/Glossary/FPS",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento?tokens#tokens-de-duracao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento?tokens#tokens-de-easing",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
           "https://www.w3.org/WAI/standards-guidelines/wcag/"
         ],
-        "tempo": 0.949,
+        "tempo": 1.046,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/fundamentos-visuais/superficie": {
-        "links": [],
-        "tempo": 1.167,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/fundamentos-visuais/tipografia": {
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie": {
         "links": [
-          "https://type-scale.com/",
-          "https://www.cdnfonts.com/rawline.font",
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing",
+          "https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie?tokens#borda-espessura",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie?tokens#canto-arredondamento",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie?tokens#opacidade",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie?tokens#overlay",
+          "https://next-ds.estaleiro.serpro.gov.br/home"
+        ],
+        "tempo": 1.416,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia": {
+        "links": [
+          "https://fonts.google.com/knowledge/glossary/tofu",
+          "https://fonts.google.com/noto",
+          "https://fonts.google.com/noto/specimen/Noto+Sans",
+          "https://github.com/notofonts/notofonts.github.io",
+          "https://github.com/notofonts/notofonts.github.io/tree/main/fonts/NotoSans",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia?tokens#tokens-de-entrelinha",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia?tokens#tokens-de-estilo",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia?tokens#tokens-de-familia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia?tokens#tokens-de-peso",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia?tokens#tokens-de-tamanho-size",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/formulario",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing",
+          "https://notofonts.github.io",
+          "https://scripts.sil.org/OFL",
           "https://www.modularscale.com",
           "https://www.w3schools.com/tags/default.asp"
         ],
-        "tempo": 1.061,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/fundamentos-visuais/visao-geral": {
-        "links": [
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/elevacao",
-          "https://www.gov.br/ds/fundamentos-visuais/espacamento",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/fundamentos-visuais/grid",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/ilustracao",
-          "https://www.gov.br/ds/fundamentos-visuais/movimento",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia"
-        ],
-        "tempo": 0.897,
+        "tempo": 0.996,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
@@ -437,260 +520,234 @@
     }
   },
   "padroes": {
-    "url_pai": "https://www.gov.br/ds/padroes/",
-    "links_pai": [],
-    "tempo_pai": 0.759,
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/padroes/",
+    "links_pai": [
+      "https://next-ds.estaleiro.serpro.gov.br/home",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/collapse",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/content-overflow",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/densidade",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/dropdown",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/formulario",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/internacionalizacao",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/tema",
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/writing"
+    ],
+    "tempo_pai": 0.741,
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
       "tipo": ""
     },
     "filhos": {
-      "https://www.gov.br/ds/padroes/design/ajuda-comunicacao": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/collapse": {
         "links": [
-          "http://openshift.github.io/openshift-origin-design/designs/administrator/future-openshift/contextual-help/",
-          "https://brasil.uxdesign.cc/como-coletar-feedback-e-capturar-usu%C3%A1rios-para-pesquisas-sobre-o-produto-7cfbb7e56c5d",
-          "https://material.io/archive/guidelines/patterns/help-feedback.html#help-feedback-placement",
-          "https://www.gov.br/ds/padroes/design/collapse",
-          "https://www.gov.br/ds/padroes/design/dropdown",
-          "https://www.gov.br/ds/padroes/design/formulario",
-          "https://www.gov.br/ds/padroes/design/onboarding",
-          "https://www.oracle.com/webfolder/ux/middleware/alta/patterns/ContextHelponDemand.html"
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado?visao-geral#area-minima-de-interacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?visao-geral#objetos-temporarios",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/collapse?saiba-mais#criando-estruturas-hierarquicas",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/collapse?visao-geral#3--conteudo-persistente",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/content-overflow"
         ],
-        "tempo": 1.171,
+        "tempo": 1.004,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/padroes/design/collapse": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/content-overflow": {
         "links": [
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia"
+          "https://carbondesignsystem.com/",
+          "https://css-tricks.com/almanac/properties/o/overflow/",
+          "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content",
+          "https://next-ds.estaleiro.serpro.gov.br/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?visao-geral#objetos-temporarios",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia?visao-geral#2--navegacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/collapse",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/content-overflow?tokens",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/content-overflow?visao-geral#14--rolagem-acima-da-dobra",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/content-overflow?visao-geral#5--rolagem-com-slide",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/dropdown",
+          "https://uxbooth.com/articles/best-practices-for-scrolling/",
+          "https://www.alura.com.br/artigos/pros-e-contras-paginacao-rolagem-infinita"
         ],
-        "tempo": 1.072,
+        "tempo": 0.957,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/padroes/design/contentoverflow": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/densidade": {
         "links": [
-          "https://www.gov.br/ds/components/modal?tab=designer",
-          "https://www.gov.br/ds/components/tooltip?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/elevacao",
-          "https://www.gov.br/ds/padroes/design/collapse",
-          "https://www.gov.br/ds/padroes/design/dropdown"
+          "https://blog.xpeducacao.com.br/design-universal/",
+          "https://material.io/design/layout/applying-density.html",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento?visao-geral#4--escala",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento?visao-geral#41--escala-de-layout",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?visao-geral#definindo-as-dimensoes",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie?visao-geral#4--dimensao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia?visao-geral#4--entrelinha-line-height",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes"
         ],
-        "tempo": 1.022,
+        "tempo": 0.991,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/padroes/design/densidade": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/dropdown": {
         "links": [
-          "https://material.io/design/layout/applying-density.html"
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao?visao-geral#camada-2",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?visao-geral#flutuantes",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento?visao-geral#propriedades-do-movimento",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes"
         ],
-        "tempo": 0.959,
+        "tempo": 1.035,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/padroes/design/dropdown": {
-        "links": [
-          "https://www.gov.br/ds/fundamentos-visuais/elevacao",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie"
-        ],
-        "tempo": 1.111,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/padroes/design/emptystates": {
-        "links": [
-          "https://brasil.uxdesign.cc/empty-states-interfaces-cheias-de-oportunidades-a1ed4f6e5a8a",
-          "https://www.carbondesignsystem.com/patterns/empty-states-pattern",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/templates/erro?tab=designer"
-        ],
-        "tempo": 1.092,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/padroes/design/formulario": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/formulario": {
         "links": [
           "https://guia-wcag.com/",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/button",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/message",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/formulario?visao-geral#anatomia",
+          "https://pt.surveymonkey.com/mp/creating-accessible-forms/",
           "https://serprogovbr.sharepoint.com/sites/UXCenter",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/magicbutton?tab=designer",
-          "https://www.gov.br/ds/components/message?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/espacamento",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
+          "https://www.acessibilidade.gov.pt/tutorial/formularios-acessiveis-utilizando-as-wcag2-0/",
           "https://www.nngroup.com/articles/web-form-design/",
+          "https://www.virtualvision.com.br/blog/acessibilidade-em-formularios-complexos/",
           "https://www.w3.org/WAI/tutorials/forms/"
         ],
-        "tempo": 1.045,
+        "tempo": 0.975,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/padroes/design/grafico": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/internacionalizacao": {
         "links": [
-          "http://blog.coletum.com/tipos-de-graficos/",
-          "http://talitapagani.com/gaia/g1-recomendacao-1/",
-          "https://accessibility.oit.ncsu.edu/accessible-color-and-color-contrast/",
-          "https://accessibility.psu.edu/images/charts/",
-          "https://amplix.net/como-as-cores-facilitam-o-entendimento-de-um-grafico/",
-          "https://blog.datawrapper.de/colorblindness-part1/",
-          "https://blog.datawrapper.de/colorblindness-part2/",
-          "https://blog.datawrapper.de/colorblindness-part3/",
-          "https://blog.presentation-company.com/data-visualization-vs.-data-storytelling-whats-the-difference",
-          "https://brasil.uxdesign.cc/acessibilidade-o-impacto-das-cores-bfc0d60420db",
-          "https://infogram.com/pt/criar/grafico-de-bolhas",
-          "https://medium.com/carbondesign/color-palettes-and-accessibility-features-for-data-visualization-7869f4874fca",
-          "https://medium.com/datavizbr/dez-dicas-para-deixar-sua-visualiza%C3%A7%C3%A3o-de-dados-mais-acess%C3%ADvel-bf884895812d",
-          "https://medium.com/nightingale/como-escrever-textos-alternativos-de-gr%C3%A1ficos-7a5ead229822",
-          "https://medium.com/nightingale/data-visualization-accessibility-where-are-we-now-and-whats-next-b2c9eeac4e8b",
-          "https://pt.surveymonkey.com/curiosity/use-custom-chart-colors-to-reflect-your-brand-and-bring-your-survey-data-to-life/",
-          "https://pt.venngage.com/blog/diagrama-de-dispersao/",
-          "https://serprodrive.serpro.gov.br/s/7DNtygdJcAzASST",
-          "https://serprodrive.serpro.gov.br/s/ADccP4T8pCfmznt",
-          "https://serprodrive.serpro.gov.br/s/AnEwBrA8TwdnGdH",
-          "https://temporalcerebral.com.br/como-aplicar-a-harmonia-das-cores-no-design-grafico/",
-          "https://uxdesign.cc/data-visualization-for-color-accessibility-8a30ce25d90b",
-          "https://www.elaborata.com.br/blog/2018/06/07/combinar-e-escolher-cores-para-o-design-grafico-dicas/",
-          "https://www.gov.br/ds/components/loading?tab=desenvolvedor",
-          "https://www.gov.br/ds/components/tooltip?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/movimento",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.highcharts.com/blog/accessibility/",
-          "https://www.w3.org/WAI/tutorials/images/complex/#long-descriptions",
-          "https://www.w3.org/wiki/SVG*Accessibility"
+          "https://fonts.google.com/noto",
+          "https://m2.material.io/design/usability/bidirectionality.html#mirroring-layout",
+          "https://medium.com/dropbox-design/design-for-internationalization-24c12ea6b38f",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid?visao-geral#entendendo-a-interacao-entre-a-grid-e-os-elementos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie?visao-geral#4--dimensao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia?visao-geral#noto",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia?visao-geral#orientacoes-de-uso",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/tema",
+          "https://www.nngroup.com/articles/international-sites-requirements/",
+          "https://www.nngroup.com/articles/international-usability-details-differ/",
+          "https://www.nngroup.com/articles/international-web-usability/",
+          "https://www.shutterstock.com/pt/blog/o-significado-das-cores-nas-culturas-ao-redor-do-mundo",
+          "https://www.youtube.com/watch?v=16_NYHUZ1kM&t=95s"
         ],
-        "tempo": 1.217,
+        "tempo": 1.063,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/padroes/design/navegacao": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton": {
         "links": [
-          "https://design-system.service.gov.uk/patterns/step-by-step-navigation/",
-          "https://material.io/archive/guidelines/patterns/navigation.html",
-          "https://material.io/design/navigation/understanding-navigation.html"
+          "https://brasil.uxdesign.cc/como-as-skeletons-screens-podem-ajudar-a-aprimoram-experi%C3%AAncia-de-uso-do-seu-produto-987c736651ca",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton?tokens",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/skeletonscreen?tokens#altura",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/skeletonscreen?tokens#arredondamento",
+          "https://support.google.com/adsense/answer/7450973?hl=pt-BR",
+          "https://www.flowlabdigital.com.br/conheca-as-vantagens-das-skeletons-screens/",
+          "https://www.nngroup.com/articles/skeleton-screens/",
+          "https://www.uxdesigninstitute.com/blog/whats-a-skeleton-screen/",
+          "https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/",
+          "https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/#dfn-essential",
+          "https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/#info-and-relationships",
+          "https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/#non-text-contrast",
+          "https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/#status-messages"
         ],
-        "tempo": 1.057,
+        "tempo": 1.095,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/padroes/design/onboarding": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/tema": {
         "links": [
-          "https://material.io/design/communication/onboarding.html",
-          "https://www.gov.br/ds/components/carousel?tab=designer",
-          "https://www.gov.br/ds/components/tooltip?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.toptal.com/designers/ux/user-onboarding-best-practices"
+          "https://color.adobe.com/pt/create/color-accessibility",
+          "https://colorandcontrast.com",
+          "https://colorkit.io/shades-tints",
+          "https://contrast-ratio.com/",
+          "https://contrastchecker.online/color-relative-luminance-calculator",
+          "https://hslpicker.com/",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://paletton.com/",
+          "https://planetcalc.com/7779",
+          "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+          "https://www.whocanuse.com"
         ],
-        "tempo": 1.016,
+        "tempo": 1.001,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
           "tipo": ""
         }
       },
-      "https://www.gov.br/ds/padroes/mobile/android-e-ios": {
-        "links": [
-          "https://serprodrive.serpro.gov.br/s/CiLWgb77s3tbr69",
-          "https://serprodrive.serpro.gov.br/s/ixDJP9pL2zM6BGW",
-          "https://serprodrive.serpro.gov.br/s/kLJfZc9zpfa8jsL",
-          "https://serprodrive.serpro.gov.br/s/qwk9ekj4E3ScECK",
-          "https://www.gov.br/ds/fundamentos-visuais/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/elevacao",
-          "https://www.gov.br/ds/fundamentos-visuais/espacamento",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/fundamentos-visuais/grid",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/ilustracao",
-          "https://www.gov.br/ds/fundamentos-visuais/movimento",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/introducao/principios"
-        ],
-        "tempo": 0.858,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/padroes/visao-geral": {
-        "links": [
-          "https://www.gov.br/ds/padroes/design/ajuda-comunicacao",
-          "https://www.gov.br/ds/padroes/design/collapse",
-          "https://www.gov.br/ds/padroes/design/contentoverflow",
-          "https://www.gov.br/ds/padroes/design/densidade",
-          "https://www.gov.br/ds/padroes/design/dropdown",
-          "https://www.gov.br/ds/padroes/design/emptystates",
-          "https://www.gov.br/ds/padroes/design/formulario",
-          "https://www.gov.br/ds/padroes/design/grafico",
-          "https://www.gov.br/ds/padroes/design/navegacao",
-          "https://www.gov.br/ds/padroes/design/onboarding",
-          "https://www.gov.br/ds/padroes/mobile/android-e-ios",
-          "https://www.gov.br/ds/padroes/writing/microcopy",
-          "https://www.gov.br/ds/padroes/writing/principios-writing"
-        ],
-        "tempo": 1.015,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/padroes/writing/microcopy": {
-        "links": [
-          "https://hotmart.com/pt-br/blog/teste-2",
-          "https://rockcontent.com/br/blog/copywriting/",
-          "https://www.gov.br/ds/padroes/design/formulario",
-          "https://www.nngroup.com/"
-        ],
-        "tempo": 0.949,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/padroes/writing/principios-writing": {
+      "https://next-ds.estaleiro.serpro.gov.br/padroes/writing": {
         "links": [
           "https://brasil.uxdesign.cc/linguagem-inclusiva-e-ux-writing-muito-alem-de-dicas-fe52c4f55596",
           "https://epwg.governoeletronico.gov.br/cartilha-redacao.html",
           "https://guiaderedacao.contaazul.design/4c03672f6/p/47bee2-guia-de-redao",
           "https://irp-cdn.multiscreensite.com/87bdaac3/files/uploaded/mpli1_2.pdf",
           "https://m2.material.io/design/communication/writing.html",
-          "https://styleguide.mailchimp.com/voice-and-tone/",
-          "https://www.gov.br/ds/padroes/writing/principios-writing#boas-pr%C3%A1ticas-para-escrever-bons-textos-em-produtos-digitais"
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing?dicionario",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing?visao-geral",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing?visao-geral#boas-praticas-para-escrever-bons-textos-em-produtos-digitais",
+          "https://styleguide.mailchimp.com/voice-and-tone/"
         ],
-        "tempo": 0.888,
+        "tempo": 0.873,
         "erro": {
           "ocorreu": false,
           "mensagem": "",
@@ -699,1376 +756,228 @@
       }
     }
   },
-  "components": {
-    "url_pai": "https://www.gov.br/ds/components/",
-    "links_pai": [],
-    "tempo_pai": 0.749,
-    "erro_pai": {
-      "ocorreu": false,
-      "mensagem": "",
-      "tipo": ""
-    },
-    "filhos": {
-      "https://www.gov.br/ds/components/accordion": {
-        "links": [
-          "https://www.gov.br/ds/padroes/design/collapse",
-          "https://www.gov.br/ds/utilitarios/js/accordion"
-        ],
-        "tempo": 1.323,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/avatar": {
-        "links": [
-          "https://carbondesignsystem.com/components/button/accessibility",
-          "https://guia-wcag.com/",
-          "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/utilitarios/css/cores"
-        ],
-        "tempo": 1.798,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/breadcrumb": {
-        "links": [
-          "https://carbondesignsystem.com/components/breadcrumb/accessibility",
-          "https://guia-wcag.com/",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/card",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/util/tooltip"
-        ],
-        "tempo": 1.101,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/button": {
-        "links": [
-          "https://carbondesignsystem.com/components/button/accessibility",
-          "https://guia-wcag.com/",
-          "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/button/"
-        ],
-        "tempo": 1.184,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/card": {
-        "links": [
-          "https://carbondesignsystem.com/components/button/accessibility",
-          "https://guia-wcag.com/",
-          "https://m3.material.io/components/cards/accessibility",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie"
-        ],
-        "tempo": 2.4,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/carousel": {
-        "links": [
-          "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture",
-          "https://guia-wcag.com/",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/step",
-          "https://www.gov.br/ds/components/step?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/movimento",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.nngroup.com/articles/mobile-carousels/"
-        ],
-        "tempo": 1.129,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/checkbox": {
-        "links": [
-          "https://carbondesignsystem.com/components/checkbox/accessibility/",
-          "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-checked",
-          "https://www.gov.br/ds/components/ds/utilitarios/css/display",
-          "https://www.gov.br/ds/components/ds/utilitarios/css/espacamento",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/components/list?tab=designer",
-          "https://www.gov.br/ds/components/message?tab=designer",
-          "https://www.gov.br/ds/components/utilitarios/js/checkgroup",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.104,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/cookiebar": {
-        "links": [
-          "http://www.planalto.gov.br/ccivil*03/*ato2015-2018/2018/lei/L13709.htm",
-          "https://serpro.gov.br/lgpd/menu/a-lgpd/o-que-muda-com-a-lgpd",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/card",
-          "https://www.gov.br/ds/components/card?tab=designer",
-          "https://www.gov.br/ds/components/checkbox?tab=designer",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/components/list",
-          "https://www.gov.br/ds/components/message",
-          "https://www.gov.br/ds/components/message?tab=designer",
-          "https://www.gov.br/ds/components/radio",
-          "https://www.gov.br/ds/components/switch",
-          "https://www.gov.br/ds/components/switch?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.605,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/datetimepicker": {
-        "links": [
-          "https://carbondesignsystem.com/components/date-picker/accessibility",
-          "https://flatpickr.js.org/",
-          "https://flatpickr.js.org/options/",
-          "https://m3.material.io/components/date-pickers/accessibility",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/card?tab=designer",
-          "https://www.gov.br/ds/components/input",
-          "https://www.gov.br/ds/components/input?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/guias/uso-de-vendors",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.112,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/divider": {
-        "links": [
-          "https://m3.material.io/components/divider/accessibility",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/utilitarios/css/espacamento",
-          "https://www.gov.br/utilitarios/css/flexbox",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.021,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/footer": {
-        "links": [
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/divider",
-          "https://www.gov.br/ds/components/divider?tab=designer",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/components/list",
-          "https://www.gov.br/ds/components/list?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/padroes/design/collapse",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/WAI/ARIA/apg/"
-        ],
-        "tempo": 1.189,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/header": {
-        "links": [
-          "https://www.gov.br/ds/components/avatar?tab=designer",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/divider?tab=designer",
-          "https://www.gov.br/ds/components/input",
-          "https://www.gov.br/ds/components/input?tab=designer",
-          "https://www.gov.br/ds/components/signin?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/padroes/design/dropdown",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.269,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/input": {
-        "links": [
-          "https://carbondesignsystem.com/components/text-input/accessibility",
-          "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input",
-          "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/message",
-          "https://www.gov.br/ds/components/message?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/padroes/design/densidade",
-          "https://www.gov.br/ds/padroes/design/formulario",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.476,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/item": {
-        "links": [
-          "https://www.gov.br/ds/components/divider?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.669,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/list": {
-        "links": [
-          "https://www.gov.br/ds/components/divider?tab=designer",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.399,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/loading": {
-        "links": [
-          "https://carbondesignsystem.com/components/loading/accessibility",
-          "https://m3.material.io/components/progress-indicators/accessibility",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.1,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/magicbutton": {
-        "links": [
-          "https://carbondesignsystem.com/components/button/accessibility",
-          "https://guia-wcag.com/",
-          "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/button/"
-        ],
-        "tempo": 1.395,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/menu": {
-        "links": [
-          "https://carbondesignsystem.com/components/overflow-menu/accessibility",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/divider?tab=desenvolvedor",
-          "https://www.gov.br/ds/components/footer?tab=designer",
-          "https://www.gov.br/ds/components/header?tab=designer",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/elevacao",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/templates/base?tab=designer",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/menubar/"
-        ],
-        "tempo": 1.173,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/message": {
-        "links": [
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/alert/"
-        ],
-        "tempo": 1.02,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/modal": {
-        "links": [
-          "https://carbondesignsystem.com/components/date-picker/accessibility",
-          "https://m3.material.io/components/date-pickers/accessibility",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/loading",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/utilitarios/js/scrim",
-          "https://www.ufrgs.br/acessibilidadedigital/modais-com-acessibilidade/",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
-        ],
-        "tempo": 1.007,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/notification": {
-        "links": [
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/divider?tab=designer",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/components/list",
-          "https://www.gov.br/ds/components/tab",
-          "https://www.gov.br/ds/components/tab?tab=designer",
-          "https://www.gov.br/ds/components/tag",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/padroes/design/dropdown",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.08,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/pagination": {
-        "links": [
-          "https://carbondesignsystem.com/components/pagination/accessibility",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/divider",
-          "https://www.gov.br/ds/components/input",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/components/list",
-          "https://www.gov.br/ds/components/radio",
-          "https://www.gov.br/ds/components/select",
-          "https://www.gov.br/ds/components/select?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.062,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/radio": {
-        "links": [
-          "https://carbondesignsystem.com/components/radio-button/accessibility",
-          "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/components/list?tab=designer",
-          "https://www.gov.br/ds/components/message?tab=designer",
-          "https://www.gov.br/ds/components/utilitarios/css/display",
-          "https://www.gov.br/ds/components/utilitarios/css/espacamento",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.022,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/scrim": {
-        "links": [
-          "https://www.gov.br/ds/padroes/ajuda/",
-          "https://www.gov.br/ds/util/scrim/"
-        ],
-        "tempo": 1.679,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/select": {
-        "links": [
-          "https://carbondesignsystem.com/components/select/accessibility",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/checkbox",
-          "https://www.gov.br/ds/components/input",
-          "https://www.gov.br/ds/components/input?tab=designer",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/components/list",
-          "https://www.gov.br/ds/components/list?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/estados",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/padroes/design/dropdown",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/"
-        ],
-        "tempo": 1.245,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/signin": {
-        "links": [
-          "https://carbondesignsystem.com/components/button/accessibility",
-          "https://guia-wcag.com/",
-          "https://mayflower.digital.mass.gov/core/index.html?path=/docs/elements-buttons--button-primary",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/button/"
-        ],
-        "tempo": 1.279,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/skiplink": {
-        "links": [
-          "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/accesskey",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/components/tag",
-          "https://www.gov.br/ds/components/tag?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.ufrgs.br/acessibilidadedigital/pular-links/",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/"
-        ],
-        "tempo": 1.139,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/step": {
-        "links": [
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.256,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/switch": {
-        "links": [
-          "https://carbondesignsystem.com/components/toggle/accessibility",
-          "https://m3.material.io/components/switch/accessibility",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/switch/"
-        ],
-        "tempo": 1.01,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/tab": {
-        "links": [
-          "https://carbondesignsystem.com/components/tabs/accessibility",
-          "https://m3.material.io/components/tabs/accessibility",
-          "https://www.gov.br/ds/components/divider?tab=designer",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/components/tooltip?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.ufrgs.br/acessibilidadedigital/abas-tabs-acessiveis/",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-2/tabs.html",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/"
-        ],
-        "tempo": 1.016,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/table": {
-        "links": [
-          "http://www.acessibilidadelegal.com/13-tabelas-acessiveis.php",
-          "https://carbondesignsystem.com/components/data-table/accessibility",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/checkbox",
-          "https://www.gov.br/ds/components/divider",
-          "https://www.gov.br/ds/components/divider?tab=designer",
-          "https://www.gov.br/ds/components/footer?tab=designer",
-          "https://www.gov.br/ds/components/header?tab=designer",
-          "https://www.gov.br/ds/components/input",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/components/list",
-          "https://www.gov.br/ds/components/pagination",
-          "https://www.gov.br/ds/components/radio",
-          "https://www.gov.br/ds/components/select",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/WAI/tutorials/tables/irregular/"
-        ],
-        "tempo": 1.203,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/tag": {
-        "links": [
-          "https://carbondesignsystem.com/components/tag/accessibility/",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/ds/utilities-css/cores",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.103,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/textarea": {
-        "links": [
-          "https://carbondesignsystem.com/components/text-input/accessibility",
-          "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea",
-          "https://www.gov.br/ds/components/input?tab=designer",
-          "https://www.gov.br/ds/components/message?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/padroes/design/formulario",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.136,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/tooltip": {
-        "links": [
-          "https://carbondesignsystem.com/components/tooltip/accessibility/",
-          "https://popper.js.org/",
-          "https://www.gov.br/ds/fundamentos-visuais/elevacao",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/guias/uso-de-vendors",
-          "https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/"
-        ],
-        "tempo": 1.697,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/upload": {
-        "links": [
-          "https://carbondesignsystem.com/components/file-uploader/accessibility",
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/item",
-          "https://www.gov.br/ds/components/list?tab=designer",
-          "https://www.gov.br/ds/components/loading?tab=designer",
-          "https://www.gov.br/ds/components/message",
-          "https://www.gov.br/ds/components/message?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/iconografia",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie",
-          "https://www.gov.br/ds/fundamentos-visuais/tipografia",
-          "https://www.gov.br/ds/util/tooltip",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.132,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/visao-geral": {
-        "links": [
-          "https://www.gov.br/ds/components/avatar?tab=designer",
-          "https://www.gov.br/ds/components/breadcrumb?tab=designer",
-          "https://www.gov.br/ds/components/button?tab=designer",
-          "https://www.gov.br/ds/components/card?tab=designer",
-          "https://www.gov.br/ds/components/carousel?tab=designer",
-          "https://www.gov.br/ds/components/checkbox?tab=designer",
-          "https://www.gov.br/ds/components/cookiebar?tab=designer",
-          "https://www.gov.br/ds/components/datetimepicker?tab=designer",
-          "https://www.gov.br/ds/components/divider?tab=designer",
-          "https://www.gov.br/ds/components/footer?tab=designer",
-          "https://www.gov.br/ds/components/header?tab=designer",
-          "https://www.gov.br/ds/components/input?tab=designer",
-          "https://www.gov.br/ds/components/item?tab=designer",
-          "https://www.gov.br/ds/components/list?tab=designer",
-          "https://www.gov.br/ds/components/loading?tab=designer",
-          "https://www.gov.br/ds/components/magicbutton?tab=designer",
-          "https://www.gov.br/ds/components/menu?tab=designer",
-          "https://www.gov.br/ds/components/message?tab=designer",
-          "https://www.gov.br/ds/components/modal?tab=designer",
-          "https://www.gov.br/ds/components/notification?tab=designer",
-          "https://www.gov.br/ds/components/pagination?tab=designer",
-          "https://www.gov.br/ds/components/radio?tab=designer",
-          "https://www.gov.br/ds/components/select?tab=designer",
-          "https://www.gov.br/ds/components/signin?tab=designer",
-          "https://www.gov.br/ds/components/skiplink?tab=designer",
-          "https://www.gov.br/ds/components/step?tab=designer",
-          "https://www.gov.br/ds/components/switch?tab=designer",
-          "https://www.gov.br/ds/components/tab?tab=designer",
-          "https://www.gov.br/ds/components/table?tab=designer",
-          "https://www.gov.br/ds/components/tag?tab=designer",
-          "https://www.gov.br/ds/components/textarea?tab=designer",
-          "https://www.gov.br/ds/components/tooltip?tab=designer",
-          "https://www.gov.br/ds/components/upload?tab=designer",
-          "https://www.gov.br/ds/components/wizard?tab=designer"
-        ],
-        "tempo": 1.009,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/components/wizard": {
-        "links": [
-          "https://www.gov.br/ds/components/button",
-          "https://www.gov.br/ds/components/step?tab=designer",
-          "https://www.gov.br/ds/padroes/design/formulario",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/"
-        ],
-        "tempo": 1.127,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      }
-    }
-  },
-  "templates": {
-    "url_pai": "https://www.gov.br/ds/templates/",
-    "links_pai": [],
-    "tempo_pai": 0.755,
-    "erro_pai": {
-      "ocorreu": false,
-      "mensagem": "",
-      "tipo": ""
-    },
-    "filhos": {
-      "https://www.gov.br/ds/templates/base": {
-        "links": [
-          "https://www.gov.br/ds/components/breadcrumb?tab=designer",
-          "https://www.gov.br/ds/components/footer?tab=designer",
-          "https://www.gov.br/ds/components/header?tab=designer",
-          "https://www.gov.br/ds/components/menu",
-          "https://www.gov.br/ds/components/menu?tab=designer",
-          "https://www.gov.br/ds/components/skiplink?tab=designer",
-          "https://www.gov.br/ds/fundamentos-visuais/grid",
-          "https://www.gov.br/ds/fundamentos-visuais/superficie"
-        ],
-        "tempo": 1.451,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/templates/erro": {
-        "links": [
-          "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status",
-          "https://docs-ds.estaleiro.serpro.gov.br//govbr-ds-core/dist/templates/erro/erro.html",
-          "https://www.gov.br/ds/components/footer?tab=designer",
-          "https://www.gov.br/ds/components/header?tab=designer",
-          "https://www.gov.br/ds/templates/base",
-          "https://www.gov.br/ds/templates/utilities-css/cores"
-        ],
-        "tempo": 1.144,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/templates/visao-geral": {
-        "links": [
-          "https://www.gov.br/ds/templates/base?tab=designer",
-          "https://www.gov.br/ds/templates/erro?tab=designer"
-        ],
-        "tempo": 0.828,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      }
-    }
-  },
-  "utilitarios": {
-    "url_pai": "https://www.gov.br/ds/utilitarios/",
-    "links_pai": [],
-    "tempo_pai": 0.824,
-    "erro_pai": {
-      "ocorreu": false,
-      "mensagem": "",
-      "tipo": ""
-    },
-    "filhos": {
-      "https://www.gov.br/ds/utilitarios/css/arredondamento": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/superficie"
-        ],
-        "tempo": 0.828,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/bordas": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/superficie"
-        ],
-        "tempo": 0.827,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/cores": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/cores"
-        ],
-        "tempo": 0.833,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/display": {
-        "links": [],
-        "tempo": 0.893,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/elevacao": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/elevacao"
-        ],
-        "tempo": 0.86,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/espacamento": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/espacamento"
-        ],
-        "tempo": 0.865,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/flexbox": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/utilitarios/css/display"
-        ],
-        "tempo": 0.898,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/grid": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/components/footer",
-          "https://www.gov.br/ds/utilitarios/css/components/header",
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/grid",
-          "https://www.gov.br/ds/utilitarios/css/templates/base"
-        ],
-        "tempo": 0.845,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/movimento": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/movimento"
-        ],
-        "tempo": 0.844,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/overflow": {
-        "links": [],
-        "tempo": 0.913,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/textos": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/tipografia"
-        ],
-        "tempo": 0.844,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/css/tipografia": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/fundamentos-visuais/tipografia"
-        ],
-        "tempo": 0.83,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/js/accordion": {
-        "links": [],
-        "tempo": 0.856,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/js/checkgroup": {
-        "links": [],
-        "tempo": 0.877,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/js/collapse": {
-        "links": [],
-        "tempo": 0.923,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/js/dropdown": {
-        "links": [],
-        "tempo": 0.843,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/js/scrim": {
-        "links": [],
-        "tempo": 0.898,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/js/tooltip": {
-        "links": [],
-        "tempo": 2.459,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/utilitarios/visao-geral": {
-        "links": [
-          "https://www.gov.br/ds/utilitarios/css/arredondamento",
-          "https://www.gov.br/ds/utilitarios/css/bordas",
-          "https://www.gov.br/ds/utilitarios/css/cores",
-          "https://www.gov.br/ds/utilitarios/css/display",
-          "https://www.gov.br/ds/utilitarios/css/elevacao",
-          "https://www.gov.br/ds/utilitarios/css/espacamento",
-          "https://www.gov.br/ds/utilitarios/css/flexbox",
-          "https://www.gov.br/ds/utilitarios/css/grid",
-          "https://www.gov.br/ds/utilitarios/css/movimento",
-          "https://www.gov.br/ds/utilitarios/css/overflow",
-          "https://www.gov.br/ds/utilitarios/css/textos",
-          "https://www.gov.br/ds/utilitarios/css/tipografia",
-          "https://www.gov.br/ds/utilitarios/js/accordion?tab=desenvolvedor",
-          "https://www.gov.br/ds/utilitarios/js/checkgroup?tab=desenvolvedor",
-          "https://www.gov.br/ds/utilitarios/js/collapse?tab=desenvolvedor",
-          "https://www.gov.br/ds/utilitarios/js/dropdown?tab=desenvolvedor",
-          "https://www.gov.br/ds/utilitarios/js/scrim?tab=desenvolvedor",
-          "https://www.gov.br/ds/utilitarios/js/tooltip?tab=desenvolvedor"
-        ],
-        "tempo": 1.131,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      }
-    }
-  },
-  "guias": {
-    "url_pai": "https://www.gov.br/ds/guias/",
-    "links_pai": [],
-    "tempo_pai": 0.793,
-    "erro_pai": {
-      "ocorreu": false,
-      "mensagem": "",
-      "tipo": ""
-    },
-    "filhos": {
-      "https://www.gov.br/ds/guias/acessibilidade-html": {
-        "links": [
-          "http://emag.governoeletronico.gov.br/",
-          "https://www.lifewire.com/why-use-semantic-html-3468271",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/WCAG21/",
-          "https://www.w3.org/TR/html52/",
-          "https://www.w3.org/TR/wai-aria/",
-          "https://www.w3.org/WAI/"
-        ],
-        "tempo": 0.903,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/boas-praticas-de-css": {
-        "links": [
-          "http://bradfrost.com/blog/post/atomic-web-design/",
-          "http://csslint.net/",
-          "http://getskeleton.com/",
-          "http://smacss.com/",
-          "http://thesassway.com/intermediate/dynamically-change-text-color-based-on-its-background-with-sass",
-          "http://www.richfinelli.com/what-is-a-css-source-maps/",
-          "https://codebeautify.org/cssvalidate",
-          "https://css-tricks.com/sass-vs-less/",
-          "https://css-tricks.com/snippets/css/media-queries-for-standard-devices/",
-          "https://cssguidelin.es/",
-          "https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/CSS_Media_queries",
-          "https://en.wikipedia.org/wiki/Comparison_of_browser_engines_(CSS_support)",
-          "https://foundation.zurb.com/",
-          "https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps",
-          "https://getbootstrap.com/",
-          "https://getuikit.com/",
-          "https://gist.github.com/chriseppstein/1215856",
-          "https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488",
-          "https://github.com/airbnb/css",
-          "https://github.com/gajus/css-lint",
-          "https://github.com/sass/linter",
-          "https://github.com/sasstools/sass-lint",
-          "https://jonsuh.com/blog/managing-responsive-breakpoints-with-sass-maps/",
-          "https://levelup.gitconnected.com/the-complete-css-style-guide-for-your-next-project-bb5a5d8f7bc9",
-          "https://materializecss.com/",
-          "https://milligram.io/",
-          "https://necolas.github.io/normalize.css/",
-          "https://pinetools.com/css-beautifier",
-          "https://purecss.io/",
-          "https://raygun.com/blog/css-preprocessors-examples/",
-          "https://rscss.io",
-          "https://sass-guidelin.es",
-          "https://semantic-ui.com/",
-          "https://stylelint.io/",
-          "https://thoughtbot.com/blog/removing-sass-duplication",
-          "https://v0.material-ui.com/#/",
-          "https://willianjusten.com.br/organizando-seu-css-com-itcss/",
-          "https://www.creativebloq.com/advice/a-guide-to-writing-better-css",
-          "https://www.w3schools.com/css/css_rwd_mediaqueries.asp"
-        ],
-        "tempo": 0.87,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/boas-praticas-de-html": {
-        "links": [
-          "https://www.lifewire.com/xua-compatible-meta-tag-3469059",
-          "https://www.w3.org/",
-          "https://www.w3.org/TR/2017/REC-html52-20171214/"
-        ],
-        "tempo": 0.833,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/codificacao-javascript": {
-        "links": [
-          "http://www.ecma-international.org/",
-          "http://www.ecma-international.org/publications/standards/Ecma-262.htm",
-          "https://eslint.org/docs/rules/",
-          "https://eslint.org/docs/rules/array-bracket-spacing",
-          "https://eslint.org/docs/rules/arrow-body-style",
-          "https://eslint.org/docs/rules/arrow-parens",
-          "https://eslint.org/docs/rules/arrow-spacing",
-          "https://eslint.org/docs/rules/block-scoped-var",
-          "https://eslint.org/docs/rules/block-spacing",
-          "https://eslint.org/docs/rules/brace-style",
-          "https://eslint.org/docs/rules/camelcase",
-          "https://eslint.org/docs/rules/class-methods-use-this",
-          "https://eslint.org/docs/rules/comma-dangle",
-          "https://eslint.org/docs/rules/comma-spacing",
-          "https://eslint.org/docs/rules/comma-style",
-          "https://eslint.org/docs/rules/complexity",
-          "https://eslint.org/docs/rules/computed-property-spacing",
-          "https://eslint.org/docs/rules/constructor-super",
-          "https://eslint.org/docs/rules/default-case",
-          "https://eslint.org/docs/rules/default-case-last",
-          "https://eslint.org/docs/rules/default-param-last",
-          "https://eslint.org/docs/rules/dot-location",
-          "https://eslint.org/docs/rules/eol-last",
-          "https://eslint.org/docs/rules/func-call-spacing",
-          "https://eslint.org/docs/rules/implicit-arrow-linebreak",
-          "https://eslint.org/docs/rules/indent",
-          "https://eslint.org/docs/rules/key-spacing",
-          "https://eslint.org/docs/rules/keyword-spacing",
-          "https://eslint.org/docs/rules/lines-between-class-members",
-          "https://eslint.org/docs/rules/new-parens",
-          "https://eslint.org/docs/rules/no-alert",
-          "https://eslint.org/docs/rules/no-caller",
-          "https://eslint.org/docs/rules/no-class-assign",
-          "https://eslint.org/docs/rules/no-confusing-arrow",
-          "https://eslint.org/docs/rules/no-console",
-          "https://eslint.org/docs/rules/no-const-assign",
-          "https://eslint.org/docs/rules/no-constructor-return",
-          "https://eslint.org/docs/rules/no-debugger",
-          "https://eslint.org/docs/rules/no-delete-var",
-          "https://eslint.org/docs/rules/no-dupe-args",
-          "https://eslint.org/docs/rules/no-dupe-class-members",
-          "https://eslint.org/docs/rules/no-dupe-else-if",
-          "https://eslint.org/docs/rules/no-dupe-keys",
-          "https://eslint.org/docs/rules/no-duplicate-case",
-          "https://eslint.org/docs/rules/no-duplicate-imports",
-          "https://eslint.org/docs/rules/no-else-return",
-          "https://eslint.org/docs/rules/no-empty",
-          "https://eslint.org/docs/rules/no-empty-function",
-          "https://eslint.org/docs/rules/no-empty-pattern",
-          "https://eslint.org/docs/rules/no-eq-null",
-          "https://eslint.org/docs/rules/no-eval",
-          "https://eslint.org/docs/rules/no-ex-assign",
-          "https://eslint.org/docs/rules/no-extra-label",
-          "https://eslint.org/docs/rules/no-extra-semi",
-          "https://eslint.org/docs/rules/no-fallthrough",
-          "https://eslint.org/docs/rules/no-floating-decimal",
-          "https://eslint.org/docs/rules/no-func-assign",
-          "https://eslint.org/docs/rules/no-global-assign",
-          "https://eslint.org/docs/rules/no-implied-eval",
-          "https://eslint.org/docs/rules/no-import-assign",
-          "https://eslint.org/docs/rules/no-iterator",
-          "https://eslint.org/docs/rules/no-label-var",
-          "https://eslint.org/docs/rules/no-lone-blocks",
-          "https://eslint.org/docs/rules/no-lonely-if",
-          "https://eslint.org/docs/rules/no-loop-func",
-          "https://eslint.org/docs/rules/no-mixed-spaces-and-tabs",
-          "https://eslint.org/docs/rules/no-multi-spaces",
-          "https://eslint.org/docs/rules/no-multiple-empty-lines",
-          "https://eslint.org/docs/rules/no-new",
-          "https://eslint.org/docs/rules/no-param-reassign",
-          "https://eslint.org/docs/rules/no-proto",
-          "https://eslint.org/docs/rules/no-redeclare",
-          "https://eslint.org/docs/rules/no-self-assign",
-          "https://eslint.org/docs/rules/no-self-compare",
-          "https://eslint.org/docs/rules/no-shadow-restricted-names",
-          "https://eslint.org/docs/rules/no-tabs",
-          "https://eslint.org/docs/rules/no-template-curly-in-string",
-          "https://eslint.org/docs/rules/no-this-before-super",
-          "https://eslint.org/docs/rules/no-trailing-spaces",
-          "https://eslint.org/docs/rules/no-undef-init",
-          "https://eslint.org/docs/rules/no-undefined",
-          "https://eslint.org/docs/rules/no-unexpected-multiline",
-          "https://eslint.org/docs/rules/no-unreachable",
-          "https://eslint.org/docs/rules/no-unsafe-finally",
-          "https://eslint.org/docs/rules/no-unused-expressions",
-          "https://eslint.org/docs/rules/no-unused-labels",
-          "https://eslint.org/docs/rules/no-use-before-define",
-          "https://eslint.org/docs/rules/no-useless-catch",
-          "https://eslint.org/docs/rules/no-useless-computed-key",
-          "https://eslint.org/docs/rules/no-useless-concat",
-          "https://eslint.org/docs/rules/no-useless-constructor",
-          "https://eslint.org/docs/rules/no-useless-escape",
-          "https://eslint.org/docs/rules/no-useless-rename",
-          "https://eslint.org/docs/rules/no-useless-return",
-          "https://eslint.org/docs/rules/no-var",
-          "https://eslint.org/docs/rules/no-whitespace-before-property",
-          "https://eslint.org/docs/rules/no-with",
-          "https://eslint.org/docs/rules/object-curly-spacing",
-          "https://eslint.org/docs/rules/operator-assignment",
-          "https://eslint.org/docs/rules/operator-linebreak",
-          "https://eslint.org/docs/rules/padded-blocks",
-          "https://eslint.org/docs/rules/prefer-arrow-callback",
-          "https://eslint.org/docs/rules/prefer-const",
-          "https://eslint.org/docs/rules/prefer-destructuring",
-          "https://eslint.org/docs/rules/prefer-rest-params",
-          "https://eslint.org/docs/rules/prefer-spread",
-          "https://eslint.org/docs/rules/prefer-template",
-          "https://eslint.org/docs/rules/rest-spread-spacing",
-          "https://eslint.org/docs/rules/semi",
-          "https://eslint.org/docs/rules/semi-spacing",
-          "https://eslint.org/docs/rules/semi-style",
-          "https://eslint.org/docs/rules/sort-imports",
-          "https://eslint.org/docs/rules/sort-keys",
-          "https://eslint.org/docs/rules/space-before-blocks",
-          "https://eslint.org/docs/rules/space-before-function-paren",
-          "https://eslint.org/docs/rules/space-in-parens",
-          "https://eslint.org/docs/rules/space-infix-ops",
-          "https://eslint.org/docs/rules/space-unary-ops",
-          "https://eslint.org/docs/rules/switch-colon-spacing",
-          "https://eslint.org/docs/rules/template-curly-spacing",
-          "https://eslint.org/docs/rules/use-isnan",
-          "https://eslint.org/docs/rules/valid-typeof",
-          "https://eslint.org/docs/rules/vars-on-top",
-          "https://jsdoc.app/",
-          "https://jsdoc.app/index.html#block-tags",
-          "https://pt.wikipedia.org/wiki/ECMAScript",
-          "https://www.iso.org/standard/55755.html"
-        ],
-        "tempo": 0.904,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/codificacao-sass": {
-        "links": [
-          "http://sassdoc.com/",
-          "https://sass-lang.com/",
-          "https://stylelint.io/",
-          "https://stylelint.io/user-guide/ignore-code"
-        ],
-        "tempo": 0.843,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/construcao-de-componentes": {
-        "links": [
-          "http://localhost:9000/",
-          "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
-          "https://pugjs.org",
-          "https://pugjs.org/api/getting-started.html",
-          "https://pugjs.org/language/mixins.html",
-          "https://sass-lang.com/",
-          "https://sass-lang.com/documentation",
-          "https://sass-lang.com/documentation/at-rules/mixin"
-        ],
-        "tempo": 0.845,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/migracao-2x-3x": {
-        "links": [],
-        "tempo": 1.079,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/navegadores-suportados": {
-        "links": [
-          "https://github.com/nuxodin/ie11CustomProperties"
-        ],
-        "tempo": 0.831,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/visao-geral": {
-        "links": [
-          "https://www.gov.br/ds/downloads/manuais-orientadores",
-          "https://www.gov.br/ds/guias/acessibilidade-html",
-          "https://www.gov.br/ds/guias/boas-praticas-de-css",
-          "https://www.gov.br/ds/guias/boas-praticas-de-html",
-          "https://www.gov.br/ds/guias/codificacao-javascript",
-          "https://www.gov.br/ds/guias/codificacao-sass",
-          "https://www.gov.br/ds/guias/construcao-de-componentes",
-          "https://www.gov.br/ds/guias/migracao-2x-3x",
-          "https://www.gov.br/ds/guias/navegadores-suportados",
-          "https://www.gov.br/ds/guias/wai-aria"
-        ],
-        "tempo": 0.987,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      },
-      "https://www.gov.br/ds/guias/wai-aria": {
-        "links": [
-          "https://www.w3.org/TR/wai-aria/",
-          "https://www.w3.org/TR/wai-aria/#role_definitions",
-          "https://www.w3.org/TR/wai-aria/#states_and_properties",
-          "https://www.w3.org/TR/wai-aria/img/rdf_model.svg",
-          "https://www.w3.org/WAI/"
-        ],
-        "tempo": 0.825,
-        "erro": {
-          "ocorreu": false,
-          "mensagem": "",
-          "tipo": ""
-        }
-      }
-    }
-  },
-  "release-notes": {
-    "url_pai": "https://www.gov.br/ds/release-notes/",
+  "componentes": {
+    "url_pai": "https://next-ds.estaleiro.serpro.gov.br/componentes/",
     "links_pai": [
-      "https://gitlab.com/govbr-ds/design/govbr-ds-design-diretrizes/-/releases",
-      "https://gitlab.com/govbr-ds/design/govbr-ds-design-padroes-modelos/-/releases",
-      "https://gitlab.com/govbr-ds/design/govbr-ds-design-uikits/-/releases",
-      "https://gitlab.com/govbr-ds/dev/react/react-components/-/releases",
-      "https://gitlab.com/govbr-ds/dev/wbc/govbr-ds-wbc/-/releases",
-      "https://gitlab.com/govbr-ds/ds/dev/govbr-ds-dev-core/-/releases"
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/avatar",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/button",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/divider",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/icon",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/input",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/list",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/message",
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/text",
+      "https://next-ds.estaleiro.serpro.gov.br/home"
     ],
-    "tempo_pai": 0.88,
+    "tempo_pai": 0.712,
     "erro_pai": {
       "ocorreu": false,
       "mensagem": "",
       "tipo": ""
     },
-    "filhos": {}
+    "filhos": {
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/avatar": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/avatar?visao-geral#1--superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/avatar?visao-geral#2--imagem",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/avatar?visao-geral#3--texto",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/avatar?visao-geral#4--mascara",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/avatar?visao-geral#a--representacao-do-usuario-ou-entidade",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor?visao-geral#numero-magico",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao?saiba-mais#ilustracoes-vs-fotos-quando-usar-cada-uma",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie?visao-geral#3--canto",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home"
+        ],
+        "tempo": 1.093,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/button": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/icon",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing?microcopy#1--acao"
+        ],
+        "tempo": 1.07,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/divider": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componente/text",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie#propriedades-da-borda",
+          "https://next-ds.estaleiro.serpro.gov.br/home"
+        ],
+        "tempo": 0.994,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/button",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label#1-rotulo",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/dropdown",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/formulario",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing"
+        ],
+        "tempo": 1.191,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/icon": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text?saiba-mais#Comportamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia?visao-geral#orientacoes-de-uso",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superfície",
+          "https://next-ds.estaleiro.serpro.gov.br/home"
+        ],
+        "tempo": 0.932,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/input": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/button",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/icon",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/input?visao-geral#1--campo-de-entrada-de-dados",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/input?visao-geral#2--rotulo",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/input?visao-geral#3--icone-de-apoio",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/input?visao-geral#4--placeholder",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/input?visao-geral#5--texto-de-entrada",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/input?visao-geral#6--botao",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/input?visao-geral#7--feedback",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/message",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/Writing?microcopy#2--entrada-de-dados",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing?microcopy#2--entrada-de-dados",
+          "https://uxplanet.org/designing-perfect-text-field-clarity-accessibility-and-user-effort-d03c1e26004b",
+          "https://www.nngroup.com/articles/date-input/",
+          "https://www.nngroup.com/articles/mobile-input-checklist/"
+        ],
+        "tempo": 0.974,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/list": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/divider",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?saiba-mais#boas-praticas",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?visao-geral#1--superficies",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?visao-geral#2--cabecalho",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?visao-geral#3--item",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?visao-geral#4--separador",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?visao-geral#a--botoes-de-acao",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?visao-geral#b--area-de-midia",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?visao-geral#c--area-de-conteudo",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/list?visao-geral#d--area-de-acoes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padrao/tema",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing"
+        ],
+        "tempo": 1.05,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/message": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/button",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/icon",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/formulario?visao-geral#4--componentes-de-entrada-de-dados",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing",
+          "https://next-ds.estaleiro.serpro.gov.br/padroes/writing?microcopy#4--feedback"
+        ],
+        "tempo": 1.024,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      },
+      "https://next-ds.estaleiro.serpro.gov.br/componentes/text": {
+        "links": [
+          "https://next-ds.estaleiro.serpro.gov.br/componentes",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/addlink",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text?saiba-mais#Comportamentos",
+          "https://next-ds.estaleiro.serpro.gov.br/componentes/text?visao-geral#Tipos",
+          "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia",
+          "https://next-ds.estaleiro.serpro.gov.br/home"
+        ],
+        "tempo": 0.935,
+        "erro": {
+          "ocorreu": false,
+          "mensagem": "",
+          "tipo": ""
+        }
+      }
+    }
   }
 }

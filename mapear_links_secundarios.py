@@ -5,7 +5,8 @@ from playwright.async_api import async_playwright
 
 ARQUIVO_ENTRADA = "links_apenas_filhos.json"
 ARQUIVO_SAIDA = "novos_links_por_pagina.json"
-BASE_URL = "https://www.gov.br/ds/"
+#BASE_URL = "https://www.gov.br/ds/"
+BASE_URL = "https://next-ds.estaleiro.serpro.gov.br/"
 
 async def mapear_novos_links():
     # Carrega os links filhos do arquivo anterior

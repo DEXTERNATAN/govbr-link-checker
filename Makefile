@@ -1,4 +1,4 @@
-.PHONY: install run extrair mapear verificar relatorio clean
+.PHONY: install run extrair mapear verificar relatorio clean tudo
 
 VENV_DIR=.venv
 PYTHON=$(VENV_DIR)/bin/python
@@ -39,3 +39,6 @@ clean:
 	@echo "Removendo arquivos gerados..."
 	rm -f links_extraidos.json links_apenas_filhos.json novos_links_por_pagina.json verificacao_links_quebrados.json relatorio_links.html
 	@echo "Limpeza concluída."
+
+tudo: extrair mapear verificar relatorio
+	@echo "✅ Processo completo de verificação de links concluído com sucesso!"

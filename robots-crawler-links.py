@@ -5,7 +5,7 @@ from collections import defaultdict
 from playwright.async_api import async_playwright
 
 #v3
-BASE_URL = "https://www.gov.br/ds/"
+BASE_URL = "https://next-ds.estaleiro.serpro.gov.br/"
 
 #v4
 # BASE_URL = "https://www.gov.br/ds/"

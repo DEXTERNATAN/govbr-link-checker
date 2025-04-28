@@ -1,24 +1,29 @@
 [
   {
-    "introducao": [
+    "#main-content-title": [
       {
-        "filhos": {
-          "comunidade": {
-            "url": "https://www.gov.br/ds/introducao/comunidade"
-          },
-          "o-que-ha-de-novo": {
-            "url": "https://www.gov.br/ds/introducao/o-que-ha-de-novo"
-          },
-          "padrao-minimo": {
-            "url": "https://www.gov.br/ds/introducao/padrao-minimo"
-          },
-          "principios": {
-            "url": "https://www.gov.br/ds/introducao/principios"
-          },
-          "sobre": {
-            "url": "https://www.gov.br/ds/introducao/sobre"
-          }
-        }
+        "filhos": {}
+      }
+    ]
+  },
+  {
+    "#main-navigation-title": [
+      {
+        "filhos": {}
+      }
+    ]
+  },
+  {
+    "#main-searchbox": [
+      {
+        "filhos": {}
+      }
+    ]
+  },
+  {
+    "#footer-title": [
+      {
+        "filhos": {}
       }
     ]
   },
@@ -30,91 +35,64 @@
     ]
   },
   {
-    "como-comecar": [
+    "introducao": [
       {
         "filhos": {
-          "instalacao": {
-            "url": "https://www.gov.br/ds/como-comecar/instalacao"
+          "como-comecar": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/introducao/como-comecar"
           },
-          "prototipando": {
-            "url": "https://www.gov.br/ds/como-comecar/prototipando"
+          "fluxo-criacao": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/introducao/fluxo-criacao"
           },
-          "purgecss": {
-            "url": "https://www.gov.br/ds/como-comecar/purgecss"
+          "fluxo-desenvolvimento": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/introducao/fluxo-desenvolvimento"
           },
-          "utilizando-sass": {
-            "url": "https://www.gov.br/ds/como-comecar/utilizando-sass"
+          "principios": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/introducao/principios"
           },
-          "vendors": {
-            "url": "https://www.gov.br/ds/como-comecar/vendors"
-          },
-          "versao-lite": {
-            "url": "https://www.gov.br/ds/como-comecar/versao-lite"
+          "sobre": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/introducao/sobre"
           }
         }
       }
     ]
   },
   {
-    "acessibilidade": [
-      {
-        "filhos": {}
-      }
-    ]
-  },
-  {
-    "downloads": [
+    "fundamentos": [
       {
         "filhos": {
-          "assets": {
-            "url": "https://www.gov.br/ds/downloads/assets"
+          "cor": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/cor"
           },
-          "legislacao": {
-            "url": "https://www.gov.br/ds/downloads/legislacao"
-          },
-          "manuais-orientadores": {
-            "url": "https://www.gov.br/ds/downloads/manuais-orientadores"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "fundamentos-visuais": [
-      {
-        "filhos": {
-          "cores": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/cores"
+          "design-token": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/design-token"
           },
           "elevacao": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/elevacao"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/elevacao"
           },
           "espacamento": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/espacamento"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/espacamento"
           },
-          "estados": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/estados"
+          "estado": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/estado"
           },
           "grid": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/grid"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/grid"
           },
           "iconografia": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/iconografia"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/iconografia"
           },
           "ilustracao": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/ilustracao"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/ilustracao"
           },
           "movimento": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/movimento"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/movimento"
           },
           "superficie": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/superficie"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/superficie"
           },
           "tipografia": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/tipografia"
-          },
-          "visao-geral": {
-            "url": "https://www.gov.br/ds/fundamentos-visuais/visao-geral"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/fundamentos/tipografia"
           }
         }
       }
@@ -124,295 +102,69 @@
     "padroes": [
       {
         "filhos": {
-          "design/ajuda-comunicacao": {
-            "url": "https://www.gov.br/ds/padroes/design/ajuda-comunicacao"
+          "collapse": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/collapse"
           },
-          "design/collapse": {
-            "url": "https://www.gov.br/ds/padroes/design/collapse"
+          "content-overflow": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/content-overflow"
           },
-          "design/contentoverflow": {
-            "url": "https://www.gov.br/ds/padroes/design/contentoverflow"
+          "densidade": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/densidade"
           },
-          "design/densidade": {
-            "url": "https://www.gov.br/ds/padroes/design/densidade"
+          "dropdown": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/dropdown"
           },
-          "design/dropdown": {
-            "url": "https://www.gov.br/ds/padroes/design/dropdown"
+          "formulario": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/formulario"
           },
-          "design/emptystates": {
-            "url": "https://www.gov.br/ds/padroes/design/emptystates"
+          "internacionalizacao": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/internacionalizacao"
           },
-          "design/formulario": {
-            "url": "https://www.gov.br/ds/padroes/design/formulario"
+          "skeleton": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/skeleton"
           },
-          "design/grafico": {
-            "url": "https://www.gov.br/ds/padroes/design/grafico"
+          "tema": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/tema"
           },
-          "design/navegacao": {
-            "url": "https://www.gov.br/ds/padroes/design/navegacao"
-          },
-          "design/onboarding": {
-            "url": "https://www.gov.br/ds/padroes/design/onboarding"
-          },
-          "mobile/android-e-ios": {
-            "url": "https://www.gov.br/ds/padroes/mobile/android-e-ios"
-          },
-          "visao-geral": {
-            "url": "https://www.gov.br/ds/padroes/visao-geral"
-          },
-          "writing/microcopy": {
-            "url": "https://www.gov.br/ds/padroes/writing/microcopy"
-          },
-          "writing/principios-writing": {
-            "url": "https://www.gov.br/ds/padroes/writing/principios-writing"
+          "writing": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/padroes/writing"
           }
         }
       }
     ]
   },
   {
-    "components": [
+    "componentes": [
       {
         "filhos": {
-          "accordion": {
-            "url": "https://www.gov.br/ds/components/accordion"
-          },
           "avatar": {
-            "url": "https://www.gov.br/ds/components/avatar"
-          },
-          "breadcrumb": {
-            "url": "https://www.gov.br/ds/components/breadcrumb"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/avatar"
           },
           "button": {
-            "url": "https://www.gov.br/ds/components/button"
-          },
-          "card": {
-            "url": "https://www.gov.br/ds/components/card"
-          },
-          "carousel": {
-            "url": "https://www.gov.br/ds/components/carousel"
-          },
-          "checkbox": {
-            "url": "https://www.gov.br/ds/components/checkbox"
-          },
-          "cookiebar": {
-            "url": "https://www.gov.br/ds/components/cookiebar"
-          },
-          "datetimepicker": {
-            "url": "https://www.gov.br/ds/components/datetimepicker"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/button"
           },
           "divider": {
-            "url": "https://www.gov.br/ds/components/divider"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/divider"
           },
-          "footer": {
-            "url": "https://www.gov.br/ds/components/footer"
+          "form-label": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/form-label"
           },
-          "header": {
-            "url": "https://www.gov.br/ds/components/header"
+          "icon": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/icon"
           },
           "input": {
-            "url": "https://www.gov.br/ds/components/input"
-          },
-          "item": {
-            "url": "https://www.gov.br/ds/components/item"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/input"
           },
           "list": {
-            "url": "https://www.gov.br/ds/components/list"
-          },
-          "loading": {
-            "url": "https://www.gov.br/ds/components/loading"
-          },
-          "magicbutton": {
-            "url": "https://www.gov.br/ds/components/magicbutton"
-          },
-          "menu": {
-            "url": "https://www.gov.br/ds/components/menu"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/list"
           },
           "message": {
-            "url": "https://www.gov.br/ds/components/message"
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/message"
           },
-          "modal": {
-            "url": "https://www.gov.br/ds/components/modal"
-          },
-          "notification": {
-            "url": "https://www.gov.br/ds/components/notification"
-          },
-          "pagination": {
-            "url": "https://www.gov.br/ds/components/pagination"
-          },
-          "radio": {
-            "url": "https://www.gov.br/ds/components/radio"
-          },
-          "scrim": {
-            "url": "https://www.gov.br/ds/components/scrim"
-          },
-          "select": {
-            "url": "https://www.gov.br/ds/components/select"
-          },
-          "signin": {
-            "url": "https://www.gov.br/ds/components/signin"
-          },
-          "skiplink": {
-            "url": "https://www.gov.br/ds/components/skiplink"
-          },
-          "step": {
-            "url": "https://www.gov.br/ds/components/step"
-          },
-          "switch": {
-            "url": "https://www.gov.br/ds/components/switch"
-          },
-          "tab": {
-            "url": "https://www.gov.br/ds/components/tab"
-          },
-          "table": {
-            "url": "https://www.gov.br/ds/components/table"
-          },
-          "tag": {
-            "url": "https://www.gov.br/ds/components/tag"
-          },
-          "textarea": {
-            "url": "https://www.gov.br/ds/components/textarea"
-          },
-          "tooltip": {
-            "url": "https://www.gov.br/ds/components/tooltip"
-          },
-          "upload": {
-            "url": "https://www.gov.br/ds/components/upload"
-          },
-          "visao-geral": {
-            "url": "https://www.gov.br/ds/components/visao-geral"
-          },
-          "wizard": {
-            "url": "https://www.gov.br/ds/components/wizard"
+          "text": {
+            "url": "https://next-ds.estaleiro.serpro.gov.br/componentes/text"
           }
         }
-      }
-    ]
-  },
-  {
-    "templates": [
-      {
-        "filhos": {
-          "base": {
-            "url": "https://www.gov.br/ds/templates/base"
-          },
-          "erro": {
-            "url": "https://www.gov.br/ds/templates/erro"
-          },
-          "visao-geral": {
-            "url": "https://www.gov.br/ds/templates/visao-geral"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "utilitarios": [
-      {
-        "filhos": {
-          "css/arredondamento": {
-            "url": "https://www.gov.br/ds/utilitarios/css/arredondamento"
-          },
-          "css/bordas": {
-            "url": "https://www.gov.br/ds/utilitarios/css/bordas"
-          },
-          "css/cores": {
-            "url": "https://www.gov.br/ds/utilitarios/css/cores"
-          },
-          "css/display": {
-            "url": "https://www.gov.br/ds/utilitarios/css/display"
-          },
-          "css/elevacao": {
-            "url": "https://www.gov.br/ds/utilitarios/css/elevacao"
-          },
-          "css/espacamento": {
-            "url": "https://www.gov.br/ds/utilitarios/css/espacamento"
-          },
-          "css/flexbox": {
-            "url": "https://www.gov.br/ds/utilitarios/css/flexbox"
-          },
-          "css/grid": {
-            "url": "https://www.gov.br/ds/utilitarios/css/grid"
-          },
-          "css/movimento": {
-            "url": "https://www.gov.br/ds/utilitarios/css/movimento"
-          },
-          "css/overflow": {
-            "url": "https://www.gov.br/ds/utilitarios/css/overflow"
-          },
-          "css/textos": {
-            "url": "https://www.gov.br/ds/utilitarios/css/textos"
-          },
-          "css/tipografia": {
-            "url": "https://www.gov.br/ds/utilitarios/css/tipografia"
-          },
-          "js/accordion": {
-            "url": "https://www.gov.br/ds/utilitarios/js/accordion"
-          },
-          "js/checkgroup": {
-            "url": "https://www.gov.br/ds/utilitarios/js/checkgroup"
-          },
-          "js/collapse": {
-            "url": "https://www.gov.br/ds/utilitarios/js/collapse"
-          },
-          "js/dropdown": {
-            "url": "https://www.gov.br/ds/utilitarios/js/dropdown"
-          },
-          "js/scrim": {
-            "url": "https://www.gov.br/ds/utilitarios/js/scrim"
-          },
-          "js/tooltip": {
-            "url": "https://www.gov.br/ds/utilitarios/js/tooltip"
-          },
-          "visao-geral": {
-            "url": "https://www.gov.br/ds/utilitarios/visao-geral"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "guias": [
-      {
-        "filhos": {
-          "acessibilidade-html": {
-            "url": "https://www.gov.br/ds/guias/acessibilidade-html"
-          },
-          "boas-praticas-de-css": {
-            "url": "https://www.gov.br/ds/guias/boas-praticas-de-css"
-          },
-          "boas-praticas-de-html": {
-            "url": "https://www.gov.br/ds/guias/boas-praticas-de-html"
-          },
-          "codificacao-javascript": {
-            "url": "https://www.gov.br/ds/guias/codificacao-javascript"
-          },
-          "codificacao-sass": {
-            "url": "https://www.gov.br/ds/guias/codificacao-sass"
-          },
-          "construcao-de-componentes": {
-            "url": "https://www.gov.br/ds/guias/construcao-de-componentes"
-          },
-          "migracao-2x-3x": {
-            "url": "https://www.gov.br/ds/guias/migracao-2x-3x"
-          },
-          "navegadores-suportados": {
-            "url": "https://www.gov.br/ds/guias/navegadores-suportados"
-          },
-          "visao-geral": {
-            "url": "https://www.gov.br/ds/guias/visao-geral"
-          },
-          "wai-aria": {
-            "url": "https://www.gov.br/ds/guias/wai-aria"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "release-notes": [
-      {
-        "filhos": {}
       }
     ]
   }

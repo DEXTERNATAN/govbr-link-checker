@@ -254,12 +254,12 @@ class LinkVerificador(Spider):
                             self.resultado[info["pai"]]["erro_pai"]["erro_links_pai"] = True
                             break
 
-        try:
-            with open(ARQUIVO_SAIDA, "w", encoding="utf-8") as f:
-                json.dump(self.resultado, f, ensure_ascii=False, indent=2)
-            self.logger.info(f"✅ Resultado salvo em '{ARQUIVO_SAIDA}'")
-        except IOError as e:
-            self.logger.error(f"❌ Erro ao salvar o arquivo '{ARQUIVO_SAIDA}': {e}")
+    try:
+        with open(ARQUIVO_SAIDA, "w", encoding="utf-8") as f:
+            json.dump(self.resultado, f, ensure_ascii=False, indent=2)
+        self.logger.info(f"✅ Resultado salvo em '{ARQUIVO_SAIDA}'")
+    except IOError as e:
+        self.logger.error(f"❌ Erro ao salvar o arquivo '{ARQUIVO_SAIDA}': {e}")
 
 def verificar_links():
     # Carrega os dados do arquivo JSON
@@ -300,4 +300,4 @@ def verificar_links():
     process.start()  # O processo é bloqueante, vai esperar até terminar
 
 if __name__ == "__main__":
-    verificar_links() 
+    verificar_links()
